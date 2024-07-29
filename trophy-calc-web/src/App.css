@@ -71,6 +71,11 @@
   overflow-x: hidden;
 }
 
+.trophy:hover {
+  border: 2px solid rgb(22, 68, 127);
+  background-color: #2a313e;
+}
+
 .trophy.selected {
   border: 2px solid gold;
   background-color: #303022;
