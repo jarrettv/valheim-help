@@ -1,6 +1,7 @@
 [
     {
         "biome": "Meadows",
+        "group": "Meadows",
         "iconUrl": "trophies/boar_trophy.png",
         "name": "Boar",
         "url": "https://valheim.fandom.com/wiki/Boar_trophy",
@@ -12,6 +13,7 @@
     },
     {
         "biome": "Meadows",
+        "group": "Meadows",
         "iconUrl": "trophies/deer_trophy.png",
         "name": "Deer",
         "url": "https://valheim.fandom.com/wiki/Deer_trophy",
@@ -23,6 +25,7 @@
     },
     {
         "biome": "Meadows",
+        "group": "Meadows",
         "iconUrl": "trophies/neck_trophy.png",
         "name": "Neck",
         "url": "https://valheim.fandom.com/wiki/Neck_trophy",
@@ -34,6 +37,7 @@
     },
     {
         "biome": "Meadows",
+        "group": "Meadows",
         "iconUrl": "trophies/eikthyr_trophy.png",
         "name": "Eikthyr",
         "url": "https://valheim.fandom.com/wiki/Eikthyr_trophy",
@@ -45,6 +49,7 @@
     },
     {
         "biome": "Black Forest",
+        "group": "Black Forest",
         "iconUrl": "trophies/greydwarf_trophy.png",
         "name": "Greydwarf",
         "url": "https://valheim.fandom.com/wiki/Greydwarf_trophy",
@@ -56,6 +61,7 @@
     },
     {
         "biome": "Black Forest",
+        "group": "Black Forest",
         "iconUrl": "trophies/greydwarf_brute_trophy.png",
         "name": "Greydwarf Brute",
         "url": "https://valheim.fandom.com/wiki/Greydwarf_Brute_trophy",
@@ -67,6 +73,7 @@
     },
     {
         "biome": "Black Forest",
+        "group": "Black Forest",
         "iconUrl": "trophies/greydwarf_shaman_trophy.png",
         "name": "Greydwarf Shaman",
         "url": "https://valheim.fandom.com/wiki/Greydwarf_Shaman_trophy",
@@ -78,6 +85,7 @@
     },
     {
         "biome": "Black Forest",
+        "group": "Black Forest",
         "iconUrl": "trophies/rancid_remains_trophy.png",
         "name": "Rancid Remains",
         "url": "https://valheim.fandom.com/wiki/Rancid_Remains_trophy",
@@ -89,6 +97,7 @@
     },
     {
         "biome": "Black Forest",
+        "group": "Black Forest",
         "iconUrl": "trophies/skeleton_trophy.png",
         "name": "Skeleton",
         "url": "https://valheim.fandom.com/wiki/Skeleton_trophy",
@@ -100,6 +109,7 @@
     },
     {
         "biome": "Black Forest",
+        "group": "Black Forest",
         "iconUrl": "trophies/troll_trophy.png",
         "name": "Troll",
         "url": "https://valheim.fandom.com/wiki/Troll_trophy",
@@ -111,6 +121,7 @@
     },
     {
         "biome": "Black Forest",
+        "group": "Black Forest",
         "iconUrl": "trophies/brenna_trophy.png",
         "name": "Brenna",
         "url": "https://valheim.fandom.com/wiki/Brenna_trophy",
@@ -122,6 +133,7 @@
     },
     {
         "biome": "Black Forest",
+        "group": "Black Forest",
         "iconUrl": "trophies/the_elder_trophy.png",
         "name": "The Elder",
         "url": "https://valheim.fandom.com/wiki/The_Elder_trophy",
@@ -133,6 +145,7 @@
     },
     {
         "biome": "Swamp",
+        "group": "Swamp",
         "iconUrl": "trophies/abomination_trophy.png",
         "name": "Abomination",
         "url": "https://valheim.fandom.com/wiki/Abomination_trophy",
@@ -144,6 +157,7 @@
     },
     {
         "biome": "Swamp",
+        "group": "Swamp",
         "iconUrl": "trophies/blob_trophy.png",
         "name": "Blob",
         "url": "https://valheim.fandom.com/wiki/Blob_trophy",
@@ -155,6 +169,7 @@
     },
     {
         "biome": "Swamp",
+        "group": "Swamp",
         "iconUrl": "trophies/draugr_trophy.png",
         "name": "Draugr",
         "url": "https://valheim.fandom.com/wiki/Draugr_trophy",
@@ -166,6 +181,7 @@
     },
     {
         "biome": "Swamp",
+        "group": "Swamp",
         "iconUrl": "trophies/draugr_elite_trophy.png",
         "name": "Draugr Elite",
         "url": "https://valheim.fandom.com/wiki/Draugr_Elite_trophy",
@@ -177,6 +193,7 @@
     },
     {
         "biome": "Swamp",
+        "group": "Swamp",
         "iconUrl": "trophies/leech_trophy.png",
         "name": "Leech",
         "url": "https://valheim.fandom.com/wiki/Leech_trophy",
@@ -188,6 +205,7 @@
     },
     {
         "biome": "Swamp",
+        "group": "Swamp",
         "iconUrl": "trophies/surtling_trophy.png",
         "name": "Surtling",
         "url": "https://valheim.fandom.com/wiki/Surtling_trophy",
@@ -199,6 +217,7 @@
     },
     {
         "biome": "Swamp",
+        "group": "Swamp",
         "iconUrl": "trophies/wraith_trophy.png",
         "name": "Wraith",
         "url": "https://valheim.fandom.com/wiki/Wraith_trophy",
@@ -210,6 +229,7 @@
     },
     {
         "biome": "Swamp",
+        "group": "Swamp",
         "iconUrl": "trophies/bonemass_trophy.png",
         "name": "Bonemass",
         "url": "https://valheim.fandom.com/wiki/Bonemass_trophy",
@@ -221,6 +241,7 @@
     },
     {
         "biome": "Mountain",
+        "group": "Mountain",
         "iconUrl": "trophies/cultist_trophy.png",
         "name": "Cultist",
         "url": "https://valheim.fandom.com/wiki/Cultist_trophy",
@@ -232,6 +253,7 @@
     },
     {
         "biome": "Mountain",
+        "group": "Mountain",
         "iconUrl": "trophies/drake_trophy.png",
         "name": "Drake",
         "url": "https://valheim.fandom.com/wiki/Drake_trophy",
@@ -243,6 +265,7 @@
     },
     {
         "biome": "Mountain",
+        "group": "Mountain",
         "iconUrl": "trophies/fenring_trophy.png",
         "name": "Fenring",
         "url": "https://valheim.fandom.com/wiki/Fenring_trophy",
@@ -254,6 +277,7 @@
     },
     {
         "biome": "Mountain",
+        "group": "Mountain",
         "iconUrl": "trophies/stone_golem_trophy.png",
         "name": "Stone Golem",
         "url": "https://valheim.fandom.com/wiki/Stone_Golem_trophy",
@@ -265,6 +289,7 @@
     },
     {
         "biome": "Mountain",
+        "group": "Mountain",
         "iconUrl": "trophies/ulv_trophy.png",
         "name": "Ulv",
         "url": "https://valheim.fandom.com/wiki/Ulv_trophy",
@@ -276,6 +301,7 @@
     },
     {
         "biome": "Mountain",
+        "group": "Mountain",
         "iconUrl": "trophies/wolf_trophy.png",
         "name": "Wolf",
         "url": "https://valheim.fandom.com/wiki/Wolf_trophy",
@@ -287,6 +313,7 @@
     },
     {
         "biome": "Mountain",
+        "group": "Mountain",
         "iconUrl": "trophies/geirrhafa_trophy.png",
         "name": "Geirrhafa",
         "url": "https://valheim.fandom.com/wiki/Geirrhafa_trophy",
@@ -298,6 +325,7 @@
     },
     {
         "biome": "Mountain",
+        "group": "Mountain",
         "iconUrl": "trophies/moder_trophy.png",
         "name": "Moder",
         "url": "https://valheim.fandom.com/wiki/Moder_trophy",
@@ -309,6 +337,7 @@
     },
     {
         "biome": "Plains",
+        "group": "Plains",
         "iconUrl": "trophies/deathsquito_trophy.png",
         "name": "Deathsquito",
         "url": "https://valheim.fandom.com/wiki/Deathsquito_trophy",
@@ -320,6 +349,7 @@
     },
     {
         "biome": "Plains",
+        "group": "Plains",
         "iconUrl": "trophies/fuling_trophy.png",
         "name": "Fuling",
         "url": "https://valheim.fandom.com/wiki/Fuling_trophy",
@@ -331,6 +361,7 @@
     },
     {
         "biome": "Plains",
+        "group": "Plains",
         "iconUrl": "trophies/fuling_berserker_trophy.png",
         "name": "Fuling Berserker",
         "url": "https://valheim.fandom.com/wiki/Fuling_berserker_trophy",
@@ -342,6 +373,7 @@
     },
     {
         "biome": "Plains",
+        "group": "Plains",
         "iconUrl": "trophies/fuling_shaman_trophy.png",
         "name": "Fuling Shaman",
         "url": "https://valheim.fandom.com/wiki/Fuling_shaman_trophy",
@@ -353,6 +385,7 @@
     },
     {
         "biome": "Plains",
+        "group": "Plains",
         "iconUrl": "trophies/growth_trophy.png",
         "name": "Growth",
         "url": "https://valheim.fandom.com/wiki/Growth_trophy",
@@ -364,6 +397,7 @@
     },
     {
         "biome": "Plains",
+        "group": "Plains",
         "iconUrl": "trophies/lox_trophy.png",
         "name": "Lox",
         "url": "https://valheim.fandom.com/wiki/Lox_trophy",
@@ -375,6 +409,7 @@
     },
     {
         "biome": "Plains",
+        "group": "Plains",
         "iconUrl": "trophies/zil_trophy.png",
         "name": "Zil",
         "url": "https://valheim.fandom.com/wiki/Zil_trophy",
@@ -386,6 +421,7 @@
     },
     {
         "biome": "Plains",
+        "group": "Plains",
         "iconUrl": "trophies/thungr_trophy.png",
         "name": "Thungr",
         "url": "https://valheim.fandom.com/wiki/Thungr_trophy",
@@ -397,6 +433,7 @@
     },
     {
         "biome": "Plains",
+        "group": "Plains",
         "iconUrl": "trophies/yagluth_trophy.png",
         "name": "Yagluth",
         "url": "https://valheim.fandom.com/wiki/Yagluth_trophy",
@@ -408,6 +445,7 @@
     },
     {
         "biome": "Mistlands",
+        "group": "Mistlands",
         "iconUrl": "trophies/dvergr_trophy.png",
         "name": "Dvergr",
         "url": "https://valheim.fandom.com/wiki/Dvergr_trophy",
@@ -419,6 +457,7 @@
     },
     {
         "biome": "Mistlands",
+        "group": "Mistlands",
         "iconUrl": "trophies/hare_trophy.png",
         "name": "Hare",
         "url": "https://valheim.fandom.com/wiki/Hare_trophy",
@@ -430,6 +469,7 @@
     },
     {
         "biome": "Mistlands",
+        "group": "Mistlands",
         "iconUrl": "trophies/gjall_trophy.png",
         "name": "Gjall",
         "url": "https://valheim.fandom.com/wiki/Gjall_trophy",
@@ -441,6 +481,7 @@
     },
     {
         "biome": "Mistlands",
+        "group": "Mistlands",
         "iconUrl": "trophies/seeker_trophy.png",
         "name": "Seeker",
         "url": "https://valheim.fandom.com/wiki/Seeker_trophy",
@@ -452,6 +493,7 @@
     },
     {
         "biome": "Mistlands",
+        "group": "Mistlands",
         "iconUrl": "trophies/seeker_soldier_trophy.png",
         "name": "Seeker Soldier",
         "url": "https://valheim.fandom.com/wiki/Seeker_soldier_trophy",
@@ -463,6 +505,7 @@
     },
     {
         "biome": "Mistlands",
+        "group": "Mistlands",
         "iconUrl": "trophies/tick_trophy.png",
         "name": "Tick",
         "url": "https://valheim.fandom.com/wiki/Tick_trophy",
@@ -474,6 +517,7 @@
     },
     {
         "biome": "Mistlands",
+        "group": "Mistlands",
         "iconUrl": "trophies/the_queen_trophy.png",
         "name": "The Queen",
         "url": "https://valheim.fandom.com/wiki/The_Queen_trophy",
@@ -485,6 +529,7 @@
     },
     {
         "biome": "Ashlands",
+        "group": "Ashlands",
         "iconUrl": "trophies/asksvin_trophy.png",
         "name": "Asksvin",
         "url": "https://valheim.fandom.com/wiki/Asksvin_trophy",
@@ -496,6 +541,7 @@
     },
     {
         "biome": "Ashlands",
+        "group": "Ashlands",
         "iconUrl": "trophies/bonemaw_trophy.png",
         "name": "Bonemaw",
         "url": "https://valheim.fandom.com/wiki/Bonemaw_trophy",
@@ -507,6 +553,7 @@
     },
     {
         "biome": "Ashlands",
+        "group": "Ashlands",
         "iconUrl": "trophies/fallen_valkyrie_trophy.png",
         "name": "Fallen Valkyrie",
         "url": "https://valheim.fandom.com/wiki/Fallen_Valkyrie_trophy",
@@ -518,6 +565,7 @@
     },
     {
         "biome": "Ashlands",
+        "group": "Ashlands",
         "iconUrl": "trophies/marksman_trophy.png",
         "name": "Marksman",
         "url": "https://valheim.fandom.com/wiki/Marksman_trophy",
@@ -529,6 +577,7 @@
     },
     {
         "biome": "Ashlands",
+        "group": "Ashlands",
         "iconUrl": "trophies/morgen_trophy.png",
         "name": "Morgen",
         "url": "https://valheim.fandom.com/wiki/Morgen_trophy",
@@ -540,6 +589,7 @@
     },
     {
         "biome": "Ashlands",
+        "group": "Ashlands",
         "iconUrl": "trophies/volture_trophy.png",
         "name": "Volture",
         "url": "https://valheim.fandom.com/wiki/Volture_trophy",
@@ -551,6 +601,7 @@
     },
     {
         "biome": "Ashlands",
+        "group": "Ashlands",
         "iconUrl": "trophies/warlock_trophy.png",
         "name": "Warlock",
         "url": "https://valheim.fandom.com/wiki/Warlock_trophy",
@@ -562,6 +613,7 @@
     },
     {
         "biome": "Ashlands",
+        "group": "Ashlands",
         "iconUrl": "trophies/warrior_trophy.png",
         "name": "Warrior",
         "url": "https://valheim.fandom.com/wiki/Warrior_trophy",
@@ -573,6 +625,7 @@
     },
     {
         "biome": "Ashlands",
+        "group": "Ashlands",
         "iconUrl": "trophies/fader_trophy.png",
         "name": "Fader",
         "url": "https://valheim.fandom.com/wiki/Fader_trophy",
@@ -584,6 +637,7 @@
     },
     {
         "biome": "Ocean",
+        "group": "Ocean/Penalty",
         "iconUrl": "trophies/serpent_trophy.png",
         "name": "Serpent",
         "url": "https://valheim.fandom.com/wiki/Serpent_trophy",
@@ -592,5 +646,77 @@
         "dropChance": "33%",
         "uses": "Decoration, Crafting",
         "score": 25
+    },
+    {
+        "biome": "Penalty",
+        "group": "Ocean/Penalty",
+        "iconUrl": "trophies/death.webp",
+        "name": "Death",
+        "url": "",
+        "droppedBy": "",
+        "droppedByUrl": "",
+        "dropChance": "",
+        "uses": "",
+        "score": -20
+    },
+    {
+        "biome": "Penalty",
+        "group": "Ocean/Penalty",
+        "iconUrl": "trophies/death.webp",
+        "name": "Death",
+        "url": "",
+        "droppedBy": "",
+        "droppedByUrl": "",
+        "dropChance": "",
+        "uses": "",
+        "score": -20
+    },
+    {
+        "biome": "Penalty",
+        "group": "Ocean/Penalty",
+        "iconUrl": "trophies/death.webp",
+        "name": "Death",
+        "url": "",
+        "droppedBy": "",
+        "droppedByUrl": "",
+        "dropChance": "",
+        "uses": "",
+        "score": -20
+    },
+    {
+        "biome": "Penalty",
+        "group": "Ocean/Penalty",
+        "iconUrl": "trophies/rested.webp",
+        "name": "Re-log",
+        "url": "",
+        "droppedBy": "",
+        "droppedByUrl": "",
+        "dropChance": "",
+        "uses": "",
+        "score": -10
+    },
+    {
+        "biome": "Penalty",
+        "group": "Ocean/Penalty",
+        "iconUrl": "trophies/rested.webp",
+        "name": "Re-log",
+        "url": "",
+        "droppedBy": "",
+        "droppedByUrl": "",
+        "dropChance": "",
+        "uses": "",
+        "score": -10
+    },
+    {
+        "biome": "Penalty",
+        "group": "Ocean/Penalty",
+        "iconUrl": "trophies/rested.webp",
+        "name": "Re-log",
+        "url": "",
+        "droppedBy": "",
+        "droppedByUrl": "",
+        "dropChance": "",
+        "uses": "",
+        "score": -10
     }
 ]

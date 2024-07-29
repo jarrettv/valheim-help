@@ -20,7 +20,7 @@ const Home: React.FC = () => {
     }
   };
 
-  const biomes = [...new Set(trophiesData.map(trophy => trophy.biome))];
+  const groups = [...new Set(trophiesData.map(trophy => trophy.group))];
 
   return (
     <div className="App">
@@ -30,11 +30,11 @@ const Home: React.FC = () => {
         <div className="score"><div>Total Score</div><div className="score-value">{totalScore}</div></div>
       </div>
       <div className="content">
-        {biomes.map(biome => (
-          <div key={biome} className="biome-section">
+        {groups.map(group => (
+          <div key={group} className="biome-section">
             <div className="trophies-container">
               {trophiesData
-                .filter(trophy => trophy.biome === biome)
+                .filter(trophy => trophy.group === group)
                 .map(trophy => (
                   <Trophy
                     key={trophy.name}
