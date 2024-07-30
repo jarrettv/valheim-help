@@ -25,8 +25,10 @@ const Home: React.FC = () => {
   return (
     <div className="App">
       <div className="header">
-        <img src="valheim-logo.webp" alt="Valheim" />
-        <h1>Trophy Hunt Calculator</h1>
+        <div>
+          <img src="valheim-logo.webp" alt="Valheim" />
+          <h1>Trophy Hunt Calculator</h1>
+        </div>
         <div className="score"><div>Total Score</div><div className="score-value">{totalScore}</div></div>
       </div>
       <div className="content">

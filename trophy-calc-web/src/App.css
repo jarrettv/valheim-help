@@ -1,3 +1,9 @@
+@media (max-width: 780px) {
+  .header h1 {
+    display: none;
+  }
+}
+
 .app {
   display: grid;
   grid-template-columns: 1fr;
@@ -12,11 +18,18 @@
 
 .header {
   display:flex;
+  justify-content: space-between;
   align-items: center;
   margin:0;
   width:100vw;
   color: white;  
   grid-area: header;
+  height:7vh;
+}
+
+.header>div{
+  display:flex;
+  align-items: center;
 }
 
 .header img {
@@ -26,7 +39,6 @@
 }
 
 .header h1 {
-  flex:1;
   margin: 0.3rem 0 0.3rem 1rem;
   font-size: 2rem;
   font-weight: normal;
@@ -47,7 +59,9 @@
   margin:0 1rem;
 }
 .content {
-  overflow-y: auto;
+  overflow-y: scroll;
+  overflow-x:auto;
+  height: 92vh;
   margin:0;
   padding: 0;
   grid-area: content;
