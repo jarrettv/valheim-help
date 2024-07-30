@@ -1,8 +1,4 @@
-@media (max-width: 780px) {
-  .header h1 {
-    display: none;
-  }
-}
+
 
 .app {
   display: grid;
@@ -44,13 +40,23 @@
   font-weight: normal;
  }
 
- .header .score {
+ @media (max-width: 780px) {
+  .header h1 {
+    display: none;
+  }
+}
+.header .score {
   display:flex;
   margin: 0 2rem 0.3rem 0;
   font-size: 1.6rem;
   font-weight: normal;
   align-items: center;
  }
+ @media (max-width: 440px) {
+  .header .score-label {
+    display: none;
+  }
+}
 
 .header .score-value {
   color:gold;
@@ -71,60 +77,4 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.trophy {
-  text-align: center;
-  width: 96px;
-  line-height: 1.4rem;
-  margin: 0.3rem;
-  padding: 0.3rem 0.5rem;
-  border: 2px solid transparent;
-  cursor: pointer;
-  transition: border 0.3s;
-  overflow-x: hidden;
-}
-
-.trophy:hover {
-  border: 2px solid rgb(22, 68, 127);
-  background-color: #2a313e;
-}
-
-.trophy.selected {
-  border: 2px solid gold;
-  background-color: #303022;
-}
-
-.trophy .chance {
-  font-size:smaller;
-  position: relative;
-  float:left;
-  width: 22px;
-  height: 30px;
-  margin-right: -22px;
-  color: white;
-  opacity:0.6;
-}
-
-.trophy .score {
-  position: relative;
-  float:right;
-  width: 22px;
-  height: 30px;
-  margin-left: -22px;
-  color: white;
-}
-
-.trophy.selected .score {
-  color:gold;
-  font-weight: bold;
-}
-
-.trophy img {
-  width: 64px;
-  height: 64px;
-}
-
-.trophy-info {
-  text-align: center;
 }

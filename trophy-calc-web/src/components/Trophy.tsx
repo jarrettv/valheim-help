@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+import './Trophy.css';
 
 interface TrophyProps {
   trophy: Trophy;
