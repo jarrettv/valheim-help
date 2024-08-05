@@ -1,5 +1,5 @@
 import { Link } from '@tanstack/react-router'
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useQuery } from '@tanstack/react-query';
 import { Gear, fetchGear } from "../api/GearApi";
 import GearButton from "../components/GearButton";
