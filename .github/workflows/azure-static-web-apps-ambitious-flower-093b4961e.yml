@@ -19,14 +19,10 @@ jobs:
         with:
           submodules: true
           lfs: false
-      - name: Use Bun
-        uses: oven-sh/setup-bun@v1
-      - name: Install Bun
-        run: |
-          bun install
-          bun run build
-      - name: Deploy
-        uses: Azure/static-web-apps-deploy@v1
+      - uses: oven-sh/setup-bun@v1
+      - run: bun install
+      - run: bun run build
+      - uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_AMBITIOUS_FLOWER_093B4961E }}
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
