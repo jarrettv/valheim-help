@@ -1,0 +1,50 @@
+.gear-details {
+  max-width: 520px;
+  flex:1;
+}
+.gear-details h2 {
+  margin: 0.5rem 0;
+  font-size: 1.9rem;
+  font-weight: normal;
+}
+
+
+.gear-details button {
+  float:right;
+  font-size:larger;
+  padding: 0.3rem 0.5rem;
+}
+
+.gear-details .levels {
+  display:flex;
+  flex-direction: row;
+}
+
+.gear-details .level-head {font-size:1.4rem}
+.gear-details .level-attr{ flex:1; border: 2px solid transparent}
+.gear-details .level-attr.selected {
+  color:gold; 
+  font-weight:bold;
+  border-color:gold;
+  background-color: #303022;
+}
+.gear-details .level-attr:hover {
+  border-color: rgb(22, 68, 127);
+  background-color: #2a313e;
+}
+
+.gear-details div div:nth-child(even) {
+  background-color: #cccccc08;
+}
+
+.gear-details .level-labels {
+  flex: 1.5;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.gear-details .level-labels small {
+  display: inline-block;
+  padding-left:0.3rem;
+  font-size:0.8rem;
+  opacity:0.5;
+}

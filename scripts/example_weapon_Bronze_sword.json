@@ -1,0 +1,197 @@
+{
+    "item": {
+        "name": "Bronze sword",
+        "description": "Blood-drinker. A thirsty friend.",
+        "image": "https://static.wikia.nocookie.net/valheim/images/b/b8/Bronze_sword.png/revision/latest?cb=20210209165118",
+        "levels": [
+            {
+                "level": 1,
+                "wielding": "One-handed",
+                "weight": 0.8,
+                "durability": 200,
+                "craftingLevel": 1,
+                "repairLevel": 1,
+                "materials": {
+                    "Wood": 2,
+                    "Bronze": 8,
+                    "Leather scraps": 2
+                },
+                "primaryAttack": {
+                    "slash": 25,
+                    "backstab": 3,
+                    "stagger": 35,
+                    "knockback": 40,
+                    "stamina": 8,
+                    "attackSpeed": "2.46 s (1.14 + 0.44 + 0.88)",
+                    "chainLastHit": "2x damage, +20% knockback",
+                    "hitbox": "2.4 range, 90 angle, 1.0 height, 0.5 ray, no multitarget penalty"
+                },
+                "secondaryAttack": {
+                    "slash": 105,
+                    "backstab": 3,
+                    "stagger": 105,
+                    "knockback": 40,
+                    "stamina": 16,
+                    "attackSpeed": "1.84 s",
+                    "hitbox": "2.7 range, 10 angle, 1.0 height, 0.7 ray"
+                },
+                "block":{
+                    "armor": {
+                        "skill0": 12,
+                        "skill100": 18
+                    },
+                    "parryArmor": {
+                        "skill0": 24,
+                        "skill100": 36
+                    },
+                    "force": 20,
+                    "parryBonus": 2
+                },
+                "passive": {
+                    "movementSpeed": "-5%"
+                }
+            },
+            {
+                "level": 2,
+                "wielding": "One-handed",
+                "weight": 0.8,
+                "durability": 250,
+                "craftingLevel": 2,
+                "repairLevel": 1,
+                "materials": {
+                    "Wood": 1,
+                    "Bronze": 4,
+                    "Leather scraps": 1
+                },
+                "primaryAttack": {
+                    "slash": 41,
+                    "backstab": 3,
+                    "stagger": 41,
+                    "knockback": 40,
+                    "stamina": 8,
+                    "attackSpeed": "2.46 s (1.14 + 0.44 + 0.88)",
+                    "chainLastHit": "2x damage, +20% knockback",
+                    "hitbox": "2.4 range, 90 angle, 1.0 height, 0.5 ray, no multitarget penalty"
+                },
+                "secondaryAttack": {
+                    "slash": 123,
+                    "backstab": 3,
+                    "stagger": 123,
+                    "knockback": 40,
+                    "stamina": 16,
+                    "attackSpeed": "1.84 s",
+                    "hitbox": "2.7 range, 10 angle, 1.0 height, 0.7 ray"
+                },
+                "block":{
+                    "armor": {
+                        "skill0": 12,
+                        "skill100": 18
+                    },
+                    "parryArmor": {
+                        "skill0": 24,
+                        "skill100": 36
+                    },
+                    "force": 25,
+                    "parryBonus": 2
+                },
+                "passive": {
+                    "movementSpeed": "-5%"
+                }
+            },
+            {
+                "level": 3,
+                "wielding": "One-handed",
+                "weight": 0.8,
+                "durability": 300,
+                "craftingLevel": 3,
+                "repairLevel": 1,
+                "materials": {
+                    "Wood": 2,
+                    "Bronze": 8,
+                    "Leather scraps": 2
+                },
+                "primaryAttack": {
+                    "slash": 47,
+                    "backstab": 3,
+                    "stagger": 47,
+                    "knockback": 40,
+                    "stamina": 8,
+                    "attackSpeed": "2.46 s (1.14 + 0.44 + 0.88)",
+                    "chainLastHit": "2x damage, +20% knockback",
+                    "hitbox": "2.4 range, 90 angle, 1.0 height, 0.5 ray, no multitarget penalty"
+                },
+                "secondaryAttack": {
+                    "slash": 141,
+                    "backstab": 3,
+                    "stagger": 141,
+                    "knockback": 40,
+                    "stamina": 16,
+                    "attackSpeed": "1.84 s",
+                    "hitbox": "2.7 range, 10 angle, 1.0 height, 0.7 ray"
+                },
+                "block":{
+                    "armor": {
+                        "skill0": 12,
+                        "skill100": 18
+                    },
+                    "parryArmor": {
+                        "skill0": 24,
+                        "skill100": 36
+                    },
+                    "force": 30,
+                    "parryBonus": 2
+                },
+                "passive": {
+                    "movementSpeed": "-5%"
+                }
+            },
+            {
+                "level": 4,
+                "wielding": "One-handed",
+                "weight": 0.8,
+                "durability": 350,
+                "craftingLevel": 4,
+                "repairLevel": 1,
+                "materials": {
+                    "Wood": 3,
+                    "Bronze": 12,
+                    "Leather scraps": 3
+                },
+                "primaryAttack": {
+                    "slash": 53,
+                    "backstab": 3,
+                    "stagger": 53,
+                    "knockback": 40,
+                    "stamina": 8,
+                    "attackSpeed": "2.46 s (1.14 + 0.44 + 0.88)",
+                    "chainLastHit": "2x damage, +20% knockback",
+                    "hitbox": "2.4 range, 90 angle, 1.0 height, 0.5 ray, no multitarget penalty"
+                },
+                "secondaryAttack": {
+                    "slash": 159,
+                    "backstab": 3,
+                    "stagger": 159,
+                    "knockback": 40,
+                    "stamina": 16,
+                    "attackSpeed": "1.84 s",
+                    "hitbox": "2.7 range, 10 angle, 1.0 height, 0.7 ray"
+                },
+                "block":{
+                    "armor": {
+                        "skill0": 12,
+                        "skill100": 18
+                    },
+                    "parryArmor": {
+                        "skill0": 24,
+                        "skill100": 36
+                    },
+                    "force": 35,
+                    "parryBonus": 2
+                },
+                "passive": {
+                    "movementSpeed": "-5%"
+                }
+            }
+        ]
+    }
+}

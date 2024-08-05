@@ -1,0 +1,4 @@
+
+.gear-info article { display:flex; 
+  flex-direction:row; }
+.gear-info  .gear-group { display:flex; flex-wrap: wrap; }

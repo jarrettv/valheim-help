@@ -1,0 +1,64 @@
+
+.trophy {
+  text-align: center;
+  width: 96px;
+  line-height: 1.4rem;
+  margin: 0.3rem;
+  padding: 0.3rem 0.5rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border 0.3s;
+  overflow-x: hidden;
+}
+
+.trophy:hover {
+  border: 2px solid rgb(22, 68, 127);
+  background-color: #2a313e;
+}
+
+.trophy.selected {
+  border: 2px solid gold;
+  background-color: #303022;
+}
+
+.trophy .chance {
+  font-size:smaller;
+  position: relative;
+  float:left;
+  width: 22px;
+  height: 30px;
+  margin-right: -22px;
+  color: white;
+  opacity:0.6;
+}
+
+.trophy .score {
+  position: relative;
+  float:right;
+  width: 22px;
+  height: 30px;
+  margin-left: -22px;
+  color: white;
+}
+
+.trophy.selected .score {
+  color:gold;
+  font-weight: bold;
+}
+
+.trophy img {
+  width: 64px;
+  height: 64px;
+}
+
+.trophy .info {
+  text-align: center;
+}
+.trophy .name {
+  margin: -0.6rem 0 0 0;
+  font-size:1.4rem;
+}
+.trophy .subname {
+  margin: -0.1rem 0 0 0;
+   opacity:0.8;
+}
