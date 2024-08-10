@@ -4,24 +4,19 @@ import json
 with open("out/trophies_raw.json", "r") as f:
     trophies = json.load(f)
 
-# Define boss trophies
-boss_trophies = [
-    "Eikthyr trophy",
-    "The Elder trophy",
-    "Bonemass trophy",
-    "Moder trophy",
-    "Yagluth trophy",
-    "The Queen trophy",
-    "Fader trophy",
-]
-
 # Assign scores based on the boss first and then the biome
 for trophy in trophies:
     name = trophy["name"]
     biome = trophy["biome"]
 
-    if name in boss_trophies:
+    if name in ["Eikthyr", "The Elder"]:
         trophy["score"] = 50
+    elif name in ["Bonemass"]:
+        trophy["score"] = 80
+    elif name in ["Moder", "Yagluth"]:
+        trophy["score"] = 100
+    elif name in ["The Queen", "Fader"]:
+        trophy["score"] = 1000
     elif biome == "Meadows":
         trophy["score"] = 10
     elif biome in ["Black Forest", "Swamp"]:
@@ -32,7 +27,7 @@ for trophy in trophies:
         trophy["score"] = 40
     elif biome == "Ashlands":
         trophy["score"] = 50
-    elif biome == "Ocean" and name == "Serpent trophy":
+    elif biome == "Ocean" and name == "Serpent":
         trophy["score"] = 25
     else:
         trophy["score"] = 0  # Default score if not matched

@@ -44,7 +44,7 @@
         "droppedByUrl": "https://valheim.fandom.com/wiki/Eikthyr",
         "dropChance": "100%",
         "uses": "Decoration, Forsaken Power",
-        "score": 10,
+        "score": 50,
         "group": "Meadows"
     },
     {
@@ -140,7 +140,7 @@
         "droppedByUrl": "https://valheim.fandom.com/wiki/The_Elder",
         "dropChance": "100%",
         "uses": "Decoration, Forsaken Power",
-        "score": 20,
+        "score": 50,
         "group": "Black Forest"
     },
     {
@@ -236,7 +236,7 @@
         "droppedByUrl": "https://valheim.fandom.com/wiki/Bonemass",
         "dropChance": "100%",
         "uses": "Decoration, Forsaken Power",
-        "score": 20,
+        "score": 80,
         "group": "Swamp"
     },
     {
@@ -332,7 +332,7 @@
         "droppedByUrl": "https://valheim.fandom.com/wiki/Moder",
         "dropChance": "100%",
         "uses": "Decoration, Forsaken Power",
-        "score": 30,
+        "score": 100,
         "group": "Mountain"
     },
     {
@@ -440,7 +440,7 @@
         "droppedByUrl": "https://valheim.fandom.com/wiki/Yagluth",
         "dropChance": "100%",
         "uses": "Decoration, Forsaken Power",
-        "score": 30,
+        "score": 100,
         "group": "Plains"
     },
     {
@@ -524,7 +524,7 @@
         "droppedByUrl": "https://valheim.fandom.com/wiki/The_Queen",
         "dropChance": "100%",
         "uses": "Decoration, Forsaken Power",
-        "score": 40,
+        "score": 1000,
         "group": "Mistlands"
     },
     {
@@ -632,7 +632,7 @@
         "droppedByUrl": "https://valheim.fandom.com/wiki/Fader",
         "dropChance": "100%",
         "uses": "Decoration, Forsaken Power",
-        "score": 50,
+        "score": 1000,
         "group": "Ashlands"
     },
     {
@@ -644,7 +644,7 @@
         "droppedByUrl": "https://valheim.fandom.com/wiki/Serpent",
         "dropChance": "33%",
         "uses": "Decoration, Crafting",
-        "score": 0,
+        "score": 25,
         "group": "Ocean/Penalty"
     },
     {
