@@ -35,9 +35,9 @@
 .trophy .score {
   position: relative;
   float:right;
-  width: 22px;
+  width: 34px;
   height: 30px;
-  margin-left: -22px;
+  margin-left: -34px;
   color: white;
 }
 
