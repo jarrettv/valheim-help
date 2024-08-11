@@ -1,35 +1,30 @@
 export type Gear = {
   id: string;
+  code: string;
   name: string;
-  description: string;
-  iconUrl: string;
+  desc: string;
   type: string;
-  source: string;
+  image: string;
   usage: string;
-  wielding: string;
+  wield: string;
   weight: number;
+  power: number;
+  source: string;
+  durab: string;
+  craft: string;
+  repair: string;
   passive:{
     [key: string]: string;
   };
-  power: number;
-  levels: {
-      level: number;
-      durability: number;
-      craftingLevel: number;
-      repairLevel: number;
-      materials: {
-        [key: string]: string;
-      };
-      primaryAttack: {
-        [key: string]: string;
-      };
-      secondaryAttack: {
-        [key: string]: string;
-      };
-      blocking: {
-        [key: string]: string;
-      };
-  }[];
+  mats: {
+    [key: string]: string;
+  };
+  attack?: {
+    [key: string]: string;
+  };
+  block?: {
+    [key: string]: string;
+  };
 };
 
 export const fetchGear = async (): Promise<Gear[]> => {

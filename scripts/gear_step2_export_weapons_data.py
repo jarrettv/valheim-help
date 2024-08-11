@@ -19,6 +19,75 @@ data = []
 types = {}
 
 
+def get_attack_info(attk_tag, tab):
+    attk = {}
+    attk_sections = attk_tag.parent.find_all("section")
+    for attk_section in attk_sections:
+        if attk_section:
+            atts = attk_section.find_all("th")
+            vals = attk_section.find_all("td")
+            for i, att in enumerate(atts):
+                # if att.text == "Attack speed" or vals[i].text == "Attack speed":
+                #     continue
+                if vals[i].text.isdigit():
+                    attk[att.text] = int(vals[i].text)
+                else:
+                    attk[att.text] = vals[i].text
+
+    if "Stamina" not in attk:
+        stam_tag = tab.find("h3", string="Stamina")
+        if stam_tag:
+            atts = stam_tag.parent.parent.find_all("h3")
+            vals = stam_tag.parent.parent.find_all("div")
+            for i, att in enumerate(atts):
+                if vals[i].text.isdigit():
+                    attk[att.text] = int(vals[i].text)
+                else:
+                    attk[att.text] = vals[i].text
+
+    # chain_tag = attk_tag.find("h3", string="Chain last hit")
+    # if chain_tag:
+    #     attk["Chain last hit"] = chain_tag.find_next("div").text.strip()
+
+    # hitbox_tag = attk_tag.find("h3", string="Hitbox")
+    # if hitbox_tag:
+    #     attk["Hitbox"] = hitbox_tag.find_next("div").text.strip()
+
+    return attk
+
+
+def add_info_from_table(table, attribute):
+    power = 0
+    atts = table.find_all("th")
+    vals = table.find_all("td")
+
+    for i, att in enumerate(atts):
+        print(f"{att.text}={vals[i].text}")
+        attribute[att.text] = (
+            vals[i].text.replace(" (0 skill)", "-").replace(" (100 skill)", "")
+        )
+        if " (0 skill)" in vals[i].text:
+            zero_score = vals[i].text.split(" (0 skill)")[0]
+            if zero_score.isdigit():
+                power += int(zero_score)
+    return power
+
+
+def get_blocking_info(tab, blocking_table_tag):
+    blocking = {}
+    power = add_info_from_table(blocking_table_tag, blocking)
+
+    parry_tag = tab.find("th", string="Parry bonus")
+    if parry_tag:
+        power += add_info_from_table(parry_tag.parent.parent.parent, blocking)
+
+    force_tag = tab.find("th", string="Block force")
+    if force_tag:
+        power += add_info_from_table(force_tag.parent.parent.parent, blocking)
+
+    return (blocking, power)
+
+
 def get_weapon_info(wiki_name, weapon_name):
     url = base_url + wiki_name
     html_filename = "./out/weapon_html/" + weapon_name + ".html"
@@ -35,6 +104,7 @@ def get_weapon_info(wiki_name, weapon_name):
         soup = BeautifulSoup(html, "html.parser")
 
         item = {}
+        item["id"] = weapon_name.replace(" ", "_").lower()
         item["name"] = soup.find("meta", property="og:title")["content"]
 
         # Extract description
@@ -52,11 +122,11 @@ def get_weapon_info(wiki_name, weapon_name):
         # Extract internal ID
         internal_id_tag = soup.find("div", {"data-source": "id"})
         if internal_id_tag:
-            item["id"] = internal_id_tag.find(
+            item["code"] = internal_id_tag.find(
                 "div", {"class": "pi-data-value pi-font"}
             ).text
         else:
-            item["id"] = weapon_name.replace(" ", "_").lower()
+            item["code"] = weapon_name.replace(" ", "_").lower()
 
         # Extract type
         type_tag = soup.find("h3", string="Type").parent.find("a")
@@ -164,85 +234,22 @@ def get_weapon_info(wiki_name, weapon_name):
                         materials[material.strip()] = int(quantity)
             level_info["materials"] = materials
 
-            # Extract primary attack
+            # Extract primary and secondary attack if they exist
             primary_attack_tag = tab.find("h2", string="Primary attack")
             if primary_attack_tag:
-                primary_attack = {}
-                primary_attack_sections = primary_attack_tag.parent.find_all("section")
-                for primary_attack_section in primary_attack_sections:
-                    if primary_attack_section:
-                        atts = primary_attack_section.find_all("th")
-                        vals = primary_attack_section.find_all("td")
-                        power = 0
-                        for i, att in enumerate(atts):
-                            if (
-                                att.text == "Attack speed"
-                                or vals[i].text == "Attack speed"
-                            ):
-                                continue
-                            if vals[i].text.isdigit():
-                                power += float(vals[i].text)
-                                primary_attack[att.text] = int(vals[i].text)
-                            else:
-                                primary_attack[att.text] = vals[i].text
+                level_info["primaryAttack"] = get_attack_info(primary_attack_tag, tab)
 
-                        if power > item["power"]:
-                            item["power"] = power
-                level_info["primaryAttack"] = primary_attack
+            primary_attack_tag = tab.find("h2", string="Secondary attack")
+            if primary_attack_tag:
+                level_info["secondaryAttack"] = get_attack_info(primary_attack_tag, tab)
 
-            secondary_attack_tag = tab.find("h2", string="Secondary attack")
-            if secondary_attack_tag:
-                secondary_attack = {}
-                secondary_attack_sections = secondary_attack_tag.parent.find_all(
-                    "section"
-                )
-                for secondary_attack_section in secondary_attack_sections:
-                    if secondary_attack_section:
-                        atts = secondary_attack_section.find_all("th")
-                        vals = secondary_attack_section.find_all("td")
-                        for i, att in enumerate(atts):
-                            if (
-                                att.text == "Attack speed"
-                                or vals[i].text == "Attack speed"
-                            ):
-                                continue
-                            if vals[i].text.isdigit():
-                                secondary_attack[att.text] = int(vals[i].text)
-                            else:
-                                secondary_attack[att.text] = vals[i].text
-                level_info["secondaryAttack"] = secondary_attack
-
-            # Extract block armor
-            blocking_table_tag = tab.find("div", string="Blocking")
-            if blocking_table_tag:
-                blocking = {}
-                power = 0
-                atts = blocking_table_tag.parent.parent.find_all("th")
-                vals = blocking_table_tag.parent.parent.find_all("td")
-                for i, att in enumerate(atts):
-                    blocking[att.text] = (
-                        vals[i]
-                        .text.replace(" (0 skill)", "»")
-                        .replace("(100 skill)", "")
-                    )
-                    if " (0 skill)" in vals[i].text:
-                        zero_score = vals[i].text.split(" (0 skill)")[0]
-                        if zero_score.isdigit():
-                            power += int(zero_score)
-
-                parry_table_tab = tab.find("th", string="Parry bonus")
-                if parry_table_tab:
-                    blocking["Parry bonus"] = parry_table_tab.parent.parent.parent.find(
-                        "td"
-                    ).text
-                    if blocking["Parry bonus"].isdigit():
-                        power += int(blocking["Parry bonus"])
-                        blocking["Parry bonus"] = int(blocking["Parry bonus"])
-
-                if power > item["power"]:
-                    item["power"] = power
-
+            # Extract block if it exists
+            blocking_tag = tab.find("div", string="Blocking")
+            if blocking_tag:
+                blocking, b_power = get_blocking_info(tab, blocking_tag.parent.parent)
                 level_info["blocking"] = blocking
+                if b_power > item["power"]:
+                    item["power"] = b_power
 
             levels.append(level_info)
 
@@ -254,7 +261,7 @@ def get_weapon_info(wiki_name, weapon_name):
 for weapon in weapons:
     data.append(get_weapon_info(weapon["wiki_name"], weapon["weapon_name"]))
 
-with open("out/weapons.json", "w", encoding="utf-8") as f:
+with open("out/weapons_v1.json", "w", encoding="utf-8") as f:
     json.dump(data, f, indent=4)
 
 print("Data extraction completed.")

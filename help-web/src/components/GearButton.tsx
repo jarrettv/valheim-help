@@ -13,7 +13,7 @@ export default function GearButton(props: GearButtonProps) {
       className={`gear ${props.isSelected ? 'selected' : ''}`}
       onClick={() => props.onClick(props.gear)}
     >
-      <img src={props.gear.iconUrl} alt={props.gear.name} />
+      <img src={props.gear.image} alt={props.gear.name} />
       <div className="info">
         <div className="name">{props.gear.name}</div>
       </div>
