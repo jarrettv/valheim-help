@@ -7,6 +7,7 @@ import { Gear } from '../api/GearApi';
 function roundIfPossible(value: string): string {
   if (value.includes('%')) return value;
   if (value.includes('s')) return value;
+  if (value.includes('x')) return value;
   const num = parseFloat(value);
 
   // Check if the conversion resulted in a valid number
