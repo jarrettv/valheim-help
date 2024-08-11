@@ -43,6 +43,9 @@
 .gear-details .bubble.spirit {
   background-color: rgb(149, 255, 209);
 }
+.gear-details .bubble.lightning {
+  background-color: rgb(255, 255, 172);
+}
 .gear-details .bubble.poison {
   background-color: rgb(40, 255, 90);
 }

@@ -67,6 +67,8 @@ function mapKeyToGroup(key: string): string {
       return 'spirit';
     case 'Poison':
       return 'poison';
+    case 'Lightning':
+      return 'lightning';
     default:
       return 'stat';
   }
