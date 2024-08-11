@@ -17,10 +17,10 @@ export default function HomePage() {
           <Link to="/trophy-calc" className="[&.active]:font-bold">
             Trophy Hunt Calculator
           </Link>
-          <Link to="/gear-info" className="[&.active]:font-bold">
+          <Link to="/gear" className="[&.active]:font-bold">
             Gear Lookup for Weapons and Armor Info
           </Link>
-          <Link to="/food-info" className="[&.active]:font-bold">
+          <Link to="/food" className="[&.active]:font-bold">
             Food Lookup for Recipes and Info
           </Link>
         </nav>

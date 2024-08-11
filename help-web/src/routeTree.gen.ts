@@ -12,9 +12,10 @@
 
 import { Route as rootRoute } from './routes/__root'
 import { Route as TrophyCalcImport } from './routes/trophy-calc'
-import { Route as GearInfoImport } from './routes/gear-info'
-import { Route as FoodInfoImport } from './routes/food-info'
 import { Route as IndexImport } from './routes/index'
+import { Route as GearIndexImport } from './routes/gear.index'
+import { Route as FoodIndexImport } from './routes/food.index'
+import { Route as GearGearIdImport } from './routes/gear.$gearId'
 
 // Create/Update Routes
 
@@ -23,18 +24,23 @@ const TrophyCalcRoute = TrophyCalcImport.update({
   getParentRoute: () => rootRoute,
 } as any)
 
-const GearInfoRoute = GearInfoImport.update({
-  path: '/gear-info',
-  getParentRoute: () => rootRoute,
-} as any)
-
-const FoodInfoRoute = FoodInfoImport.update({
-  path: '/food-info',
-  getParentRoute: () => rootRoute,
-} as any)
-
 const IndexRoute = IndexImport.update({
   path: '/',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const GearIndexRoute = GearIndexImport.update({
+  path: '/gear/',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const FoodIndexRoute = FoodIndexImport.update({
+  path: '/food/',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const GearGearIdRoute = GearGearIdImport.update({
+  path: '/gear/$gearId',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -49,25 +55,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexImport
       parentRoute: typeof rootRoute
     }
-    '/food-info': {
-      id: '/food-info'
-      path: '/food-info'
-      fullPath: '/food-info'
-      preLoaderRoute: typeof FoodInfoImport
-      parentRoute: typeof rootRoute
-    }
-    '/gear-info': {
-      id: '/gear-info'
-      path: '/gear-info'
-      fullPath: '/gear-info'
-      preLoaderRoute: typeof GearInfoImport
-      parentRoute: typeof rootRoute
-    }
     '/trophy-calc': {
       id: '/trophy-calc'
       path: '/trophy-calc'
       fullPath: '/trophy-calc'
       preLoaderRoute: typeof TrophyCalcImport
+      parentRoute: typeof rootRoute
+    }
+    '/gear/$gearId': {
+      id: '/gear/$gearId'
+      path: '/gear/$gearId'
+      fullPath: '/gear/$gearId'
+      preLoaderRoute: typeof GearGearIdImport
+      parentRoute: typeof rootRoute
+    }
+    '/food/': {
+      id: '/food/'
+      path: '/food'
+      fullPath: '/food'
+      preLoaderRoute: typeof FoodIndexImport
+      parentRoute: typeof rootRoute
+    }
+    '/gear/': {
+      id: '/gear/'
+      path: '/gear'
+      fullPath: '/gear'
+      preLoaderRoute: typeof GearIndexImport
       parentRoute: typeof rootRoute
     }
   }
@@ -77,9 +90,10 @@ declare module '@tanstack/react-router' {
 
 export const routeTree = rootRoute.addChildren({
   IndexRoute,
-  FoodInfoRoute,
-  GearInfoRoute,
   TrophyCalcRoute,
+  GearGearIdRoute,
+  FoodIndexRoute,
+  GearIndexRoute,
 })
 
 /* prettier-ignore-end */
@@ -91,22 +105,26 @@ export const routeTree = rootRoute.addChildren({
       "filePath": "__root.tsx",
       "children": [
         "/",
-        "/food-info",
-        "/gear-info",
-        "/trophy-calc"
+        "/trophy-calc",
+        "/gear/$gearId",
+        "/food/",
+        "/gear/"
       ]
     },
     "/": {
       "filePath": "index.tsx"
     },
-    "/food-info": {
-      "filePath": "food-info.tsx"
-    },
-    "/gear-info": {
-      "filePath": "gear-info.tsx"
-    },
     "/trophy-calc": {
       "filePath": "trophy-calc.tsx"
+    },
+    "/gear/$gearId": {
+      "filePath": "gear.$gearId.tsx"
+    },
+    "/food/": {
+      "filePath": "food.index.tsx"
+    },
+    "/gear/": {
+      "filePath": "gear.index.tsx"
     }
   }
 }

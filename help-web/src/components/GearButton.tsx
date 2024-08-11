@@ -3,15 +3,12 @@ import { Gear } from '../api/GearApi';
 
 interface GearButtonProps {
   gear: Gear;
-  onClick: (gear: Gear) => void;
-  isSelected: boolean;
 }
 
 export default function GearButton(props: GearButtonProps) {
   return (
     <div
-      className={`gear ${props.isSelected ? 'selected' : ''}`}
-      onClick={() => props.onClick(props.gear)}
+      className={`gear`}
     >
       <img src={props.gear.image} alt={props.gear.name} />
       <div className="info">

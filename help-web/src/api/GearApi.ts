@@ -28,7 +28,7 @@ export type Gear = {
 };
 
 export const fetchGear = async (): Promise<Gear[]> => {
-  const res = await fetch('gear.json');
+  const res = await fetch('/gear.json');
   if (!res.ok) {
     throw new Error('Network response was not ok');
   }
