@@ -1,0 +1,129 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import trophies from "./trophies.json";
+
+const groups = [...new Set(trophies.map((trophy) => trophy.group))];
+---
+
+<Layout title="Valheim Trophy Calc" name="Trophy Calc">
+  <aside id="score">0</aside>
+  {
+    groups.map((group) => (
+      <section class="biome-group">
+        {trophies
+          .filter((trophy) => trophy.group === group)
+          .map((trophy) => (
+            <div class="trophy" data-name={trophy.name} data-score={trophy.score}>
+              <div class="score">{trophy.score}</div>
+              <div class="chance">{trophy.dropChance}</div>
+              <img src={`/${trophy.iconUrl}`} alt={trophy.name} />
+              <div class="info">
+                <div class="name">{trophy.name}</div>
+                <div class="subname">{trophy.biome}</div>
+              </div>
+            </div>
+          ))}
+      </section>
+    ))
+  }
+</Layout>
+
+<script>
+// add event listener to each trophy and toggle selected class
+document.querySelectorAll('.trophy').forEach((trophy) => {
+  trophy.addEventListener('click', () => {
+    trophy.classList.toggle('selected');
+    updateScore();
+  });
+});
+
+// update score based on selected trophies
+function updateScore() {
+  const score = Array.from(document.querySelectorAll('.trophy.selected'))
+    .filter((trophy) => trophy instanceof HTMLElement)
+    .map((trophy) => parseInt(trophy.dataset.score!))
+    .reduce((acc, score) => acc + score, 0);
+  document.getElementById('score')!.textContent = score.toString();
+}
+</script>
+
+<style>
+  #score {
+    position: fixed;
+    top: 0;
+    right: 2rem;
+    color:gold;
+  font-size: 3rem;
+  font-weight: bold;
+  margin:0 1rem;
+  }
+  .biome-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+  .trophy {
+  text-align: center;
+  width: 96px;
+  line-height: 1.4rem;
+  margin: 0.3rem;
+  padding: 0.3rem 0.5rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border 0.3s;
+  overflow-x: hidden;
+}
+
+.trophy:hover {
+  border: 2px solid rgb(22, 68, 127);
+  background-color: #2a313e;
+}
+
+.trophy.selected {
+  border: 2px solid gold;
+  background-color: #303022;
+}
+
+.trophy .chance {
+  font-size:smaller;
+  position: relative;
+  float:left;
+  width: 22px;
+  height: 30px;
+  margin-right: -22px;
+  color: white;
+  opacity:0.6;
+}
+
+.trophy .score {
+  position: relative;
+  float:right;
+  width: 34px;
+  height: 30px;
+  margin-left: -34px;
+  color: white;
+}
+
+.trophy.selected .score {
+  color:gold;
+  font-weight: bold;
+}
+
+.trophy img {
+  width: 64px;
+  height: 64px;
+}
+
+.trophy .info {
+  text-align: center;
+}
+.trophy .name {
+  margin: -0.6rem 0 0 0;
+  font-size:1.4rem;
+}
+.trophy .subname {
+  margin: -0.1rem 0 0 0;
+   opacity:0.8;
+}
+</style>

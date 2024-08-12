@@ -1,4 +1,40 @@
-:root {
+---
+interface Props {
+	title: string;
+	name: string;
+}
+
+const { title, name } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/webp" href="/favicon.webp" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<main class="home-page">
+			<header>
+				<div>
+					<a href="/">
+						<img src="/valheim-logo.webp" alt="Valheim" />
+					</a>
+					<h1>{name}</h1>
+				</div>
+			</header>
+			<article>
+				<slot />
+			</article>
+		</main>
+	</body>
+</html>
+<style is:global>
+	:root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -30,6 +66,7 @@ body {
   min-height: 100vh;
 }
 
+
 main {
   display: grid;
   grid-template-columns: 1fr;
@@ -37,7 +74,6 @@ main {
   grid-template-areas: 
     'header'
     'content';
-  text-align: center;
   height: 100vh;
   width: 100vw;
 }
@@ -78,3 +114,10 @@ header h1 {
   padding: 0;
   grid-area: content;
 }
+
+@media (max-width: 780px) {
+  header h1 {
+    display: none;
+  }
+}
+</style>

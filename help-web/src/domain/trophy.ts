@@ -10,12 +10,3 @@ export type Trophy = {
   uses: string;
   score: number;
 }
-
-
-export const fetchTrophies = async (): Promise<Trophy[]> => {
-  const res = await fetch('trophies.json');
-  if (!res.ok) {
-    throw new Error('Network response was not ok');
-  }
-  return res.json();
-};

@@ -1,0 +1,134 @@
+---
+interface Props {
+	group: string;
+	name?: string;
+	value: string;
+}
+
+
+const { group, name, value } = Astro.props;
+
+
+function roundIfPossible(value: string): string {
+  if (value.includes('%')) return value;
+  if (value.includes('s')) return value;
+  if (value.includes('x')) return value;
+  const num = parseFloat(value);
+
+  // Check if the conversion resulted in a valid number
+  if (!isNaN(num)) {
+    return Math.round(num).toString();
+  }
+  return value; // Return the original string if it's not a valid number
+}
+
+var hasSecondary = value.includes(';');
+var primary = hasSecondary ? value.split(';')[0] : value;
+var secondary = hasSecondary ? value.split(';')[1] : '';
+var bubbles = primary.split('>');
+if (new Set(bubbles).size === 1) {
+  bubbles = [bubbles[0]];
+}
+var bubbles2 = secondary.split('>');
+if (new Set(bubbles2).size === 1) {
+  bubbles2 = [bubbles2[0]];
+}
+
+---
+<div class="bubble-row">
+  <div class="bubble-group">
+    {group === 'mat' && name && <img alt={name} src={`/mats/${name.replace(/ /g, '_').toLowerCase()}.png`} />}
+    {bubbles.map((bubble) => (
+      <div class={`bubble ${group} ${bubble === '0' ? 'none' : ''}`}>
+        {roundIfPossible(bubble)}
+      </div>
+    ))}
+  </div>
+  {secondary && <div class="bubble-group">
+    {secondary && bubbles2.map((bubble) => (
+      <div class={`bubble ${group} ${bubble === '0' ? 'none ' : ''}sec`}>
+        {roundIfPossible(bubble)}
+      </div>
+    ))}
+
+  </div>}
+</div>
+
+<style>
+  
+.bubble-row {
+  margin: 0.3rem 0 -0.05rem 0;
+  display:flex;
+  align-content: center;
+}
+
+.bubble-group {
+  flex: 1;
+}
+
+.bubble-group img {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin: -0.5rem 0.5rem 0 -2.5rem;
+}
+
+.bubble {
+  display: inline-block;
+  padding: 0 0.4rem 0.1rem 0.4rem;
+  min-width:30px;
+  height: 1.5rem;
+  border-radius: .75rem;
+  margin:0 -0.15rem 0 -0.15rem;
+  color: #303022;
+  background-color: rgb(172, 172, 172);
+  filter: saturate(0.8);
+  position: relative;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.bubble.stam {
+  background-color: rgb(255, 215, 85);
+  font-weight: bold;
+}
+.bubble.eitr {
+  background-color: rgb(147, 104, 255);
+  font-weight: bold;
+}
+.bubble.penalty {
+  background-color: rgb(255, 58, 58);
+  font-weight: bold;
+}
+.bubble.attk {
+  background-color: #e3e3e3;
+}
+.bubble.frost {
+  background-color: rgb(103, 194, 255);
+}
+.bubble.fire {
+  background-color: rgb(255, 156, 85);
+}
+.bubble.spirit {
+  background-color: rgb(149, 255, 209);
+}
+.bubble.lightning {
+  background-color: rgb(255, 255, 172);
+}
+.bubble.poison {
+  background-color: rgb(40, 255, 90);
+}
+.bubble.sec {
+  filter: saturate(1.5);
+}
+.bubble.mat {
+  background-color: rgb(233, 233, 233);
+}
+.bubble.none {
+  filter: saturate(0.2) brightness(0.4);
+  z-index: 99;
+}
+.bubble.block {
+  background-color: rgb(0, 0, 0);
+  color:white;
+}
+</style>

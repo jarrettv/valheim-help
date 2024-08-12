@@ -1,0 +1,71 @@
+---
+import Food from "../components/Food.astro";
+import Swords from "../components/Swords.astro";
+import Trophy from "../components/Trophy.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Valheim Help" name="Help">
+	<section style="max-width:500px; margin: 0 auto;">
+		<p>
+			Welcome to Valheim Help where you can find tools and information to help you
+			enjoy gaming in Valheim. Our goal is to get you info fast without
+			distractions.
+		</p>
+
+		<p>
+			This website is open-source and accepts contributions on <a
+				href="https://github.com/jarrettv/valheim-help">Github</a
+			>. If you find mistakes or want improvements, please consider contributing
+			to the project with a pull request.
+		</p>
+
+		<p>
+			If you find the project useful, consider <a
+				href="https://github.com/sponsors/jarrettv">becoming a sponsor</a
+			>
+		</p>
+	</section>
+	<nav>
+		<a href="/trophy/calc">
+			<Trophy style="vertical-align:middle" width="1.4rem" />
+			Trophy Hunt Calculator
+		</a>
+		<a href="/gear">
+			<Swords style="vertical-align:middle" width="1.4rem" />
+			Gear Lookup for Weapons and Armor Info
+		</a>
+		<a href="/food">
+			<Food style="vertical-align:middle" width="1.4rem" />
+			Food Lookup for Recipes and Info
+		</a>
+	</nav>
+</Layout>
+
+<style>
+	nav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	nav>a {
+		flex:1;
+		border: 2px solid #fff1a2;
+		padding: 0.5rem 1rem 0.7rem 1rem;
+		margin: 0.5rem;
+		font-size: 1.5rem;
+		text-decoration: none;
+		width: 100%;
+		max-width: 500px;
+	}
+
+	nav>a>img {
+		margin-right: 1rem;
+	}
+
+	nav a:hover {
+		border-color: gold;
+		background-color: #37352c;
+	}
+</style>

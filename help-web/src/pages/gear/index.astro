@@ -1,0 +1,50 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import allGear from './gear.json';
+import { type Gear } from '../../domain/gear.ts';
+
+const groups = ["Spear", "Sword", "Club", "Knife", "Axe", "Polearm", "Fists", "Bow", "Crossbow", "Shield", "Blood magic", "Elemental magic", "Arrow", "Bolt", "Missle"];
+
+const gears: Gear[] = allGear as any;
+
+---
+
+<Layout title="Valheim Gear" name="Gear">
+  <section class="gear-index">
+  {groups.map(group => (
+    <div class="gear-group">
+      {gears.filter(gear => gear.type === group).map(gear => (
+        <a href=`/gear/${gear.id}` class="gear">
+          <img src={gear.image} alt={gear.name} />
+          <div class="name">
+            {gear.name}
+          </div>
+        </a>
+      ))}
+    </div>
+  ))}
+</section>
+</Layout>
+
+<style>
+.gear-index  .gear-group { display:flex; flex-wrap: wrap;
+  justify-content: center; }
+
+.gear {
+  text-align: center;
+  width: 96px;
+  min-width: 96px;
+  line-height: 1.4rem;
+  margin: 0.3rem;
+  padding: 0.3rem 0.5rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border 0.3s;
+  overflow-x: hidden;
+}
+
+.gear:hover {
+  border: 2px solid rgb(22, 68, 127);
+  background-color: #2a313e;
+}
+</style>
