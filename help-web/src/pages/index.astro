@@ -5,39 +5,40 @@ import Trophy from "../components/Trophy.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Valheim Help" name="Help">
+<Layout title="Valheim Help" name="Welcome">
 	<section style="max-width:500px; margin: 0 auto;">
-		<p>
-			Welcome to Valheim Help where you can find tools and information to help you
-			enjoy gaming in Valheim. Our goal is to get you info fast without
-			distractions.
-		</p>
+		<div style="margin: 0 1.5rem;">
+			<p>
+				Welcome to <strong>Valheim Help</strong> where you can find tools and information to help
+				you enjoy gaming in Valheim. Our goal is to get you info fast without
+				distractions.
+			</p>
 
-		<p>
-			This website is open-source and accepts contributions on <a
-				href="https://github.com/jarrettv/valheim-help">Github</a
-			>. If you find mistakes or want improvements, please consider contributing
-			to the project with a pull request.
-		</p>
+			<p>
+				This website is open-source and accepts contributions on <a
+					href="https://github.com/jarrettv/valheim-help">Github</a
+				>. If you find mistakes or want improvements, please consider
+				contributing to the project with a pull request.
+			</p>
 
-		<p>
-			If you find the project useful, consider <a
-				href="https://github.com/sponsors/jarrettv">becoming a sponsor</a
-			>
-		</p>
+			<p>
+				If you find the project useful, consider <a
+					href="https://github.com/sponsors/jarrettv">becoming a sponsor.</a>
+			</p>
+		</div>
 	</section>
 	<nav>
 		<a href="/trophy/calc">
-			<Trophy style="vertical-align:middle" width="1.4rem" />
+			<Trophy style="vertical-align:middle;margin-top:-0.3rem" width="1.8rem" />
 			Trophy Hunt Calculator
 		</a>
 		<a href="/gear">
-			<Swords style="vertical-align:middle" width="1.4rem" />
-			Gear Lookup for Weapons and Armor Info
+			<Swords style="vertical-align:middle;margin-top:-0.3rem" width="1.8rem" />
+			Gear <small>Weapons &amp; Armor Info</small>
 		</a>
 		<a href="/food">
-			<Food style="vertical-align:middle" width="1.4rem" />
-			Food Lookup for Recipes and Info
+			<Food style="vertical-align:middle;margin-top:-0.3rem" width="1.8rem" />
+			Food <small>Recipes &amp; Stats</small>
 		</a>
 	</nav>
 </Layout>
@@ -47,10 +48,11 @@ import Layout from "../layouts/Layout.astro";
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		margin: 0 2rem;
 	}
 
-	nav>a {
-		flex:1;
+	nav > a {
+		flex: 1;
 		border: 2px solid #fff1a2;
 		padding: 0.5rem 1rem 0.7rem 1rem;
 		margin: 0.5rem;
@@ -60,12 +62,19 @@ import Layout from "../layouts/Layout.astro";
 		max-width: 500px;
 	}
 
-	nav>a>img {
-		margin-right: 1rem;
+	nav > a > svg {
+		margin-right: 0.6rem;
 	}
 
 	nav a:hover {
 		border-color: gold;
 		background-color: #37352c;
+	}
+
+	nav small {
+		display: inline-block;
+		opacity: 0.7;
+		font-size:1.1rem;
+		margin-left:0.8rem;
 	}
 </style>
