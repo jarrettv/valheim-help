@@ -335,9 +335,7 @@
     "attack": {
       "Pierce": "120",
       "Knockback": "60",
-      "Stamina": "",
-      "Stagger": "120",
-      "Backstab": ""
+      "Stagger": "120"
     }
   },
   {
@@ -497,9 +495,7 @@
     },
     "attack": {
       "Pierce": "62",
-      "Stamina": "",
-      "Stagger": "62",
-      "Backstab": ""
+      "Stagger": "62"
     }
   },
   {
@@ -597,9 +593,7 @@
     },
     "attack": {
       "Pierce": "32",
-      "Stamina": "",
-      "Stagger": "32",
-      "Backstab": ""
+      "Stagger": "32"
     }
   },
   {
@@ -873,9 +867,7 @@
     "attack": {
       "Pierce": "32",
       "Knockback": "10",
-      "Stamina": "",
-      "Stagger": "32",
-      "Backstab": ""
+      "Stagger": "32"
     }
   },
   {
@@ -901,7 +893,6 @@
       "Pure": "1000",
       "Attack speed": "1.74 s (0.6 + 0.44 + 0.7)",
       "Stamina": "5",
-      "Stagger": "",
       "Backstab": "1x"
     },
     "block": {
@@ -934,9 +925,7 @@
     "attack": {
       "Pierce": "72",
       "Knockback": "15",
-      "Stamina": "",
-      "Stagger": "72",
-      "Backstab": ""
+      "Stagger": "72"
     }
   },
   {
@@ -961,9 +950,7 @@
     },
     "attack": {
       "Pierce": "72",
-      "Stamina": "",
-      "Stagger": "72",
-      "Backstab": ""
+      "Stagger": "72"
     }
   },
   {
@@ -1087,9 +1074,7 @@
     "attack": {
       "Pierce": "82",
       "Knockback": "15",
-      "Stamina": "",
-      "Stagger": "82",
-      "Backstab": ""
+      "Stagger": "82"
     }
   },
   {
@@ -1114,9 +1099,7 @@
     },
     "attack": {
       "Pierce": "82",
-      "Stamina": "",
-      "Stagger": "82",
-      "Backstab": ""
+      "Stagger": "82"
     }
   },
   {
@@ -1233,7 +1216,7 @@
     "type": "Axe",
     "image": "gear/Crystal_battleaxe.png",
     "usage": "Weapon",
-    "wield": "Unknown",
+    "wield": "Two-handed",
     "weight": 2.5,
     "power": 120,
     "source": "Forge",
@@ -1273,7 +1256,7 @@
     "type": "Blood magic",
     "image": "gear/Dead_raiser.png",
     "usage": "Magic weapon",
-    "wield": "Unknown",
+    "wield": "Two-handed",
     "weight": 0.3,
     "power": 144,
     "source": "Galdr table",
@@ -1341,7 +1324,7 @@
     "type": "Bow",
     "image": "gear/Draugr_fang.png",
     "usage": "Ranged weapon",
-    "wield": "Unknown",
+    "wield": "Two-handed",
     "weight": 1.5,
     "power": 5,
     "source": "Forge",
@@ -1401,7 +1384,6 @@
       "Knockback": "210",
       "Eitr": "25>25>25>25",
       "Recoil force": "40>40>40>40",
-      "Stamina": "",
       "Stagger": "20>23>26>29",
       "Backstab": "1x"
     },
@@ -1420,7 +1402,7 @@
     "type": "Sword",
     "image": "gear/Dyrnwyn.png",
     "usage": "Weapon",
-    "wield": "Unknown",
+    "wield": "One-handed",
     "weight": 0.8,
     "power": 171,
     "source": "Black forge",
@@ -1554,9 +1536,7 @@
       "Pierce": "11",
       "Fire": "22",
       "Knockback": "10",
-      "Stamina": "",
-      "Stagger": "11",
-      "Backstab": ""
+      "Stagger": "11"
     }
   },
   {
@@ -1620,9 +1600,7 @@
     "attack": {
       "Pierce": "140",
       "Knockback": "60",
-      "Stamina": "",
-      "Stagger": "140",
-      "Backstab": ""
+      "Stagger": "140"
     }
   },
   {
@@ -1824,9 +1802,7 @@
     "attack": {
       "Pierce": "27",
       "Knockback": "10",
-      "Stamina": "",
-      "Stagger": "27",
-      "Backstab": ""
+      "Stagger": "27"
     }
   },
   {
@@ -1854,9 +1830,7 @@
       "Pierce": "26",
       "Frost": "52",
       "Knockback": "10",
-      "Stamina": "",
-      "Stagger": "26",
-      "Backstab": ""
+      "Stagger": "26"
     }
   },
   {
@@ -1908,7 +1882,7 @@
     "type": "Polearm",
     "image": "gear/Himminafl.png",
     "usage": "Weapon",
-    "wield": "Unknown",
+    "wield": "Two-handed",
     "weight": 2.5,
     "power": 192,
     "source": "Black forge",
@@ -2077,9 +2051,7 @@
     },
     "attack": {
       "Pierce": "42",
-      "Stamina": "",
-      "Stagger": "42",
-      "Backstab": ""
+      "Stagger": "42"
     }
   },
   {
@@ -2276,9 +2248,7 @@
     "attack": {
       "Pierce": "42",
       "Knockback": "10",
-      "Stamina": "",
-      "Stagger": "42",
-      "Backstab": ""
+      "Stagger": "42"
     }
   },
   {
@@ -2289,7 +2259,7 @@
     "type": "Axe",
     "image": "gear/Jotun_bane.png",
     "usage": "Wood cutting",
-    "wield": "Unknown",
+    "wield": "One-handed",
     "weight": 2.0,
     "power": 144,
     "source": "Black forge",
@@ -2368,7 +2338,7 @@
     "type": "Sword",
     "image": "gear/Mistwalker.png",
     "usage": "Weapon",
-    "wield": "Unknown",
+    "wield": "One-handed",
     "weight": 0.8,
     "power": 144,
     "source": "Black forge",
@@ -2423,9 +2393,7 @@
     "attack": {
       "Pierce": "62",
       "Knockback": "15",
-      "Stamina": "",
-      "Stagger": "62",
-      "Backstab": ""
+      "Stagger": "62"
     }
   },
   {
@@ -2489,9 +2457,7 @@
     "attack": {
       "Pierce": "52",
       "Knockback": "10",
-      "Stamina": "",
-      "Stagger": "52",
-      "Backstab": ""
+      "Stagger": "52"
     }
   },
   {
@@ -2552,9 +2518,7 @@
       "Pierce": "26",
       "Poison": "52",
       "Knockback": "10",
-      "Stamina": "",
-      "Stagger": "26",
-      "Backstab": ""
+      "Stagger": "26"
     }
   },
   {
@@ -2687,9 +2651,7 @@
       "Pierce": "52",
       "Spirit": "20",
       "Knockback": "10",
-      "Stamina": "",
-      "Stagger": "52",
-      "Backstab": ""
+      "Stagger": "52"
     }
   },
   {
@@ -2843,7 +2805,7 @@
     "type": "Sword",
     "image": "gear/Slayer.png",
     "usage": "Weapon",
-    "wield": "Unknown",
+    "wield": "Two-handed",
     "weight": 4.0,
     "power": 192,
     "source": "Black forge",
@@ -2913,7 +2875,7 @@
     "type": "Bow",
     "image": "gear/Spinesnap.png",
     "usage": "Ranged weapon",
-    "wield": "Unknown",
+    "wield": "Two-handed",
     "weight": 1.5,
     "power": 3,
     "source": "Black forge",
@@ -2990,7 +2952,7 @@
     "type": "Elemental magic",
     "image": "gear/Staff_of_embers.png",
     "usage": "Magic weapon",
-    "wield": "Unknown",
+    "wield": "Two-handed",
     "weight": 0.3,
     "power": 144,
     "source": "Galdr table",
@@ -3010,9 +2972,7 @@
       "Fire": "120>126>132>138",
       "Knockback": "100",
       "Eitr": "35>35>35>35",
-      "Stamina": "",
-      "Stagger": "120>120>120>120",
-      "Backstab": ""
+      "Stagger": "120>120>120>120"
     },
     "block": {
       "Block armor": "48-72>48-72>48-72>48-72",
@@ -3049,9 +3009,7 @@
       "Fire": "12>18>24>30",
       "Knockback": "100",
       "Eitr": "30>30>30>30",
-      "Stamina": "",
-      "Stagger": "12>12>12>12",
-      "Backstab": ""
+      "Stagger": "12>12>12>12"
     },
     "block": {
       "Block armor": "48-72>48-72>48-72>48-72",
@@ -3068,7 +3026,7 @@
     "type": "Elemental magic",
     "image": "gear/Staff_of_frost.png",
     "usage": "Magic weapon",
-    "wield": "Unknown",
+    "wield": "Two-handed",
     "weight": 0.3,
     "power": 144,
     "source": "Galdr table",
@@ -3086,10 +3044,7 @@
     "attack": {
       "Frost": "30>32>34>36",
       "Knockback": "10",
-      "Eitr": "5>5>5>5",
-      "Stamina": "",
-      "Stagger": "",
-      "Backstab": ""
+      "Eitr": "5>5>5>5"
     },
     "block": {
       "Block armor": "48-72>48-72>48-72>48-72",
@@ -3155,9 +3110,7 @@
     "attack": {
       "Blunt": "20>40>60>80",
       "Poison": "20>40>60>80",
-      "Stamina": "",
-      "Stagger": "20>40>60>80",
-      "Backstab": ""
+      "Stagger": "20>40>60>80"
     },
     "block": {
       "Block armor": "48-72>48-72>48-72>48-72",
@@ -3251,7 +3204,7 @@
     "type": "Club",
     "image": "gear/Torch.png",
     "usage": "Weapon",
-    "wield": "Unknown",
+    "wield": "Off-hand",
     "weight": 1.0,
     "power": 0,
     "source": "Player crafting menu",
@@ -3270,7 +3223,6 @@
       "Fire": "15",
       "Knockback": "30",
       "Attack speed": "2.46 s (1.14 + 0.44 + 0.88)",
-      "Stamina": "",
       "Stagger": "4",
       "Backstab": "3x"
     }
@@ -3305,10 +3257,7 @@
       "Pickaxe": "100>100>100>100",
       "Pure": "50>50>50>50",
       "Eitr": "120>120>120>120",
-      "Health": "60%>60%>60%>60%",
-      "Stamina": "",
-      "Stagger": "",
-      "Backstab": ""
+      "Health": "60%>60%>60%>60%"
     },
     "block": {
       "Block armor": "48-72>48-72>48-72>48-72",
@@ -3338,9 +3287,7 @@
     "attack": {
       "Pierce": "22",
       "Knockback": "10",
-      "Stamina": "",
-      "Stagger": "22",
-      "Backstab": ""
+      "Stagger": "22"
     }
   },
   {
@@ -3422,9 +3369,7 @@
     "attack": {
       "Pierce": "75",
       "Knockback": "45",
-      "Stamina": "",
-      "Stagger": "75",
-      "Backstab": ""
+      "Stagger": "75"
     }
   }
 ]

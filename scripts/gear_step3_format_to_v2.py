@@ -25,6 +25,32 @@ def convert_item(item):
         ),
     }
 
+    if new_item["wield"] == "Unknown":
+        if item["id"] == "mistwalker":
+            new_item["wield"] = "One-handed"
+        elif item["id"] == "slayer":
+            new_item["wield"] = "Two-handed"
+        elif item["id"] == "dyrnwyn":
+            new_item["wield"] = "One-handed"
+        elif item["id"] == "torch":
+            new_item["wield"] = "Off-hand"
+        elif item["id"] == "crystal_battleaxe":
+            new_item["wield"] = "Two-handed"
+        elif item["id"] == "jotun_bane":
+            new_item["wield"] = "One-handed"
+        elif item["id"] == "himminafl":
+            new_item["wield"] = "Two-handed"
+        elif item["id"] == "spinesnap":
+            new_item["wield"] = "Two-handed"
+        elif item["id"] == "draugr_fang":
+            new_item["wield"] = "Two-handed"
+        elif item["id"] == "dead_raiser":
+            new_item["wield"] = "Two-handed"
+        elif item["id"] == "staff_of_embers":
+            new_item["wield"] = "Two-handed"
+        elif item["id"] == "staff_of_frost":
+            new_item["wield"] = "Two-handed"
+
     new_item["mats"] = {}
     for key in item["levels"][0].get("materials", {}).keys():
         new_item["mats"][key] = ">".join(
@@ -79,9 +105,14 @@ def convert_item(item):
         backstab = new_item["attack"].pop("Backstab", "")
         stamina = new_item["attack"].pop("Stamina", "")
         stagger = new_item["attack"].pop("Stagger", "")
-        new_item["attack"]["Stamina"] = stamina
-        new_item["attack"]["Stagger"] = stagger
-        new_item["attack"]["Backstab"] = backstab
+        if stamina != "":
+            new_item["attack"]["Stamina"] = stamina
+
+        if stagger != "":
+            new_item["attack"]["Stagger"] = stagger
+
+        if backstab != "":
+            new_item["attack"]["Backstab"] = backstab
 
     # Dynamically copy block section
     if item["levels"][0].get("blocking"):

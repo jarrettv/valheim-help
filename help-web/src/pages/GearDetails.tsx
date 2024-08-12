@@ -32,18 +32,18 @@ function BubbleLevels({ group, name = '', value }: { group: string, name?: strin
   }
 
   return (
-    <div style={{ display: 'flex' }}>
-      <div style={{ flex: 1, flexFlow: 'row nowrap' }}>
-        {group === 'mat' && <img alt={name} src={`/mats/${name.replace(/ /g, '_').toLowerCase()}.png`} style={{ width: '1.8rem', height: '1.8rem', marginRight: '0.5rem', marginLeft: '-2rem', verticalAlign: 'middle' }} />}
+    <div className="bubble-row">
+      <div className="bubble-group">
+        {group === 'mat' && <img alt={name} src={`/mats/${name.replace(/ /g, '_').toLowerCase()}.png`} />}
         {bubbles.map((bubble, index) => (
           <div key={index} className={`bubble ${groupClass} ${bubble === '0' ? 'none' : ''}`}>
             {roundIfPossible(bubble)}
           </div>
         ))}
       </div>
-      {secondary && <div style={{ flex: 1, flexWrap: 'nowrap' }}>
+      {secondary && <div className="bubble-group">
         {secondary && bubbles2.map((bubble, index) => (
-          <div key={index} className={`bubble ${groupClass} sec`}>
+          <div key={index} className={`bubble ${groupClass} ${bubble === '0' ? 'none ' : ''}sec`}>
             {roundIfPossible(bubble)}
           </div>
         ))}
@@ -70,6 +70,10 @@ function mapKeyToGroup(key: string): string {
       return 'poison';
     case 'Lightning':
       return 'lightning';
+    case 'Stamina':
+      return 'stam';
+    case 'Eitr':
+      return 'eitr';
     default:
       return 'stat';
   }
@@ -96,16 +100,14 @@ export default function GearDetails() {
         <table>
           <thead>
             <tr>
-              <td rowSpan={2}><img src={`/${gear.image}`} alt={gear.name} style={{ marginTop: '-0.8rem' }} /></td>
+              <td rowSpan={2}><img src={`/${gear.image}`} alt={gear.name} style={{ margin: '-0.2rem 0 0 0.4rem', width: '80px', height:'80px' }} /></td>
               <td><h2 title={gear.code}>{gear.name}</h2>
                 <h5>{gear.desc}</h5></td>
             </tr>
           </thead>
           <tbody>
-            <tr><td>Type</td><td>{gear.type}</td></tr>
-            <tr><td>Wielding</td><td>{gear.wield}</td></tr>
-            <tr><td>Source</td><td>{gear.source}</td></tr>
-            <tr><td>Weight</td><td>{gear.weight}kg</td></tr>
+            <tr><td>Style</td><td>{gear.wield} {gear.type}</td></tr>
+            <tr><td>Source / Wt</td><td>{gear.source} / {gear.weight}kg</td></tr>
             <tr><td>Durability</td><td><BubbleLevels group="stat" value={gear.durab} /></td></tr>
             <tr><td>Craft Level</td><td><BubbleLevels group="stat" value={gear.craft} /></td></tr>
             <tr><td>Repair Level</td><td><BubbleLevels group="stat" value={gear.repair} /></td></tr>

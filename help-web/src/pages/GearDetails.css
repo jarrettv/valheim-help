@@ -7,31 +7,44 @@
   font-size: 1.9rem;
   font-weight: normal;
 }
+.gear-details .bubble-row {
+  margin: 0.3rem 0 -0.05rem 0;
+  display:flex;
+  align-content: center;
+}
 
+.gear-details .bubble-group {
+  flex: 1;
+}
 
-.gear-details button {
-  float:right;
-  font-size:larger;
-  padding: 0.3rem 0.5rem;
+.gear-details .bubble-group img {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin: -0.5rem 0.5rem 0 -2.5rem;
 }
 
 .gear-details .bubble {
   display: inline-block;
   padding: 0 0.4rem 0.1rem 0.4rem;
-  min-width:34px;
+  min-width:30px;
   height: 1.5rem;
   border-radius: .75rem;
-  margin: 0 -0.1rem;
+  margin:0 -0.15rem 0 -0.15rem;
   color: #303022;
   background-color: rgb(172, 172, 172);
   filter: saturate(0.8);
   position: relative;
+  overflow: hidden;
+  z-index: 100;
 }
 
+.gear-details .bubble.attk {
+  background-color: #e3e3e3;
+}
 .gear-details .bubble.penalty {
   background-color: rgb(255, 58, 58);
 }
-.gear-details .bubble.attk {
+.gear-details .bubble.stam {
   background-color: rgb(255, 215, 85);
 }
 .gear-details .bubble.frost {
@@ -49,22 +62,26 @@
 .gear-details .bubble.poison {
   background-color: rgb(40, 255, 90);
 }
+.gear-details .bubble.eitr {
+  background-color: rgb(147, 104, 255);
+}
 .gear-details .bubble.sec {
   filter: saturate(1.5);
 }
 .gear-details .bubble.mat {
   background-color: rgb(233, 233, 233);
-  z-index: 100;
 }
 .gear-details .bubble.none {
   filter: saturate(0.2) brightness(0.4);
   z-index: 99;
 }
 .gear-details .bubble.block {
-  background-color: rgb(191, 112, 255);
+  background-color: rgb(0, 0, 0);
+  color:white;
 }
 
-.gear-details table { width: 100%}
-.gear-details td:first-child { text-align: right; width:26%}
+.gear-details table { width: 100%; max-width: 600px; border-collapse: collapse; }
+.gear-details td:first-child { text-align: right; width:23%; line-height: 0.9rem;padding:0.55rem 0}
+.gear-details tr:nth-child(odd) { background-color: rgba(0,0,0,0.3); }
 .gear-details table h2 { margin: 0; font-size: 1.9rem }
 .gear-details table h5 { margin: 0; font-size: 1.1rem; opacity: 0.8; font-weight: normal; }
