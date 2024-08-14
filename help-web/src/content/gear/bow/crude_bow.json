@@ -1,0 +1,35 @@
+{
+    "id": "crude_bow",
+    "code": "Bow",
+    "name": "Crude bow",
+    "desc": "A crude but functional bow.",
+    "type": "Bow",
+    "image": "./crude_bow.png",
+    "usage": "Ranged weapon",
+    "wield": "Two-handed",
+    "weight": 1.5,
+    "power": 5,
+    "source": "Workbench",
+    "durab": "50>100>150>200",
+    "craft": "1>2>3>4",
+    "repair": "1>1>1>1",
+    "mats": {
+        "Wood": "10>5>10>15",
+        "Leather scraps": "8>4>8>12"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Pierce": "22>25>28>31",
+        "Attack speed": "0.8 s + 2.5 s draw time",
+        "Stamina": "4 / s",
+        "Stagger": "22>25>28>31",
+        "Backstab": "3x"
+    },
+    "block": {
+        "Block armor": "5-7.5>5-7.5>5-7.5>5-7.5",
+        "Parry block armor": "7.5-11.25>7.5-11.25>7.5-11.25>7.5-11.25",
+        "Parry bonus": "1.5x"
+    }
+}

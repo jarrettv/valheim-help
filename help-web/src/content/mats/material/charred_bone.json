@@ -1,0 +1,13 @@
+{
+    "id": "charred_bone",
+    "image": "./charred_bone.png",
+    "name": "Charred bone",
+    "desc": "Followed by the distinct smell of burnt meat",
+    "code": "CharredBone",
+    "type": "Material",
+    "drop": "Charred Warrior",
+    "usage": "Crafting",
+    "weight": 0.5,
+    "stack": 50,
+    "mats": {}
+}

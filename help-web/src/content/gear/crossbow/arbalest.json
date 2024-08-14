@@ -1,0 +1,37 @@
+{
+    "id": "arbalest",
+    "code": "CrossbowArbalest",
+    "name": "Arbalest",
+    "desc": "A slow but powerful weapon.",
+    "type": "Crossbow",
+    "image": "./arbalest.png",
+    "usage": "Weapon",
+    "wield": "Two-handed",
+    "weight": 1.5,
+    "power": 3,
+    "source": "Black forge",
+    "durab": "50>100>150>200",
+    "craft": "1>2>3>4",
+    "repair": "1>1>1>1",
+    "mats": {
+        "Wood": "10>5>10>15",
+        "Iron": "8>4>8>12",
+        "Root": "4>1>2>3"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Pierce": "200>203>206>209",
+        "Knockback": "210",
+        "Recoil force": "40>40>40>40",
+        "Stamina": "1/s x 3.5s (3)",
+        "Stagger": "200>203>206>209",
+        "Backstab": "3x"
+    },
+    "block": {
+        "Block armor": "3-4.5>3-4.5>3-4.5>3-4.5",
+        "Parry block armor": "4.5-6.75>4.5-6.75>4.5-6.75>4.5-6.75",
+        "Parry bonus": "1.5x"
+    }
+}

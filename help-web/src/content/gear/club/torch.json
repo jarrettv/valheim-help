@@ -1,0 +1,31 @@
+{
+    "id": "torch",
+    "code": "Torch",
+    "name": "Torch",
+    "desc": "It brings light and warmth, drives back the darkness.",
+    "type": "Club",
+    "image": "./torch.png",
+    "usage": "Weapon",
+    "wield": "Off-hand",
+    "weight": 1.0,
+    "power": 0,
+    "source": "Player crafting menu",
+    "durab": "20",
+    "craft": "0",
+    "repair": "0",
+    "mats": {
+        "Wood": "1",
+        "Resin": "1"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Blunt": "4",
+        "Fire": "15",
+        "Knockback": "30",
+        "Attack speed": "2.46 s (1.14 + 0.44 + 0.88)",
+        "Stagger": "4",
+        "Backstab": "3x"
+    }
+}

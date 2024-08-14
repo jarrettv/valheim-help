@@ -1,0 +1,13 @@
+{
+    "id": "blood_clot",
+    "image": "./blood_clot.png",
+    "name": "Blood clot",
+    "desc": "Be careful not to puncture this while you carry it...",
+    "code": "GiantBloodSack",
+    "type": "Material",
+    "drop": "Ticks",
+    "usage": "Crafting",
+    "weight": 0.5,
+    "stack": 50,
+    "mats": {}
+}

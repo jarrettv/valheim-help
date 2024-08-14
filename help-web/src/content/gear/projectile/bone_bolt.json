@@ -1,0 +1,24 @@
+{
+    "id": "bone_bolt",
+    "code": "BoltBone",
+    "name": "Bone bolt",
+    "desc": "A crude bolt of yellowed bone.",
+    "type": "Bolt",
+    "image": "./bone_bolt.png",
+    "usage": "Weapon",
+    "wield": "Unknown",
+    "weight": 0,
+    "power": 0,
+    "source": "Black forge",
+    "durab": "0",
+    "craft": "1",
+    "repair": "0",
+    "mats": {
+        "Bone fragments": "8",
+        "Feathers": "2"
+    },
+    "attack": {
+        "Pierce": "32",
+        "Stagger": "32"
+    }
+}

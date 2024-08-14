@@ -1,0 +1,28 @@
+{
+    "id": "frost_arrow",
+    "code": "ArrowFrost",
+    "name": "Frost arrow",
+    "desc": "A shard of piercing ice.",
+    "type": "Arrow",
+    "image": "./frost_arrow.png",
+    "usage": "Bow ammunition",
+    "wield": "Unknown",
+    "weight": 0,
+    "power": 0,
+    "source": "Workbench",
+    "durab": "0",
+    "craft": "4",
+    "repair": "0",
+    "mats": {
+        "Wood": "8",
+        "Obsidian": "4",
+        "Feathers": "2",
+        "Freeze gland": "1"
+    },
+    "attack": {
+        "Pierce": "26",
+        "Frost": "52",
+        "Knockback": "10",
+        "Stagger": "26"
+    }
+}

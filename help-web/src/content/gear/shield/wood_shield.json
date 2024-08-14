@@ -1,0 +1,30 @@
+{
+    "id": "wood_shield",
+    "code": "ShieldWood",
+    "name": "Wood shield",
+    "desc": "A simple wooden shield.",
+    "type": "Shield",
+    "image": "./wood_shield.png",
+    "usage": "Blocking",
+    "wield": "Off-hand",
+    "weight": 4.0,
+    "power": 45,
+    "source": "Workbench",
+    "durab": "200>250>300",
+    "craft": "1>2>3",
+    "repair": "1>1>1",
+    "mats": {
+        "Wood": "10>5>10",
+        "Resin": "4>2>4",
+        "Leather scraps": "4>2>4"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "block": {
+        "Block armor": "6-9>12-18>18-27",
+        "Parry block armor": "9-13.5>18-27>27-40.5",
+        "Block force": "20>25>30",
+        "Parry bonus": "1.5x"
+    }
+}

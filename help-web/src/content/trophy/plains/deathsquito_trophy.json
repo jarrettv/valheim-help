@@ -1,0 +1,9 @@
+{
+    "id": "deathsquito_trophy",
+    "biome": "Plains",
+    "image": "./deathsquito_trophy.png",
+    "name": "Deathsquito",
+    "dropChance": "5%",
+    "score": 30,
+    "group": "Plains"
+}

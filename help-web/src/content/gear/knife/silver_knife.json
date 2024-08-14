@@ -1,0 +1,38 @@
+{
+    "id": "silver_knife",
+    "code": "KnifeSilver",
+    "name": "Silver knife",
+    "desc": "A savage piece of pain.",
+    "type": "Knife",
+    "image": "./silver_knife.png",
+    "usage": "Weapon",
+    "wield": "One-handed",
+    "weight": 0.3,
+    "power": 10,
+    "source": "Forge",
+    "durab": "200>250>300>350",
+    "craft": "3>4>5>6",
+    "repair": "3>3>3>3",
+    "mats": {
+        "Wood": "2>1>2>3",
+        "Silver": "10>5>10>15",
+        "Leather scraps": "3>1>2>3",
+        "Iron": "2>1>2>3"
+    },
+    "attack": {
+        "Pierce": "25>26>27>28;75>78>81>84",
+        "Slash": "25>26>27>28;75>78>81>84",
+        "Spirit": "12>12>12>12;36>36>36>36",
+        "Knockback": "10;40",
+        "Attack speed": "1.74 s (0.6 + 0.44 + 0.7);1.52 s",
+        "Stamina": "10;30",
+        "Stagger": "50>52>54>56;150>156>162>168",
+        "Backstab": "6x;6x"
+    },
+    "block": {
+        "Block armor": "2-3>2-3>2-3>2-3",
+        "Parry block armor": "8-12>8-12>8-12>8-12",
+        "Block force": "10>15>20>25",
+        "Parry bonus": "4x"
+    }
+}

@@ -1,4 +1,7 @@
 ---
+
+import { getCollection } from 'astro:content';
+
 interface Props {
 	group: string;
 	name?: string;
@@ -8,6 +11,13 @@ interface Props {
 
 const { group, name, value } = Astro.props;
 
+var imgSrc = '';
+if (group === 'mat') {
+  var mats = await getCollection('mats', ({data}) => data.name.toLowerCase() === name?.toLowerCase());
+  if (mats.length > 0) {
+    imgSrc = mats[0].data.image.src;
+  }
+}
 
 function roundIfPossible(value: string): string {
   if (value.includes('%')) return value;
@@ -37,7 +47,7 @@ if (new Set(bubbles2).size === 1) {
 ---
 <div class="bubble-row">
   <div class="bubble-group">
-    {group === 'mat' && name && <img alt={name} src={`/mats/${name.replace(/ /g, '_').toLowerCase()}.png`} />}
+    {group === 'mat' && name && <img alt={name} src={imgSrc} />}
     {bubbles.map((bubble) => (
       <div class={`bubble ${group} ${bubble === '0' ? 'none' : ''}`}>
         {roundIfPossible(bubble)}

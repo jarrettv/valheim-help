@@ -1,0 +1,29 @@
+{
+    "id": "silver_shield",
+    "code": "ShieldSilver",
+    "name": "Silver shield",
+    "desc": "A shield of radiant silver.",
+    "type": "Shield",
+    "image": "./silver_shield.png",
+    "usage": "Blocking",
+    "wield": "Off-hand",
+    "weight": 5.0,
+    "power": 180,
+    "source": "Forge",
+    "durab": "200>250>300",
+    "craft": "3>4>5",
+    "repair": "3>3>3",
+    "mats": {
+        "Fine wood": "10>10>20",
+        "Silver": "8>4>8"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "block": {
+        "Block armor": "60-90>66-99>72-108",
+        "Parry block armor": "90-135>99-148.5>108-162",
+        "Block force": "40>45>50",
+        "Parry bonus": "1.5x"
+    }
+}

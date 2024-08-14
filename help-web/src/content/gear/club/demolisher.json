@@ -1,0 +1,38 @@
+{
+    "id": "demolisher",
+    "code": "SledgeDemolisher",
+    "name": "Demolisher",
+    "desc": "This mighty sledge yearns to wreak havoc.",
+    "type": "Club",
+    "image": "./demolisher.png",
+    "usage": "Weapon",
+    "wield": "Two-handed",
+    "weight": 4.0,
+    "power": 156,
+    "source": "Black forge",
+    "durab": "100>150>200>250",
+    "craft": "1>2>3>4",
+    "repair": "1>1>1>1",
+    "mats": {
+        "Yggdrasil wood": "10>2>4>6",
+        "Iron": "20>15>30>45",
+        "Refined eitr": "10>2>4>6"
+    },
+    "passive": {
+        "Movement speed": -20
+    },
+    "attack": {
+        "Blunt": "145>151>157>163",
+        "Knockback": "210",
+        "Attack speed": "2.12 s",
+        "Stamina": "28",
+        "Stagger": "290>302>314>326",
+        "Backstab": "2x"
+    },
+    "block": {
+        "Block armor": "52-78>52-78>52-78>52-78",
+        "Parry block armor": "104-156>104-156>104-156>104-156",
+        "Block force": "50>60>70>80",
+        "Parry bonus": "2x"
+    }
+}

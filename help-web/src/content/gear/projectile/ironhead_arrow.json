@@ -1,0 +1,26 @@
+{
+    "id": "ironhead_arrow",
+    "code": "ArrowIron",
+    "name": "Ironhead arrow",
+    "desc": "Capped with iron and flighted with dark feathers.",
+    "type": "Arrow",
+    "image": "./ironhead_arrow.png",
+    "usage": "Bow ammunition",
+    "wield": "Unknown",
+    "weight": 0,
+    "power": 0,
+    "source": "Forge",
+    "durab": "0",
+    "craft": "2",
+    "repair": "0",
+    "mats": {
+        "Wood": "8",
+        "Iron": "1",
+        "Feathers": "2"
+    },
+    "attack": {
+        "Pierce": "42",
+        "Knockback": "10",
+        "Stagger": "42"
+    }
+}

@@ -1,0 +1,97 @@
+---
+import BubbleLevels from '../../components/BubbleLevels.astro';
+import Layout from '../../layouts/Layout.astro';
+import { getCollection, getEntry } from 'astro:content';
+
+export async function getStaticPaths() {
+  return (await getCollection("gear")).map((gear) => ({
+    params: { gearId: gear.id },
+  }));
+}
+
+const { gearId } = Astro.params;
+const gear = (await getEntry('gear', gearId)).data;
+
+function mapKeyToGroup(key: string): string {
+  switch (key) {
+    case 'Slash':
+    case 'Blunt':
+    case 'Pierce':
+      return 'attk';
+    case 'Frost':
+      return 'frost';
+    case 'Fire':
+      return 'fire';
+    case 'Spirit':
+      return 'spirit';
+    case 'Poison':
+      return 'poison';
+    case 'Lightning':
+      return 'lightning';
+    case 'Stamina':
+      return 'stam';
+    case 'Eitr':
+      return 'eitr';
+    default:
+      return 'stat';
+  }
+}
+
+---
+
+<Layout title=`Valheim Gear - ${gear.name}` name="Gear">
+  <aside id="back"><a href="/gear">Back</a></aside>
+  <area class="gear-details">
+  <table>
+    <thead>
+      <tr>
+        <td><img src={gear.image.src} alt={gear.name} style={{ margin: '-0.2rem 0 0 0.4rem', width: '80px', height:'80px' }} /></td>
+        <td><h2 title={gear.code}>{gear.name}</h2>
+          <h5>{gear.desc}</h5></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Style</td><td>{gear.wield} {gear.type}</td></tr>
+      <tr><td>Source / Wt</td><td>{gear.source} / {gear.weight}kg</td></tr>
+      <tr><td>Durability</td><td><BubbleLevels group="stat" value={gear.durab!} /></td></tr>
+      <tr><td>Craft Level</td><td><BubbleLevels group="stat" value={gear.craft!} /></td></tr>
+      <tr><td>Repair Level</td><td><BubbleLevels group="stat" value={gear.repair!} /></td></tr>
+      <tr><td>Materials</td><td>
+        {gear.mats && Object.entries(gear.mats).map(([key, value]) => (
+          <div>
+            <BubbleLevels group="mat" name={key} value={value} />
+          </div>
+        ))}</td></tr>
+      {gear.passive && Object.entries(gear.passive).map(([key, value]) => (
+        <tr><td>{key}</td><td><BubbleLevels group="penalty" value={`${value}%`} /></td></tr>
+      ))}
+      {gear.attack && Object.entries(gear.attack).map(([key, value]) => (
+        <tr><td>{key}</td><td><BubbleLevels group={mapKeyToGroup(key)} value={value} /></td></tr>
+      ))}
+      {gear.block && Object.entries(gear.block).map(([key, value]) => (
+        <tr><td>{key}</td><td>{<BubbleLevels group='block' value={value} />}</td></tr>
+      ))}
+    </tbody></table>
+  </area>
+</Layout>
+
+<style>
+  #back {
+    position: fixed;
+    top: 0;
+    right: 2rem;
+    color:gold;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin:1rem 1rem;
+  }
+  .gear-details {
+  max-width: 520px;
+  flex:1;
+}
+table { width: 100%; max-width: 600px; border-collapse: collapse; text-align: center; }
+td:first-child { text-align: right; width:23%; line-height: 0.9rem;padding:0.55rem 0}
+tr:nth-child(odd) { background-color: rgba(0,0,0,0.3); }
+table h2 { margin: 0; font-size: 1.9rem }
+table h5 { margin: 0; font-size: 1.1rem; opacity: 0.8; font-weight: normal; }
+</style>

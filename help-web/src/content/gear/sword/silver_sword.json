@@ -1,0 +1,40 @@
+{
+    "id": "silver_sword",
+    "code": "SwordSilver",
+    "name": "Silver sword",
+    "desc": "Purest of metals, nothing unclean can abide its touch.",
+    "type": "Sword",
+    "image": "./silver_sword.png",
+    "usage": "Weapon",
+    "wield": "One-handed",
+    "weight": 1.0,
+    "power": 90,
+    "source": "Forge",
+    "durab": "200>250>300>350",
+    "craft": "3>4>5>6",
+    "repair": "3>3>3>3",
+    "mats": {
+        "Wood": "2>1>2>3",
+        "Silver": "40>20>40>60",
+        "Leather scraps": "3>1>2>3",
+        "Iron": "5>3>6>9"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Slash": "75>81>87>93;225>243>261>279",
+        "Spirit": "30>35>40>45;90>105>120>135",
+        "Knockback": "40;40",
+        "Attack speed": "2.46 s (1.14 + 0.44 + 0.88);1.84 s",
+        "Stamina": "12;24",
+        "Stagger": "75>81>87>93;225>243>261>279",
+        "Backstab": "3x;3x"
+    },
+    "block": {
+        "Block armor": "30-45>30-45>30-45>30-45",
+        "Parry block armor": "60-90>60-90>60-90>60-90",
+        "Block force": "20>25>30>35",
+        "Parry bonus": "2x"
+    }
+}

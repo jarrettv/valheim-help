@@ -1,0 +1,30 @@
+{
+    "id": "flametal_shield",
+    "code": "ShieldFlametal",
+    "name": "Flametal shield",
+    "desc": "The shield is and always will be a viking's most important weapon.",
+    "type": "Shield",
+    "image": "./flametal_shield.png",
+    "usage": "Blocking",
+    "wield": "Off-hand",
+    "weight": 5.0,
+    "power": 315,
+    "source": "Black forge",
+    "durab": "200>250>300",
+    "craft": "3>4>5",
+    "repair": "3>3>3",
+    "mats": {
+        "Ashwood": "10>10>20",
+        "Flametal": "8>4>8",
+        "Asksvin hide": "2>2>4"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "block": {
+        "Block armor": "114-171>120-180>126-189",
+        "Parry block armor": "171-256.5>180-270>189-283.5",
+        "Block force": "50>55>60",
+        "Parry bonus": "1.5x"
+    }
+}

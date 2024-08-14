@@ -112,12 +112,12 @@ def get_weapon_info(wiki_name, weapon_name):
         item["description"] = description_tag.find("i").text if description_tag else ""
 
         # Extract image
-        item["iconUrl"] = f"gear/{weapon_name}.png"
-        # figure_tag = soup.find("figure", {"class": "pi-item pi-image"})
-        # if figure_tag:
-        #     image_tag = figure_tag.find("img")
-        #     if image_tag:
-        #         item["iconUrl"] = "gear/" + image_tag["data-image-key"]
+        item["iconUrl"] = ""
+        figure_tag = soup.find("figure", {"class": "pi-item pi-image"})
+        if figure_tag:
+            image_tag = figure_tag.find("img")
+            if image_tag:
+                item["iconUrl"] = image_tag["src"]
 
         # Extract internal ID
         internal_id_tag = soup.find("div", {"data-source": "id"})

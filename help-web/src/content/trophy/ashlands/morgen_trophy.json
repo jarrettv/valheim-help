@@ -1,0 +1,9 @@
+{
+    "id": "morgen_trophy",
+    "biome": "Ashlands",
+    "image": "./morgen_trophy.png",
+    "name": "Morgen",
+    "dropChance": "5%",
+    "score": 50,
+    "group": "Ashlands"
+}

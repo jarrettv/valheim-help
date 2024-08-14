@@ -1,0 +1,9 @@
+{
+    "id": "skeleton_trophy",
+    "biome": "Black Forest",
+    "image": "./skeleton_trophy.png",
+    "name": "Skeleton",
+    "dropChance": "10%",
+    "score": 20,
+    "group": "Black Forest"
+}

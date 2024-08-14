@@ -1,0 +1,37 @@
+{
+    "id": "staff_of_fracturing",
+    "code": "StaffClusterbomb",
+    "name": "Staff of Fracturing",
+    "desc": "Only those with patience and focus will be able to harness the true power of this staff.",
+    "type": "Elemental magic",
+    "image": "./staff_of_fracturing.png",
+    "usage": "Magic weapon",
+    "wield": "Two-handed",
+    "weight": 0.3,
+    "power": 144,
+    "source": "Galdr table",
+    "durab": "200>250>300>350",
+    "craft": "2>3>4>5",
+    "repair": "2>2>2>2",
+    "mats": {
+        "Charred bone": "15>5>10>15",
+        "Ashwood": "5>3>6>9",
+        "Proustite powder": "8>1>2>3"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Blunt": "12>12>12>12",
+        "Fire": "12>18>24>30",
+        "Knockback": "100",
+        "Eitr": "30>30>30>30",
+        "Stagger": "12>12>12>12"
+    },
+    "block": {
+        "Block armor": "48-72>48-72>48-72>48-72",
+        "Parry block armor": "96-144>96-144>96-144>96-144",
+        "Block force": "20>25>30>35",
+        "Parry bonus": "2x"
+    }
+}

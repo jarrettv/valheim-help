@@ -1,0 +1,13 @@
+{
+    "id": "obsidian",
+    "image": "./obsidian.png",
+    "name": "Obsidian",
+    "desc": "Dark volcanic glass.",
+    "code": "Obsidian",
+    "type": "Material",
+    "drop": "Obsidian deposit",
+    "usage": "Crafting",
+    "weight": 2.0,
+    "stack": 50,
+    "mats": {}
+}

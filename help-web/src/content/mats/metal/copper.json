@@ -1,0 +1,15 @@
+{
+    "id": "copper",
+    "image": "./copper.png",
+    "name": "Copper",
+    "desc": "A bar of pure copper ready to be worked.",
+    "code": "Copper",
+    "type": "Metal",
+    "drop": "Smelter",
+    "usage": "Crafting, Building",
+    "weight": 12.0,
+    "stack": 30,
+    "mats": {
+        "Copper ore": 1
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "id": "black_metal_tower_shield",
+    "code": "ShieldBlackmetalTower",
+    "name": "Black metal tower shield",
+    "desc": "A tower shield of gleaming dark metal.",
+    "type": "Shield",
+    "image": "./black_metal_tower_shield.png",
+    "usage": "Blocking",
+    "wield": "Off-hand",
+    "weight": 5.0,
+    "power": 116,
+    "source": "Forge",
+    "durab": "200>250>300",
+    "craft": "3>4>5",
+    "repair": "3>3>3",
+    "mats": {
+        "Fine wood": "15>15>20",
+        "Black metal": "10>6>8",
+        "Chain": "7>2>4"
+    },
+    "passive": {
+        "Movement speed": -20
+    },
+    "block": {
+        "Block armor": "104-156>110-165>116-174",
+        "Block force": "150>155>160"
+    }
+}

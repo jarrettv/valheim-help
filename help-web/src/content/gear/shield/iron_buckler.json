@@ -1,0 +1,29 @@
+{
+    "id": "iron_buckler",
+    "code": "ShieldIronBuckler",
+    "name": "Iron buckler",
+    "desc": "Its lightness and curved center makes it excellent for deflecting attacks.",
+    "type": "Shield",
+    "image": "./iron_buckler.png",
+    "usage": "Blocking",
+    "wield": "Off-hand",
+    "weight": 4.0,
+    "power": 140,
+    "source": "Forge",
+    "durab": "200>250>300",
+    "craft": "2>3>4",
+    "repair": "2>2>2",
+    "mats": {
+        "Iron": "10>5>10",
+        "Ancient bark": "4>1>2"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "block": {
+        "Block armor": "28-42>34-51>40-60",
+        "Parry block armor": "70-105>85-127.5>100-150",
+        "Block force": "30>30>30",
+        "Parry bonus": "2.5x"
+    }
+}

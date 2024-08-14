@@ -1,0 +1,13 @@
+{
+    "id": "asksvin_bladder",
+    "image": "./asksvin_bladder.png",
+    "name": "Asksvin bladder",
+    "desc": "An acidic smell still lingers. Prominently.",
+    "code": "AskBladder",
+    "type": "Material",
+    "drop": "Asksvin",
+    "usage": "Crafting",
+    "weight": 0.5,
+    "stack": 50,
+    "mats": {}
+}

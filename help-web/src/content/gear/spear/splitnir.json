@@ -1,0 +1,39 @@
+{
+    "id": "splitnir",
+    "code": "SpearSplitner",
+    "name": "Splitnir",
+    "desc": "Split your enemies' hearts in two.",
+    "type": "Spear",
+    "image": "./splitnir.png",
+    "usage": "Weapon",
+    "wield": "One-handed",
+    "weight": 1.5,
+    "power": 171,
+    "source": "Black forge",
+    "durab": "100>150>200>250",
+    "craft": "3>4>5>6",
+    "repair": "3>3>3>3",
+    "mats": {
+        "Ashwood": "10>5>10>15",
+        "Flametal": "6>6>12>18",
+        "Asksvin hide": "2>1>2>3",
+        "Bonemaw tooth": "3>3>6>9"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Pierce": "135>141>147>153;202.5>211.5>220.5>229.5",
+        "Knockback": "20;30",
+        "Attack speed": "0.68 s;1.57 s (includes picking up)",
+        "Stamina": "16;18",
+        "Stagger": "135>141>147>153;202.5>211.5>220.5>229.5",
+        "Backstab": "3x;3x"
+    },
+    "block": {
+        "Block armor": "57-85.5>57-85.5>57-85.5>57-85.5",
+        "Parry block armor": "114-171>114-171>114-171>114-171",
+        "Block force": "20>25>30>35",
+        "Parry bonus": "2x"
+    }
+}

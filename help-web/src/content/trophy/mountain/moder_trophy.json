@@ -1,0 +1,9 @@
+{
+    "id": "moder_trophy",
+    "biome": "Mountain",
+    "image": "./moder_trophy.png",
+    "name": "Moder",
+    "dropChance": "100%",
+    "score": 100,
+    "group": "Mountain"
+}

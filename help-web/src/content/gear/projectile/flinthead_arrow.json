@@ -1,0 +1,26 @@
+{
+    "id": "flinthead_arrow",
+    "code": "ArrowFlint",
+    "name": "Flinthead arrow",
+    "desc": "A hide-breaker with a head of flint.",
+    "type": "Arrow",
+    "image": "./flinthead_arrow.png",
+    "usage": "Bow ammunition",
+    "wield": "Unknown",
+    "weight": 0,
+    "power": 0,
+    "source": "Workbench",
+    "durab": "0",
+    "craft": "2",
+    "repair": "0",
+    "mats": {
+        "Wood": "8",
+        "Flint": "2",
+        "Feathers": "2"
+    },
+    "attack": {
+        "Pierce": "27",
+        "Knockback": "10",
+        "Stagger": "27"
+    }
+}

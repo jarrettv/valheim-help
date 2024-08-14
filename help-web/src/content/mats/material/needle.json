@@ -1,0 +1,13 @@
+{
+    "id": "needle",
+    "image": "./needle.png",
+    "name": "Needle",
+    "desc": "The pointy end of a Deathsquito.",
+    "code": "Needle",
+    "type": "Material",
+    "drop": "Deathsquito",
+    "usage": "Crafting",
+    "weight": 0.5,
+    "stack": 50,
+    "mats": {}
+}

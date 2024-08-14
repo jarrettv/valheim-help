@@ -1,0 +1,9 @@
+{
+    "id": "rancid_remains_trophy",
+    "biome": "Black Forest",
+    "image": "./rancid_remains_trophy.png",
+    "name": "Rancid Remains",
+    "dropChance": "10%",
+    "score": 20,
+    "group": "Black Forest"
+}

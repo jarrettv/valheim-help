@@ -1,0 +1,13 @@
+{
+    "id": "deer_trophy",
+    "image": "./deer_trophy.png",
+    "name": "Deer trophy",
+    "desc": "A fine specimen but you'll need to kill more than deer to enter Valhalla.",
+    "code": "TrophyDeer",
+    "type": "Trophy",
+    "drop": "Deer",
+    "usage": "Decoration, summon Eikthyr",
+    "weight": 2.0,
+    "stack": 20,
+    "mats": {}
+}

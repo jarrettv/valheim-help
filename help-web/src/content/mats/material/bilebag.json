@@ -1,0 +1,13 @@
+{
+    "id": "bilebag",
+    "image": "./bilebag.png",
+    "name": "Bilebag",
+    "desc": "Caustic bile drawn from the corpse of a gjall.",
+    "code": "Bilebag",
+    "type": "Material",
+    "drop": "Gjall",
+    "usage": "Crafting",
+    "weight": 0.5,
+    "stack": 50,
+    "mats": {}
+}

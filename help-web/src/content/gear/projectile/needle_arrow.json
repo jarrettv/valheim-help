@@ -1,0 +1,25 @@
+{
+    "id": "needle_arrow",
+    "code": "ArrowNeedle",
+    "name": "Needle arrow",
+    "desc": "The final stitch.",
+    "type": "Arrow",
+    "image": "./needle_arrow.png",
+    "usage": "Bow ammunition",
+    "wield": "Unknown",
+    "weight": 0,
+    "power": 0,
+    "source": "Workbench",
+    "durab": "0",
+    "craft": "4",
+    "repair": "0",
+    "mats": {
+        "Needle": "4",
+        "Feathers": "2"
+    },
+    "attack": {
+        "Pierce": "62",
+        "Knockback": "15",
+        "Stagger": "62"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "id": "wood_tower_shield",
+    "code": "ShieldWoodTower",
+    "name": "Wood tower shield",
+    "desc": "A rough but heavy wooden shield.",
+    "type": "Shield",
+    "image": "./wood_tower_shield.png",
+    "usage": "Blocking",
+    "wield": "Off-hand",
+    "weight": 4.0,
+    "power": 22,
+    "source": "Workbench",
+    "durab": "200>250>300",
+    "craft": "1>2>3",
+    "repair": "1>1>1",
+    "mats": {
+        "Wood": "10>5>10",
+        "Leather scraps": "4>3>6"
+    },
+    "passive": {
+        "Movement speed": -20
+    },
+    "block": {
+        "Block armor": "10-15>16-24>22-33",
+        "Block force": "100>105>110"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "id": "greydwarf_eye",
+    "image": "./greydwarf_eye.png",
+    "name": "Greydwarf eye",
+    "desc": "The milky eyeball of a Greydwarf.",
+    "code": "GreydwarfEye",
+    "type": "Material",
+    "drop": "Greydwarf",
+    "usage": "Crafting, Building",
+    "weight": 0.2,
+    "stack": 50,
+    "mats": {}
+}

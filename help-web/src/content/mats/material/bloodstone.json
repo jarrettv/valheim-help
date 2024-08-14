@@ -1,0 +1,13 @@
+{
+    "id": "bloodstone",
+    "image": "./bloodstone.png",
+    "name": "Bloodstone",
+    "desc": "You wonder how many deals have been made to appease this gem. How many palms have bled onto it in exchange for its power?",
+    "code": "gemstonered",
+    "type": "Material",
+    "drop": "Charred Fortress",
+    "usage": "Crafting, Upgrading",
+    "weight": 2.0,
+    "stack": 50,
+    "mats": {}
+}

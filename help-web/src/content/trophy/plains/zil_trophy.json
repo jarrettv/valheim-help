@@ -1,0 +1,9 @@
+{
+    "id": "zil_trophy",
+    "biome": "Plains",
+    "image": "./zil_trophy.png",
+    "name": "Zil",
+    "dropChance": "100%",
+    "score": 30,
+    "group": "Plains"
+}

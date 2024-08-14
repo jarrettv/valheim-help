@@ -1,0 +1,9 @@
+{
+    "id": "neck_trophy",
+    "biome": "Meadows",
+    "image": "./neck_trophy.png",
+    "name": "Neck",
+    "dropChance": "5%",
+    "score": 10,
+    "group": "Meadows"
+}

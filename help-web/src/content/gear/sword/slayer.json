@@ -1,0 +1,38 @@
+{
+    "id": "slayer",
+    "code": "THSwordSlayer",
+    "name": "Slayer",
+    "desc": "This mighty blade thirsts for the blood of foes.",
+    "type": "Sword",
+    "image": "./slayer.png",
+    "usage": "Weapon",
+    "wield": "Two-handed",
+    "weight": 4.0,
+    "power": 192,
+    "source": "Black forge",
+    "durab": "200>250>300>350",
+    "craft": "3>4>5>6",
+    "repair": "3>3>3>3",
+    "mats": {
+        "Flametal": "30>15>30>45",
+        "Asksvin hide": "5>5>10>15",
+        "Morgen sinew": "3>3>6>9"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Slash": "170>176>182>188;510>528>546>564",
+        "Knockback": "55;55",
+        "Attack speed": "3.45 s (0.72 + 1.12 + 1.61);2.16 s",
+        "Stamina": "20;40",
+        "Stagger": "170>176>182>188;510>528>546>564",
+        "Backstab": "3x;3x"
+    },
+    "block": {
+        "Block armor": "64-96>64-96>64-96>64-96",
+        "Parry block armor": "128-192>128-192>128-192>128-192",
+        "Block force": "50>60>70>80",
+        "Parry bonus": "2x"
+    }
+}

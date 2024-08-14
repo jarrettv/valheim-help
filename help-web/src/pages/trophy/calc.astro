@@ -1,8 +1,9 @@
 ---
+import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
-import trophies from "./trophies.json";
 
-const groups = [...new Set(trophies.map((trophy) => trophy.group))];
+const trophies = (await getCollection("trophy")).map((trophy) => trophy.data);
+const groups = ['Meadows', 'Black Forest', 'Swamp', 'Mountain', 'Plains', 'Mistlands', 'Ashlands', 'Ocean/Penalty'];
 ---
 
 <Layout title="Valheim Trophy Calc" name="Trophy Calc">
@@ -12,11 +13,12 @@ const groups = [...new Set(trophies.map((trophy) => trophy.group))];
       <section class="biome-group">
         {trophies
           .filter((trophy) => trophy.group === group)
+          .sort((a, b) => a.score - b.score)
           .map((trophy) => (
             <div class="trophy" data-name={trophy.name} data-score={trophy.score}>
               <div class="score">{trophy.score}</div>
               <div class="chance">{trophy.dropChance}</div>
-              <img src={`/${trophy.iconUrl}`} alt={trophy.name} />
+              <img src={trophy.image.src} alt={trophy.name} />
               <div class="info">
                 <div class="name">{trophy.name}</div>
                 <div class="subname">{trophy.biome}</div>

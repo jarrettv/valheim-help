@@ -1,0 +1,38 @@
+{
+    "id": "blackmetal_atgeir",
+    "code": "AtgeirBlackmetal",
+    "name": "Blackmetal atgeir",
+    "desc": "A vicious hewing-axe of almost unbreakable black metal.",
+    "type": "Polearm",
+    "image": "./blackmetal_atgeir.png",
+    "usage": "Weapon",
+    "wield": "Two-handed",
+    "weight": 2.5,
+    "power": 156,
+    "source": "Forge",
+    "durab": "175>225>275>325",
+    "craft": "4>5>6>7",
+    "repair": "4>4>4>4",
+    "mats": {
+        "Fine wood": "10>0>0>0",
+        "Black metal": "30>15>30>45",
+        "Linen thread": "5>5>10>15"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Pierce": "105>111>117>123;105>111>117>123",
+        "Knockback": "30;300",
+        "Attack speed": "2.98 s (0.84 + 0.86 + 1.28);1.54 s",
+        "Stamina": "18;36",
+        "Stagger": "105>111>117>123;630>666>702>738",
+        "Backstab": "3x;3x"
+    },
+    "block": {
+        "Block armor": "52-78>52-78>52-78>52-78",
+        "Parry block armor": "104-156>104-156>104-156>104-156",
+        "Block force": "40>45>50>55",
+        "Parry bonus": "2x"
+    }
+}

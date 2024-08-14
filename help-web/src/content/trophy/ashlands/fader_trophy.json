@@ -1,0 +1,9 @@
+{
+    "id": "fader_trophy",
+    "biome": "Ashlands",
+    "image": "./fader_trophy.png",
+    "name": "Fader",
+    "dropChance": "100%",
+    "score": 1000,
+    "group": "Ashlands"
+}

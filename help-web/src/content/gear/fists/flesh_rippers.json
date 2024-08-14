@@ -1,0 +1,34 @@
+{
+    "id": "flesh_rippers",
+    "code": "FistFenrirClaw",
+    "name": "Flesh Rippers",
+    "desc": "If claws work for wolves, why not for a viking?",
+    "type": "Fists",
+    "image": "./flesh_rippers.png",
+    "usage": "Weapon",
+    "wield": "Two-handed",
+    "weight": 2.0,
+    "power": 56,
+    "source": "Forge",
+    "durab": "300>350>400>450",
+    "craft": "3>4>5>6",
+    "repair": "3>3>3>3",
+    "mats": {
+        "Fenris hair": "10>1>2>3",
+        "Fenris claw": "6>1>2>3",
+        "Silver": "10>1>2>3"
+    },
+    "attack": {
+        "Slash": "60>64>68>72",
+        "Knockback": "20",
+        "Stamina": "10",
+        "Stagger": "60>64>68>72",
+        "Backstab": "6x"
+    },
+    "block": {
+        "Block armor": "5-7.5>6-9>7-10.5>8-12",
+        "Parry block armor": "30-45>36-54>42-63>48-72",
+        "Block force": "10>15>20>25",
+        "Parry bonus": "6x"
+    }
+}

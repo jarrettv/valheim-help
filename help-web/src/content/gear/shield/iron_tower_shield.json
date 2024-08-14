@@ -1,0 +1,27 @@
+{
+    "id": "iron_tower_shield",
+    "code": "ShieldIronTower",
+    "name": "Iron tower shield",
+    "desc": "A tall shield of strong iron.",
+    "type": "Shield",
+    "image": "./iron_tower_shield.png",
+    "usage": "Blocking",
+    "wield": "Off-hand",
+    "weight": 4.0,
+    "power": 64,
+    "source": "Forge",
+    "durab": "200>250>300",
+    "craft": "2>3>4",
+    "repair": "2>2>2",
+    "mats": {
+        "Fine wood": "15>10>20",
+        "Iron": "10>5>10"
+    },
+    "passive": {
+        "Movement speed": -20
+    },
+    "block": {
+        "Block armor": "52-78>58-87>64-96",
+        "Block force": "100>105>110"
+    }
+}

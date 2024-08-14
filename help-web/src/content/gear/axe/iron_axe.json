@@ -1,0 +1,39 @@
+{
+    "id": "iron_axe",
+    "code": "AxeIron",
+    "name": "Iron axe",
+    "desc": "Sharp and strong, a woodcutter's friend.",
+    "type": "Axe",
+    "image": "./iron_axe.png",
+    "usage": "Wood cutting",
+    "wield": "One-handed",
+    "weight": 2.0,
+    "power": 63,
+    "source": "Forge",
+    "durab": "175>225>275>325",
+    "craft": "2>3>4>5",
+    "repair": "2>2>2>2",
+    "mats": {
+        "Wood": "4>0>0>0",
+        "Iron": "20>10>20>30",
+        "Leather Scraps": "2>1>2>3"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Slash": "60>65>70>75;90>97.5>105>112.5",
+        "Chop": "50>53>56>59;75>79.5>84>88.5",
+        "Knockback": "50;75",
+        "Attack speed": "2.58 s (1.11 + 0.65 + 0.82);2.0 s",
+        "Stamina": "10;20",
+        "Stagger": "60>65>70>75;90>97.5>105>112.5",
+        "Backstab": "3x;3x"
+    },
+    "block": {
+        "Block armor": "21-31.5>21-31.5>21-31.5>21-31.5",
+        "Parry block armor": "42-63>42-63>42-63>42-63",
+        "Block force": "20>25>30>35",
+        "Parry bonus": "2x"
+    }
+}

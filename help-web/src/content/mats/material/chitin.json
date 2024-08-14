@@ -1,0 +1,13 @@
+{
+    "id": "chitin",
+    "image": "./chitin.png",
+    "name": "Chitin",
+    "desc": "A shard of crustacean shell.",
+    "code": "Chitin",
+    "type": "Material",
+    "drop": "Abyssal barnacle",
+    "usage": "Crafting",
+    "weight": 2.0,
+    "stack": 50,
+    "mats": {}
+}

@@ -1,6 +1,6 @@
 import os
 import json
-from bs4 import BeautifulSoup
+import BeautifulSoup
 import requests
 
 os.makedirs("out", exist_ok=True)
@@ -8,13 +8,23 @@ os.makedirs("out", exist_ok=True)
 # URL of the Valheim wiki page with trophies
 url = "https://valheim.fandom.com/wiki/Trophies"
 
-# Send a GET request to fetch the page content
-response = requests.get(url)
+fileName = "out/trophies.html"
 
-# Check if the request was successful
-if response.status_code == 200:
-    html_content = response.content
-    soup = BeautifulSoup(html_content, "html.parser")
+if not os.path.exists(fileName):
+    print(f"Downloading {url}...")
+    response = requests.get(url)
+    if response.status_code == 200:
+        with open(fileName, "wb") as file:
+            file.write(response.content)
+    else:
+        print(f"Failed to download {url}. Status code: {response.status_code}")
+        exit(-1)
+
+print(f"Reading {fileName}...")
+with open(fileName, "rb") as file:
+    data = file.read()
+
+    soup = BeautifulSoup(data, "html.parser")
 
     trophies = []
     current_biome = None
@@ -45,13 +55,15 @@ if response.status_code == 200:
                     dropped_by_url = dropped_by_tag["href"]
                     drop_chance = drop_chance_col.text.strip()
                     uses = uses_col.text.strip()
-
-                    img_filename = f'trophies/{name.replace(" ", "_").lower()}.png'
+                    icon_url = icon_col.find("a")["href"]
+                    if icon_url.startswith("data:image"):
+                        icon_url = icon_col.find("a")["data-src"]
 
                     trophies.append(
                         {
+                            "id": name.replace(" ", "_").lower(),
                             "biome": current_biome,
-                            "iconUrl": img_filename,
+                            "iconUrl": icon_url,
                             "name": name.replace(" trophy", ""),
                             "url": f"https://valheim.fandom.com{name_url}",
                             "droppedBy": dropped_by,
@@ -68,5 +80,3 @@ if response.status_code == 200:
     print("Trophies successfully exported to trophies_raw.json.")
     print(f"Next step:")
     print(f"Add scores to the trophies using the trophy_step2_add_scores.py")
-else:
-    print(f"Failed to fetch the page. Status code: {response.status_code}")

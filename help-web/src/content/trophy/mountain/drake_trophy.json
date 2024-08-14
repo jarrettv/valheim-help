@@ -1,0 +1,9 @@
+{
+    "id": "drake_trophy",
+    "biome": "Mountain",
+    "image": "./drake_trophy.png",
+    "name": "Drake",
+    "dropChance": "10%",
+    "score": 30,
+    "group": "Mountain"
+}

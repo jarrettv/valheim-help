@@ -1,0 +1,9 @@
+{
+    "id": "boar_trophy",
+    "biome": "Meadows",
+    "image": "./boar_trophy.png",
+    "name": "Boar",
+    "dropChance": "15%",
+    "score": 10,
+    "group": "Meadows"
+}

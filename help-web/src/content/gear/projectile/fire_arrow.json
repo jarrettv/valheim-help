@@ -1,0 +1,27 @@
+{
+    "id": "fire_arrow",
+    "code": "ArrowFire",
+    "name": "Fire arrow",
+    "desc": "This arrow burns whatever it pierces.",
+    "type": "Arrow",
+    "image": "./fire_arrow.png",
+    "usage": "Bow ammunition",
+    "wield": "Unknown",
+    "weight": 0,
+    "power": 0,
+    "source": "Workbench",
+    "durab": "0",
+    "craft": "2",
+    "repair": "0",
+    "mats": {
+        "Wood": "8",
+        "Resin": "8",
+        "Feathers": "2"
+    },
+    "attack": {
+        "Pierce": "11",
+        "Fire": "22",
+        "Knockback": "10",
+        "Stagger": "11"
+    }
+}

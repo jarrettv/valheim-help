@@ -1,0 +1,9 @@
+{
+    "id": "relog2",
+    "biome": "Penalty",
+    "image": "./rested.webp",
+    "name": "Relog #2",
+    "dropChance": "",
+    "group": "Ocean/Penalty",
+    "score": -10
+}

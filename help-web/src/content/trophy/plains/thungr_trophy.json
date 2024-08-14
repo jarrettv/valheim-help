@@ -1,0 +1,9 @@
+{
+    "id": "thungr_trophy",
+    "biome": "Plains",
+    "image": "./thungr_trophy.png",
+    "name": "Thungr",
+    "dropChance": "100%",
+    "score": 30,
+    "group": "Plains"
+}

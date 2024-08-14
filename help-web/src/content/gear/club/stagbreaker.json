@@ -1,0 +1,39 @@
+{
+    "id": "stagbreaker",
+    "code": "SledgeStagbreaker",
+    "name": "Stagbreaker",
+    "desc": "A weapon worthy of the Gods! If you get hit with this, you'll know it\u2026",
+    "type": "Club",
+    "image": "./stagbreaker.png",
+    "usage": "Weapon",
+    "wield": "Two-handed",
+    "weight": 4.0,
+    "power": 12,
+    "source": "Workbench",
+    "durab": "100>150>200>250",
+    "craft": "2>3>4>5",
+    "repair": "2>2>2>2",
+    "mats": {
+        "Core wood": "20>5>10>15",
+        "Deer trophy": "5>2>4>6",
+        "Leather scraps": "2>1>2>3"
+    },
+    "passive": {
+        "Movement speed": -20
+    },
+    "attack": {
+        "Blunt": "20>26>32>38",
+        "Pierce": "5>5>5>5",
+        "Knockback": "150",
+        "Attack speed": "2.12 s",
+        "Stamina": "12",
+        "Stagger": "25>31>37>43",
+        "Backstab": "2x"
+    },
+    "block": {
+        "Block armor": "4-6>4-6>4-6>4-6",
+        "Parry block armor": "8-12>8-12>8-12>8-12",
+        "Block force": "50>60>70>80",
+        "Parry bonus": "2x"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "id": "resin",
+    "image": "./resin.png",
+    "name": "Resin",
+    "desc": "Sticky tree resin that insulates well. If put to the flame it burns slow and steady.",
+    "code": "Resin",
+    "type": "Material",
+    "drop": "Birch Trees",
+    "usage": "Crafting, Building",
+    "weight": 0.3,
+    "stack": 50,
+    "mats": {}
+}

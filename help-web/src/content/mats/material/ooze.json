@@ -1,0 +1,13 @@
+{
+    "id": "ooze",
+    "image": "./ooze.png",
+    "name": "Ooze",
+    "desc": "Rotten and putrid-smelling. Why do you want this?",
+    "code": "Ooze",
+    "type": "Material",
+    "drop": "Blob",
+    "usage": "Crafting, Building",
+    "weight": 0.5,
+    "stack": 50,
+    "mats": {}
+}

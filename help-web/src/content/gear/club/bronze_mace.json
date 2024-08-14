@@ -1,0 +1,38 @@
+{
+    "id": "bronze_mace",
+    "code": "MaceBronze",
+    "name": "Bronze mace",
+    "desc": "A headache on a stick.",
+    "type": "Club",
+    "image": "./bronze_mace.png",
+    "usage": "Weapon",
+    "wield": "One-handed",
+    "weight": 2.0,
+    "power": 36,
+    "source": "Forge",
+    "durab": "200>250>300>350",
+    "craft": "1>2>3>4",
+    "repair": "1>1>1>1",
+    "mats": {
+        "Wood": "4>0>0>0",
+        "Bronze": "8>4>8>12",
+        "Leather Scraps": "3>0>0>0"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Blunt": "35>41>47>53;87.5>102.5>117.5>132.5",
+        "Knockback": "80;160",
+        "Attack speed": "2.46 s (1.14 + 0.44 + 0.88);1.72 s",
+        "Stamina": "8;16",
+        "Stagger": "35>41>47>53;175>205>235>265",
+        "Backstab": "3x;3x"
+    },
+    "block": {
+        "Block armor": "12-18>12-18>12-18>12-18",
+        "Parry block armor": "24-36>24-36>24-36>24-36",
+        "Block force": "30>35>40>45",
+        "Parry bonus": "2x"
+    }
+}

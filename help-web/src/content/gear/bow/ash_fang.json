@@ -1,0 +1,38 @@
+{
+    "id": "ash_fang",
+    "code": "BowAshlands",
+    "name": "Ash Fang",
+    "desc": "Risen again from the ashes, this bow holds unyielding strength.",
+    "type": "Bow",
+    "image": "./ash_fang.png",
+    "usage": "Ranged weapon",
+    "wield": "Two-handed",
+    "weight": 1.5,
+    "power": 5,
+    "source": "Black forge",
+    "durab": "100>150>200>250",
+    "craft": "3>4>5>6",
+    "repair": "3>3>3>3",
+    "mats": {
+        "Ashwood": "10>5>10>15",
+        "Charred Bone": "16>10>20>30",
+        "Flametal": "5>5>10>15",
+        "Bonemaw Tooth": "5>5>10>15"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Pierce": "82>86>90>94",
+        "Spirit": "0>5>10>15",
+        "Attack speed": "0.8 s + 2.5 s draw time",
+        "Stamina": "14 / s",
+        "Stagger": "82>86>90>94",
+        "Backstab": "3x"
+    },
+    "block": {
+        "Block armor": "5-7.5>5-7.5>5-7.5>5-7.5",
+        "Parry block armor": "7.5-11.25>7.5-11.25>7.5-11.25>7.5-11.25",
+        "Parry bonus": "1.5x"
+    }
+}

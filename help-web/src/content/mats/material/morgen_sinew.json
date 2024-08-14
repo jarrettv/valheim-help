@@ -1,0 +1,13 @@
+{
+    "id": "morgen_sinew",
+    "image": "./morgen_sinew.png",
+    "name": "Morgen sinew",
+    "desc": "Chewy.",
+    "code": "MorgenSinew",
+    "type": "Material",
+    "drop": "Morgen",
+    "usage": "Crafting",
+    "weight": 0.5,
+    "stack": 50,
+    "mats": {}
+}

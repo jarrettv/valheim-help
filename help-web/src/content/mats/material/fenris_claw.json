@@ -1,0 +1,13 @@
+{
+    "id": "fenris_claw",
+    "image": "./fenris_claw.png",
+    "name": "Fenris claw",
+    "desc": "It is hard and sharp like iron.",
+    "code": "WolfClaw",
+    "type": "Material",
+    "drop": "Frost caves",
+    "usage": "Building, Crafting",
+    "weight": 0.5,
+    "stack": 20,
+    "mats": {}
+}

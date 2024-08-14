@@ -1,0 +1,39 @@
+{
+    "id": "iron_sledge",
+    "code": "SledgeIron",
+    "name": "Iron sledge",
+    "desc": "A mighty hammer, worthy of a champion.",
+    "type": "Club",
+    "image": "./iron_sledge.png",
+    "usage": "Weapon",
+    "wield": "Two-handed",
+    "weight": 4.0,
+    "power": 84,
+    "source": "Forge",
+    "durab": "100>150>200>250",
+    "craft": "2>3>4>5",
+    "repair": "2>2>2>2",
+    "mats": {
+        "Ancient bark": "10>2>4>6",
+        "Iron": "30>15>30>45",
+        "Ymir flesh": "4>2>4>6",
+        "Draugr Elite trophy": "1>0>0>0"
+    },
+    "passive": {
+        "Movement speed": -20
+    },
+    "attack": {
+        "Blunt": "55>61>67>73",
+        "Knockback": "200",
+        "Attack speed": "2.12 s",
+        "Stamina": "20",
+        "Stagger": "110>122>134>146",
+        "Backstab": "2x"
+    },
+    "block": {
+        "Block armor": "28-42>28-42>28-42>28-42",
+        "Parry block armor": "56-84>56-84>56-84>56-84",
+        "Block force": "50>60>70>80",
+        "Parry bonus": "2x"
+    }
+}

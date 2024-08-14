@@ -1,0 +1,9 @@
+{
+    "id": "lox_trophy",
+    "biome": "Plains",
+    "image": "./lox_trophy.png",
+    "name": "Lox",
+    "dropChance": "10%",
+    "score": 30,
+    "group": "Plains"
+}

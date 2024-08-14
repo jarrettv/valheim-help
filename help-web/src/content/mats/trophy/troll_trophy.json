@@ -1,0 +1,13 @@
+{
+    "id": "troll_trophy",
+    "image": "./troll_trophy.png",
+    "name": "Troll trophy",
+    "desc": "The leathery skin bears the faded tracery of ancient symbols.",
+    "code": "TrophyForestTrollTrophyFrostTroll",
+    "type": "Trophy",
+    "drop": "Troll",
+    "usage": "Decoration",
+    "weight": 4.0,
+    "stack": 20,
+    "mats": {}
+}

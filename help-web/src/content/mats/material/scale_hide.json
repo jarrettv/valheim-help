@@ -1,0 +1,13 @@
+{
+    "id": "scale_hide",
+    "image": "./scale_hide.png",
+    "name": "Scale hide",
+    "desc": "A pelt of glittering scales.",
+    "code": "ScaleHide",
+    "type": "Material",
+    "drop": "Hare",
+    "usage": "Crafting, Building",
+    "weight": 0.5,
+    "stack": 50,
+    "mats": {}
+}

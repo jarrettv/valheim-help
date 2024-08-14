@@ -1,0 +1,13 @@
+{
+    "id": "jade",
+    "image": "./jade.png",
+    "name": "Jade",
+    "desc": "This gem pulses with energy, almost as if it were a living thing.",
+    "code": "gemstonegreen",
+    "type": "Material",
+    "drop": "Charred Fortress",
+    "usage": "Crafting",
+    "weight": 2.0,
+    "stack": 50,
+    "mats": {}
+}

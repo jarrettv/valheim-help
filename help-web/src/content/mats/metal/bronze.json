@@ -1,0 +1,16 @@
+{
+    "id": "bronze",
+    "image": "./bronze.png",
+    "name": "Bronze",
+    "desc": "A strong alloy of copper and tin.",
+    "code": "Bronze",
+    "type": "Metal",
+    "drop": "Forge",
+    "usage": "Crafting, Building",
+    "weight": 12.0,
+    "stack": 30,
+    "mats": {
+        "Copper": 2,
+        "Tin": 1
+    }
+}

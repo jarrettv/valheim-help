@@ -1,0 +1,25 @@
+{
+    "id": "flametal_missile",
+    "code": "TurretBoltFlametal",
+    "name": "Flametal missile",
+    "desc": "Forged from one of the hardest metals in all of Valheim, this missile is sure to hold off your enemies.",
+    "type": "Missile",
+    "image": "./flametal_missile.png",
+    "usage": "Ballista ammunition",
+    "wield": "Unknown",
+    "weight": 0,
+    "power": 0,
+    "source": "Artisan table",
+    "durab": "0",
+    "craft": "1",
+    "repair": "0",
+    "mats": {
+        "Ashwood": "10",
+        "Flametal": "1"
+    },
+    "attack": {
+        "Pierce": "140",
+        "Knockback": "60",
+        "Stagger": "140"
+    }
+}

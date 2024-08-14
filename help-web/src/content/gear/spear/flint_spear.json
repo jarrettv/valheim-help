@@ -1,0 +1,38 @@
+{
+    "id": "flint_spear",
+    "code": "SpearFlint",
+    "name": "Flint spear",
+    "desc": "If your eye marks a thing for death, let your arm send the messenger.",
+    "type": "Spear",
+    "image": "./flint_spear.png",
+    "usage": "Weapon",
+    "wield": "One-handed",
+    "weight": 1.5,
+    "power": 12,
+    "source": "Workbench",
+    "durab": "100>150>200>250",
+    "craft": "1>2>3>4",
+    "repair": "1>1>1>1",
+    "mats": {
+        "Wood": "5>3>6>9",
+        "Flint": "10>5>10>15",
+        "Leather scraps": "2>1>2>3"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Pierce": "20>26>32>38;30>39>48>57",
+        "Knockback": "20;30",
+        "Attack speed": "0.68 s;1.57 s (includes picking up)",
+        "Stamina": "6;8",
+        "Stagger": "20>26>32>38;30>39>48>57",
+        "Backstab": "3x;3x"
+    },
+    "block": {
+        "Block armor": "4-6>4-6>4-6>4-6",
+        "Parry block armor": "8-12>8-12>8-12>8-12",
+        "Block force": "20>25>30>35",
+        "Parry bonus": "2x"
+    }
+}

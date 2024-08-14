@@ -1,0 +1,40 @@
+{
+    "id": "porcupine",
+    "code": "MaceNeedle",
+    "name": "Porcupine",
+    "desc": "A deadly weapon, bristling with fiendish spikes.",
+    "type": "Club",
+    "image": "./porcupine.png",
+    "usage": "Weapon",
+    "wield": "One-handed",
+    "weight": 2.0,
+    "power": 117,
+    "source": "Forge",
+    "durab": "150>200>250>300",
+    "craft": "4>5>6>7",
+    "repair": "4>4>4>4",
+    "mats": {
+        "Fine wood": "5>0>0>0",
+        "Iron": "20>2>4>6",
+        "Needle": "5>2>4>6",
+        "Linen thread": "10>0>0>0"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Blunt": "50>50>50>50;125>125>125>125",
+        "Pierce": "45>51>57>63;112.5>127.5>142.5>157.5",
+        "Knockback": "100;200",
+        "Attack speed": "2.46 s (1.14 + 0.44 + 0.88);1.72 s",
+        "Stamina": "14;28",
+        "Stagger": "95>101>107>113;475>505>535>565",
+        "Backstab": "3x;3x"
+    },
+    "block": {
+        "Block armor": "39-58.5>39-58.5>39-58.5>39-58.5",
+        "Parry block armor": "78-117>78-117>78-117>78-117",
+        "Block force": "30>35>40>45",
+        "Parry bonus": "2x"
+    }
+}

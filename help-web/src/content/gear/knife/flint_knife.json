@@ -1,0 +1,36 @@
+{
+    "id": "flint_knife",
+    "code": "KnifeFlint",
+    "name": "Flint knife",
+    "desc": "Sharpened flint. A reliable tool.",
+    "type": "Knife",
+    "image": "./flint_knife.png",
+    "usage": "Weapon",
+    "wield": "One-handed",
+    "weight": 0.3,
+    "power": 10,
+    "source": "Workbench",
+    "durab": "200>250>300>350",
+    "craft": "1>2>3>4",
+    "repair": "1>1>1>1",
+    "mats": {
+        "Wood": "2>0>0>0",
+        "Flint": "4>2>4>6",
+        "Leather scraps": "2>0>0>0"
+    },
+    "attack": {
+        "Pierce": "5>6>7>8;15>18>21>24",
+        "Slash": "5>6>7>8;15>18>21>24",
+        "Knockback": "10;40",
+        "Attack speed": "1.74 s (0.6 + 0.44 + 0.7);1.52 s",
+        "Stamina": "4;12",
+        "Stagger": "10>12>14>16;30>36>42>48",
+        "Backstab": "6x;6x"
+    },
+    "block": {
+        "Block armor": "2-3>2-3>2-3>2-3",
+        "Parry block armor": "8-12>8-12>8-12>8-12",
+        "Block force": "10>15>20>25",
+        "Parry bonus": "4x"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "id": "mandible",
+    "image": "./mandible.png",
+    "name": "Mandible",
+    "desc": "The hand of a man could hardly design a more perfect weapon.",
+    "code": "Mandible",
+    "type": "Material",
+    "drop": "Seeker Soldier",
+    "usage": "Crafting",
+    "weight": 0.5,
+    "stack": 50,
+    "mats": {}
+}

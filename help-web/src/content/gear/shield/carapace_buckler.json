@@ -1,0 +1,30 @@
+{
+    "id": "carapace_buckler",
+    "code": "ShieldCarapaceBuckler",
+    "name": "Carapace buckler",
+    "desc": "The skull of a seeker is solid but not heavy, which makes it perfect for a small and agile shield.",
+    "type": "Shield",
+    "image": "./carapace_buckler.png",
+    "usage": "Blocking",
+    "wield": "Off-hand",
+    "weight": 5.0,
+    "power": 315,
+    "source": "Black forge",
+    "durab": "200>250>300",
+    "craft": "1>2>3",
+    "repair": "1>1>1",
+    "mats": {
+        "Carapace": "16>8>16",
+        "Scale hide": "3>3>6",
+        "Refined eitr": "10>3>6"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "block": {
+        "Block armor": "78-117>84-126>90-135",
+        "Parry block armor": "195-292.5>210-315>225-337.5",
+        "Block force": "50>55>60",
+        "Parry bonus": "2.5x"
+    }
+}

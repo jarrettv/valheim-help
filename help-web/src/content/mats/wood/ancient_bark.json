@@ -1,0 +1,13 @@
+{
+    "id": "ancient_bark",
+    "image": "./ancient_bark.png",
+    "name": "Ancient bark",
+    "desc": "An ancient and sturdy material.",
+    "code": "ElderBark",
+    "type": "Wood",
+    "drop": "Ancient Tree",
+    "usage": "Crafting, Building",
+    "weight": 2.0,
+    "stack": 50,
+    "mats": {}
+}

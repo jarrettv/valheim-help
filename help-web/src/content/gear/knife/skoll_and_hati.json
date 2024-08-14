@@ -1,0 +1,36 @@
+{
+    "id": "skoll_and_hati",
+    "code": "KnifeSkollAndHati",
+    "name": "Skoll and Hati",
+    "desc": "Stab once for those who've betrayed you, and twice for those you hate.",
+    "type": "Knife",
+    "image": "./skoll_and_hati.png",
+    "usage": "Weapon",
+    "wield": "Two-handed",
+    "weight": 0.3,
+    "power": 120,
+    "source": "Black forge",
+    "durab": "200>250>300>350",
+    "craft": "1>2>3>4",
+    "repair": "1>1>1>1",
+    "mats": {
+        "Fine wood": "4>0>0>0",
+        "Iron": "10>4>8>12",
+        "Black metal": "10>4>8>12"
+    },
+    "attack": {
+        "Pierce": "45>46>47>48;135>138>141>144",
+        "Slash": "45>46>47>48;135>138>141>144",
+        "Knockback": "10;40",
+        "Attack speed": "1.72 s (0.54 + 0.46 + 0.72);1.66 s",
+        "Stamina": "14;42",
+        "Stagger": "90>92>94>96;270>276>282>288",
+        "Backstab": "6x;6x"
+    },
+    "block": {
+        "Block armor": "24-36>24-36>24-36>24-36",
+        "Parry block armor": "96-144>96-144>96-144>96-144",
+        "Block force": "10>15>20>25",
+        "Parry bonus": "4x"
+    }
+}

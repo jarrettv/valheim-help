@@ -1,0 +1,38 @@
+{
+    "id": "nidhogg",
+    "code": "SwordNiedhogg",
+    "name": "Nidh\u00f6gg",
+    "desc": "Named after the evil dragon that dwells by the roots of the world tree, this sword heralds doom for those who cross its path.",
+    "type": "Sword",
+    "image": "./nidhogg.png",
+    "usage": "Weapon",
+    "wield": "One-handed",
+    "weight": 0.8,
+    "power": 171,
+    "source": "Black forge",
+    "durab": "200>250>300>350",
+    "craft": "3>4>5>6",
+    "repair": "3>3>3>3",
+    "mats": {
+        "Charred Bone": "3>0>0>0",
+        "Flametal": "12>10>20>30",
+        "Asksvin hide": "2>2>4>6"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Slash": "135>141>147>153;405>423>441>459",
+        "Knockback": "40;40",
+        "Attack speed": "2.46 s (1.14 + 0.44 + 0.88);1.84 s",
+        "Stamina": "16;28",
+        "Stagger": "135>141>147>153;405>423>441>459",
+        "Backstab": "3x;3x"
+    },
+    "block": {
+        "Block armor": "57-85.5>57-85.5>57-85.5>57-85.5",
+        "Parry block armor": "114-171>114-171>114-171>114-171",
+        "Block force": "20>25>30>35",
+        "Parry bonus": "2x"
+    }
+}

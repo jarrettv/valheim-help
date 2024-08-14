@@ -1,0 +1,26 @@
+{
+    "id": "bronzehead_arrow",
+    "code": "ArrowBronze",
+    "name": "Bronzehead arrow",
+    "desc": "Sharper than flint. A sleek messenger of death.",
+    "type": "Arrow",
+    "image": "./bronzehead_arrow.png",
+    "usage": "Bow ammunition",
+    "wield": "Unknown",
+    "weight": 0,
+    "power": 0,
+    "source": "Forge",
+    "durab": "0",
+    "craft": "1",
+    "repair": "0",
+    "mats": {
+        "Wood": "8",
+        "Bronze": "1",
+        "Feathers": "2"
+    },
+    "attack": {
+        "Pierce": "32",
+        "Knockback": "10",
+        "Stagger": "32"
+    }
+}

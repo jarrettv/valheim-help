@@ -1,0 +1,36 @@
+{
+    "id": "abyssal_razor",
+    "code": "KnifeChitin",
+    "name": "Abyssal razor",
+    "desc": "A knife from the deep.",
+    "type": "Knife",
+    "image": "./abyssal_razor.png",
+    "usage": "Weapon",
+    "wield": "One-handed",
+    "weight": 0.3,
+    "power": 10,
+    "source": "Workbench",
+    "durab": "200>250>300>350",
+    "craft": "2>3>4>5",
+    "repair": "2>2>2>2",
+    "mats": {
+        "Fine wood": "4>0>0>0",
+        "Chitin": "20>10>20>30",
+        "Leather scraps": "2>0>0>0"
+    },
+    "attack": {
+        "Pierce": "20>21>22>23;60>63>66>69",
+        "Slash": "20>21>22>23;60>63>66>69",
+        "Knockback": "10;40",
+        "Attack speed": "1.74 s (0.6 + 0.44 + 0.7);1.52 s",
+        "Stamina": "8;24",
+        "Stagger": "40>42>44>46;120>126>132>138",
+        "Backstab": "6x;6x"
+    },
+    "block": {
+        "Block armor": "2-3>2-3>2-3>2-3",
+        "Parry block armor": "8-12>8-12>8-12>8-12",
+        "Block force": "10>15>20>25",
+        "Parry bonus": "4x"
+    }
+}

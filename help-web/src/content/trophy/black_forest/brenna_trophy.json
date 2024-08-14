@@ -1,0 +1,9 @@
+{
+    "id": "brenna_trophy",
+    "biome": "Black Forest",
+    "image": "./brenna_trophy.png",
+    "name": "Brenna",
+    "dropChance": "100%",
+    "score": 20,
+    "group": "Black Forest"
+}

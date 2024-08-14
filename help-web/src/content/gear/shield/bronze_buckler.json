@@ -1,0 +1,29 @@
+{
+    "id": "bronze_buckler",
+    "code": "ShieldBronzeBuckler",
+    "name": "Bronze buckler",
+    "desc": "A shield of burnished bronze, good to turn a blade or two.",
+    "type": "Shield",
+    "image": "./bronze_buckler.png",
+    "usage": "Blocking",
+    "wield": "Off-hand",
+    "weight": 3.0,
+    "power": 98,
+    "source": "Forge",
+    "durab": "200>250>300",
+    "craft": "1>2>3",
+    "repair": "1>1>1",
+    "mats": {
+        "Bronze": "10>5>10",
+        "Wood": "4>1>2"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "block": {
+        "Block armor": "16-24>22-33>28-42",
+        "Parry block armor": "40-60>55-82.5>70-105",
+        "Block force": "30>30>30",
+        "Parry bonus": "2.5x"
+    }
+}

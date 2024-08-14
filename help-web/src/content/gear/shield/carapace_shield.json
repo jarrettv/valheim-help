@@ -1,0 +1,30 @@
+{
+    "id": "carapace_shield",
+    "code": "ShieldCarapace",
+    "name": "Carapace shield",
+    "desc": "The almost unbreakable carapace of your enemies makes an excellent shield.",
+    "type": "Shield",
+    "image": "./carapace_shield.png",
+    "usage": "Blocking",
+    "wield": "Off-hand",
+    "weight": 5.0,
+    "power": 270,
+    "source": "Black forge",
+    "durab": "200>250>300",
+    "craft": "1>2>3",
+    "repair": "1>1>1",
+    "mats": {
+        "Carapace": "20>10>20",
+        "Scale hide": "3>3>6",
+        "Refined eitr": "10>3>6"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "block": {
+        "Block armor": "96-144>102-153>108-162",
+        "Parry block armor": "144-216>153-229.5>162-243",
+        "Block force": "60>65>70",
+        "Parry bonus": "1.5x"
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "id": "flint_axe",
+    "code": "AxeFlint",
+    "name": "Flint axe",
+    "desc": "Sharper than stone.",
+    "type": "Axe",
+    "image": "./flint_axe.png",
+    "usage": "Wood cutting",
+    "wield": "One-handed",
+    "weight": 1.5,
+    "power": 12,
+    "source": "Workbench",
+    "durab": "100>130>160>190",
+    "craft": "1>2>3>4",
+    "repair": "1>1>1>1",
+    "mats": {
+        "Wood": "4>0>0>0",
+        "Flint": "6>3>6>9"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Slash": "20>25>30>35;30>37.5>45>52.5",
+        "Chop": "30>33>36>39;45>49.5>54>58.5",
+        "Knockback": "50;75",
+        "Attack speed": "2.58 s (1.11 + 0.65 + 0.82);2.0 s",
+        "Stamina": "6;12",
+        "Stagger": "20>25>30>35;30>37.5>45>52.5",
+        "Backstab": "3x;3x"
+    },
+    "block": {
+        "Block armor": "4-6>4-6>4-6>4-6",
+        "Parry block armor": "8-12>8-12>8-12>8-12",
+        "Block force": "20>25>30>35",
+        "Parry bonus": "2x"
+    }
+}

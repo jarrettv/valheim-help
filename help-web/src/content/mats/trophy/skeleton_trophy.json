@@ -1,0 +1,13 @@
+{
+    "id": "skeleton_trophy",
+    "image": "./skeleton_trophy.png",
+    "name": "Skeleton trophy",
+    "desc": "The expressionless grin of this skull reminds you of the inevitability of death.",
+    "code": "TrophySkeleton",
+    "type": "Trophy",
+    "drop": "Skeleton",
+    "usage": "Decoration",
+    "weight": 0.5,
+    "stack": 20,
+    "mats": {}
+}

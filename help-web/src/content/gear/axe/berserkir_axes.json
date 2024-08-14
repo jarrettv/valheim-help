@@ -1,0 +1,35 @@
+{
+    "id": "berserkir_axes",
+    "code": "AxeBerzerkr",
+    "name": "Berserkir axes",
+    "desc": "Let your rage take over and face the slaughter.",
+    "type": "Axe",
+    "image": "./berserkir_axes.png",
+    "usage": "Weapon",
+    "wield": "Unknown",
+    "weight": 325.0,
+    "power": 57,
+    "source": "Black forge",
+    "durab": "0>0>0>0",
+    "craft": "3>4>5>6",
+    "repair": "3>3>3>3",
+    "mats": {
+        "Charred bone": "15>0>0>0",
+        "Flametal": "24>15>30>45",
+        "Asksvin hide": "3>1>2>3"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Slash": "140>145>150>155",
+        "Chop": "80>83>86>89",
+        "Knockback": "20",
+        "Stamina": "16",
+        "Stagger": "140>145>150>155",
+        "Backstab": "3x"
+    },
+    "block": {
+        "Block armor": "57-85.5>57-85.5>57-85.5>57-85.5"
+    }
+}

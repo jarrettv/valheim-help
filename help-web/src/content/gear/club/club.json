@@ -1,0 +1,36 @@
+{
+    "id": "club",
+    "code": "Club",
+    "name": "Club",
+    "desc": "A crude but useful weapon.",
+    "type": "Club",
+    "image": "./club.png",
+    "usage": "Weapon",
+    "wield": "One-handed",
+    "weight": 2.0,
+    "power": 9,
+    "source": "Player crafting menu",
+    "durab": "100>150>200>250",
+    "craft": "1>2>3>4",
+    "repair": "1>1>1>1",
+    "mats": {
+        "Wood": "6>0>0>0"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Blunt": "12>18>24>30",
+        "Knockback": "30",
+        "Attack speed": "2.46 s (1.14 + 0.44 + 0.88)",
+        "Stamina": "6",
+        "Stagger": "12>18>24>30",
+        "Backstab": "3x"
+    },
+    "block": {
+        "Block armor": "3-4.5>3-4.5>3-4.5>3-4.5",
+        "Parry block armor": "6-9>6-9>6-9>6-9",
+        "Block force": "20>25>30>35",
+        "Parry bonus": "2x"
+    }
+}

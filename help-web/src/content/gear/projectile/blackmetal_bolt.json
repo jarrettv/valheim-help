@@ -1,0 +1,25 @@
+{
+    "id": "blackmetal_bolt",
+    "code": "BoltBlackmetal",
+    "name": "Blackmetal bolt",
+    "desc": "A sleek bolt of dark metal.",
+    "type": "Bolt",
+    "image": "./blackmetal_bolt.png",
+    "usage": "Weapon",
+    "wield": "Unknown",
+    "weight": 0,
+    "power": 0,
+    "source": "Black forge",
+    "durab": "0",
+    "craft": "2",
+    "repair": "0",
+    "mats": {
+        "Wood": "8",
+        "Black metal": "2",
+        "Feathers": "2"
+    },
+    "attack": {
+        "Pierce": "62",
+        "Stagger": "62"
+    }
+}

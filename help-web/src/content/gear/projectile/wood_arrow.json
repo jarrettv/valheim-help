@@ -1,0 +1,24 @@
+{
+    "id": "wood_arrow",
+    "code": "ArrowWood",
+    "name": "Wood arrow",
+    "desc": "An arrow of sharpened wood.",
+    "type": "Arrow",
+    "image": "./wood_arrow.png",
+    "usage": "Bow ammunition",
+    "wield": "Unknown",
+    "weight": 0,
+    "power": 0,
+    "source": "Workbench",
+    "durab": "0",
+    "craft": "1",
+    "repair": "0",
+    "mats": {
+        "Wood": "8"
+    },
+    "attack": {
+        "Pierce": "22",
+        "Knockback": "10",
+        "Stagger": "22"
+    }
+}

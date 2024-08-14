@@ -1,0 +1,39 @@
+{
+    "id": "dundr",
+    "code": "StaffLightning",
+    "name": "Dundr",
+    "desc": "What happens next may shock you.",
+    "type": "Elemental magic",
+    "image": "./dundr.png",
+    "usage": "Magic weapon",
+    "wield": "Two-handed",
+    "weight": 1.5,
+    "power": 144,
+    "source": "Galdr table",
+    "durab": "200>250>300>350",
+    "craft": "2>3>4>5",
+    "repair": "2>2>2>2",
+    "mats": {
+        "Ashwood": "10>5>10>15",
+        "Flametal": "4>2>4>6",
+        "Celestial feather": "3>3>6>9",
+        "Bloodstone": "1>1>2>3"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Lightning": "20>23>26>29",
+        "Knockback": "210",
+        "Eitr": "25>25>25>25",
+        "Recoil force": "40>40>40>40",
+        "Stagger": "20>23>26>29",
+        "Backstab": "1x"
+    },
+    "block": {
+        "Block armor": "48-72>48-72>48-72>48-72",
+        "Parry block armor": "96-144>96-144>96-144>96-144",
+        "Block force": "20>25>30>35",
+        "Parry bonus": "2x"
+    }
+}

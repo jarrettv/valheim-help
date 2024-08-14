@@ -1,0 +1,13 @@
+{
+    "id": "root",
+    "image": "./root.png",
+    "name": "Root (item)",
+    "desc": "An old root from an ancient tree stump. It feels both flexible and durable at the same time.",
+    "code": "Root",
+    "type": "Material",
+    "drop": "Abomination",
+    "usage": "Crafting",
+    "weight": 0.3,
+    "stack": 50,
+    "mats": {}
+}

@@ -1,0 +1,9 @@
+{
+    "id": "ulv_trophy",
+    "biome": "Mountain",
+    "image": "./ulv_trophy.png",
+    "name": "Ulv",
+    "dropChance": "10%",
+    "score": 30,
+    "group": "Mountain"
+}

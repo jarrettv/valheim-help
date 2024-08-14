@@ -1,0 +1,13 @@
+{
+    "id": "asksvin_hide",
+    "image": "./asksvin_hide.png",
+    "name": "Asksvin hide",
+    "desc": "This sturdy leather is thick, and still warm to the touch",
+    "code": "AskHide",
+    "type": "Material",
+    "drop": "Asksvin",
+    "usage": "Crafting",
+    "weight": 1.0,
+    "stack": 50,
+    "mats": {}
+}

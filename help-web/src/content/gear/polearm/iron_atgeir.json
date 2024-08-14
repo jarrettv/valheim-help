@@ -1,0 +1,38 @@
+{
+    "id": "iron_atgeir",
+    "code": "AtgeirIron",
+    "name": "Iron atgeir",
+    "desc": "Blood-drinker, skull-cracker, death-bringer.",
+    "type": "Polearm",
+    "image": "./iron_atgeir.png",
+    "usage": "Weapon",
+    "wield": "Two-handed",
+    "weight": 2.5,
+    "power": 84,
+    "source": "Forge",
+    "durab": "175>225>275>325",
+    "craft": "2>3>4>5",
+    "repair": "2>2>2>2",
+    "mats": {
+        "Wood": "10>0>0>0",
+        "Iron": "30>15>30>45",
+        "Leather scraps": "2>1>2>3"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Pierce": "65>71>77>83;65>71>77>83",
+        "Knockback": "30;300",
+        "Attack speed": "2.98 s (0.84 + 0.86 + 1.28);1.54 s",
+        "Stamina": "14;28",
+        "Stagger": "65>71>77>83;390>426>462>498",
+        "Backstab": "3x;3x"
+    },
+    "block": {
+        "Block armor": "28-42>28-42>28-42>28-42",
+        "Parry block armor": "56-84>56-84>56-84>56-84",
+        "Block force": "40>45>50>55",
+        "Parry bonus": "2x"
+    }
+}

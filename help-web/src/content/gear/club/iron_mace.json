@@ -1,0 +1,38 @@
+{
+    "id": "iron_mace",
+    "code": "MaceIron",
+    "name": "Iron mace",
+    "desc": "A fist-sized lump of iron on a wooden shaft.",
+    "type": "Club",
+    "image": "./iron_mace.png",
+    "usage": "Weapon",
+    "wield": "One-handed",
+    "weight": 2.0,
+    "power": 63,
+    "source": "Forge",
+    "durab": "200>250>300>350",
+    "craft": "2>3>4>5",
+    "repair": "2>2>2>2",
+    "mats": {
+        "Wood": "4>0>0>0",
+        "Iron": "20>10>20>30",
+        "Leather scraps": "3>0>0>0"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Blunt": "55>61>67>73;137.5>152.5>167.5>182.5",
+        "Knockback": "90;180",
+        "Attack speed": "2.46 s (1.14 + 0.44 + 0.88);1.72 s",
+        "Stamina": "10;20",
+        "Stagger": "55>61>67>73;275>305>335>365",
+        "Backstab": "3x;3x"
+    },
+    "block": {
+        "Block armor": "21-31.5>21-31.5>21-31.5>21-31.5",
+        "Parry block armor": "42-63>42-63>42-63>42-63",
+        "Block force": "30>35>40>45",
+        "Parry bonus": "2x"
+    }
+}

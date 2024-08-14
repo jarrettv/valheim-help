@@ -1,0 +1,9 @@
+{
+    "id": "geirrhafa_trophy",
+    "biome": "Mountain",
+    "image": "./geirrhafa_trophy.png",
+    "name": "Geirrhafa",
+    "dropChance": "100%",
+    "score": 30,
+    "group": "Mountain"
+}

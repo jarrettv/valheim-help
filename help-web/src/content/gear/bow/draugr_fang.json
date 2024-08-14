@@ -1,0 +1,39 @@
+{
+    "id": "draugr_fang",
+    "code": "BowDraugrFang",
+    "name": "Draugr Fang",
+    "desc": "Dark wood strung with glistening sinew. A vicious thing.",
+    "type": "Bow",
+    "image": "./draugr_fang.png",
+    "usage": "Ranged weapon",
+    "wield": "Two-handed",
+    "weight": 1.5,
+    "power": 5,
+    "source": "Forge",
+    "durab": "100>150>200>250",
+    "craft": "2>3>4>5",
+    "repair": "2>2>2>2",
+    "mats": {
+        "Ancient bark": "10>5>10>15",
+        "Silver": "20>10>20>30",
+        "Deer hide": "2>2>4>6",
+        "Guck": "10>2>4>6"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Pierce": "47>50>53>56",
+        "Poison": "5>10>15>20",
+        "Knockback": "20",
+        "Attack speed": "0.8 s + 2.5 s draw time",
+        "Stamina": "10 / s",
+        "Stagger": "47>50>53>56",
+        "Backstab": "3x"
+    },
+    "block": {
+        "Block armor": "5-7.5>5-7.5>5-7.5>5-7.5",
+        "Parry block armor": "7.5-11.25>7.5-11.25>7.5-11.25>7.5-11.25",
+        "Parry bonus": "1.5x"
+    }
+}

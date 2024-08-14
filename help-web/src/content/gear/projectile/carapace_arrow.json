@@ -1,0 +1,26 @@
+{
+    "id": "carapace_arrow",
+    "code": "ArrowCarapace",
+    "name": "Carapace arrow",
+    "desc": "Heavy and pointy, this one's gonna hurt.",
+    "type": "Arrow",
+    "image": "./carapace_arrow.png",
+    "usage": "Bow ammunition",
+    "wield": "Unknown",
+    "weight": 0,
+    "power": 0,
+    "source": "Black forge",
+    "durab": "0",
+    "craft": "1",
+    "repair": "0",
+    "mats": {
+        "Carapace": "4",
+        "Feathers": "2",
+        "Wood": "8"
+    },
+    "attack": {
+        "Pierce": "72",
+        "Knockback": "15",
+        "Stagger": "72"
+    }
+}

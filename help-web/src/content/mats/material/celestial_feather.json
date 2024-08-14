@@ -1,0 +1,13 @@
+{
+    "id": "celestial_feather",
+    "image": "./celestial_feather.png",
+    "name": "Celestial feather",
+    "desc": "The only remnant of the fallen valkyrie's former self.",
+    "code": "celestial_feather",
+    "type": "Material",
+    "drop": "Fallen Valkyrie",
+    "usage": "Crafting",
+    "weight": 0.5,
+    "stack": 50,
+    "mats": {}
+}

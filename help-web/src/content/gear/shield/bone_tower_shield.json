@@ -1,0 +1,28 @@
+{
+    "id": "bone_tower_shield",
+    "code": "ShieldBoneTower",
+    "name": "Bone tower shield",
+    "desc": "The bones of dead warriors make for a good protection.",
+    "type": "Shield",
+    "image": "./bone_tower_shield.png",
+    "usage": "Blocking",
+    "wield": "Off-hand",
+    "weight": 4.0,
+    "power": 44,
+    "source": "Workbench",
+    "durab": "200>250>300",
+    "craft": "3>4>5",
+    "repair": "1>1>1",
+    "mats": {
+        "Wood": "10>5>10",
+        "Bone fragments": "10>5>10",
+        "Skeleton trophy": "3>0>0"
+    },
+    "passive": {
+        "Movement speed": -20
+    },
+    "block": {
+        "Block armor": "32-48>38-57>44-66",
+        "Block force": "100>105>110"
+    }
+}

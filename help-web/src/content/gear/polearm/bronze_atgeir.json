@@ -1,0 +1,38 @@
+{
+    "id": "bronze_atgeir",
+    "code": "AtgeirBronze",
+    "name": "Bronze atgeir",
+    "desc": "A true warrior's tool.",
+    "type": "Polearm",
+    "image": "./bronze_atgeir.png",
+    "usage": "Weapon",
+    "wield": "Two-handed",
+    "weight": 2.5,
+    "power": 48,
+    "source": "Forge",
+    "durab": "125>175>225>275",
+    "craft": "1>2>3>4",
+    "repair": "1>1>1>1",
+    "mats": {
+        "Wood": "10>0>0>0",
+        "Bronze": "8>4>8>12",
+        "Leather scraps": "2>0>0>0"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Pierce": "45>51>57>63;45>51>57>63",
+        "Knockback": "30;300",
+        "Attack speed": "2.98 s (0.84 + 0.86 + 1.28);1.54 s",
+        "Stamina": "12;24",
+        "Stagger": "45>51>57>63;270>306>342>378",
+        "Backstab": "3x;3x"
+    },
+    "block": {
+        "Block armor": "16-24>16-24>16-24>16-24",
+        "Parry block armor": "32-48>32-48>32-48>32-48",
+        "Block force": "40>45>50>55",
+        "Parry bonus": "2x"
+    }
+}

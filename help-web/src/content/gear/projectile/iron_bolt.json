@@ -1,0 +1,25 @@
+{
+    "id": "iron_bolt",
+    "code": "BoltIron",
+    "name": "Iron bolt",
+    "desc": "A sturdy iron missile.",
+    "type": "Bolt",
+    "image": "./iron_bolt.png",
+    "usage": "Weapon",
+    "wield": "Unknown",
+    "weight": 0,
+    "power": 0,
+    "source": "Black forge",
+    "durab": "0",
+    "craft": "1",
+    "repair": "0",
+    "mats": {
+        "Wood": "8",
+        "Feathers": "2",
+        "Iron": "1"
+    },
+    "attack": {
+        "Pierce": "42",
+        "Stagger": "42"
+    }
+}

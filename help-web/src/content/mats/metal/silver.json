@@ -1,0 +1,15 @@
+{
+    "id": "silver",
+    "image": "./silver.png",
+    "name": "Silver",
+    "desc": "A bar of pure silver ready to be worked.",
+    "code": "Silver",
+    "type": "Metal",
+    "drop": "Smelting",
+    "usage": "Crafting",
+    "weight": 14.0,
+    "stack": 30,
+    "mats": {
+        "Silver ore": 1
+    }
+}

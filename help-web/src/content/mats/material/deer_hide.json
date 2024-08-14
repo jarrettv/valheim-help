@@ -1,0 +1,13 @@
+{
+    "id": "deer_hide",
+    "image": "./deer_hide.png",
+    "name": "Deer hide",
+    "desc": "A cleaned hide from a deer.",
+    "code": "DeerHide",
+    "type": "Material",
+    "drop": "Deer",
+    "usage": "Crafting, Building",
+    "weight": 1.0,
+    "stack": 50,
+    "mats": {}
+}

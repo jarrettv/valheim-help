@@ -1,0 +1,13 @@
+{
+    "id": "stone",
+    "image": "./stone.png",
+    "name": "Stone",
+    "desc": "It's a rock.",
+    "code": "Stone",
+    "type": "Material",
+    "drop": "Greydwarf",
+    "usage": "Crafting, Building",
+    "weight": 2.0,
+    "stack": 50,
+    "mats": {}
+}

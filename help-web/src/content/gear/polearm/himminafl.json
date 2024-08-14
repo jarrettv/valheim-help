@@ -1,0 +1,40 @@
+{
+    "id": "himminafl",
+    "code": "AtgeirHimminAfl",
+    "name": "Himminafl",
+    "desc": "It might not be a hammer, but Thor himself would still approve of this weapon.",
+    "type": "Polearm",
+    "image": "./himminafl.png",
+    "usage": "Weapon",
+    "wield": "Two-handed",
+    "weight": 2.5,
+    "power": 192,
+    "source": "Black forge",
+    "durab": "175>225>275>325",
+    "craft": "1>2>3>4",
+    "repair": "1>1>1>1",
+    "mats": {
+        "Yggdrasil wood": "10>0>0>0",
+        "Refined eitr": "15>15>30>45",
+        "Silver": "5>5>10>15",
+        "Mandible": "2>2>4>6"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Pierce": "85>85>85>85;85>85>85>85",
+        "Lightning": "40>46>52>58;40>46>52>58",
+        "Knockback": "30;300",
+        "Attack speed": "2.98 s (0.84 + 0.86 + 1.28);1.54 s",
+        "Stamina": "20;40",
+        "Stagger": "125>131>137>143;750>786>822>858",
+        "Backstab": "3x;3x"
+    },
+    "block": {
+        "Block armor": "64-96>64-96>64-96>64-96",
+        "Parry block armor": "128-192>128-192>128-192>128-192",
+        "Block force": "40>45>50>55",
+        "Parry bonus": "2x"
+    }
+}

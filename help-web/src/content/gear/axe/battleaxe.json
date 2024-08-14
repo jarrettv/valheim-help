@@ -1,0 +1,39 @@
+{
+    "id": "battleaxe",
+    "code": "Battleaxe",
+    "name": "Battleaxe",
+    "desc": "Skull-splitter, a warrior's joy.",
+    "type": "Axe",
+    "image": "./battleaxe.png",
+    "usage": "Weapon",
+    "wield": "Two-handed",
+    "weight": 2.5,
+    "power": 84,
+    "source": "Forge",
+    "durab": "200>250>300>350",
+    "craft": "2>3>4>5",
+    "repair": "2>2>2>2",
+    "mats": {
+        "Ancient bark": "30>5>10>15",
+        "Iron": "35>15>30>45",
+        "Leather scraps": "4>0>0>0"
+    },
+    "passive": {
+        "Movement speed": -20
+    },
+    "attack": {
+        "Slash": "70>76>82>88;35>38>41>44",
+        "Chop": "40>42.5>45>47.5;20>21.25>22.5>23.75",
+        "Knockback": "70;140",
+        "Attack speed": "3.21 s (1.58 + 0.92 + 0.71);0.84 s",
+        "Stamina": "16;8",
+        "Stagger": "105>114>123>132;140>152>164>176",
+        "Backstab": "3x;3x"
+    },
+    "block": {
+        "Block armor": "28-42>28-42>28-42>28-42",
+        "Parry block armor": "56-84>56-84>56-84>56-84",
+        "Block force": "70>75>80>85",
+        "Parry bonus": "2x"
+    }
+}

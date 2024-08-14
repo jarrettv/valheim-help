@@ -1,0 +1,32 @@
+{
+    "id": "smoke_bomb",
+    "code": "BombSmoke",
+    "name": "Smoke bomb",
+    "desc": "Everyone knows you can't breathe in the smoke.",
+    "type": "Bomb",
+    "image": "./smoke_bomb.png",
+    "usage": "Weapon",
+    "wield": "One-handed",
+    "weight": 0,
+    "power": 5,
+    "source": "Workbench",
+    "durab": "0",
+    "craft": "1",
+    "repair": "0",
+    "mats": {
+        "Smoke puff": "1",
+        "Asksvin bladder": "1"
+    },
+    "attack": {
+        "Blunt": "5",
+        "Knockback": "40",
+        "Stamina": "8",
+        "Stagger": "5",
+        "Backstab": "3x"
+    },
+    "block": {
+        "Block armor": "2-3",
+        "Parry block armor": "3-4.5",
+        "Parry bonus": "1.5x"
+    }
+}

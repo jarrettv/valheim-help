@@ -1,0 +1,33 @@
+{
+    "id": "ooze_bomb",
+    "code": "BombOoze",
+    "name": "Ooze bomb",
+    "desc": "The stench is unbearable...",
+    "type": "Bomb",
+    "image": "./ooze_bomb.png",
+    "usage": "Weapon",
+    "wield": "One-handed",
+    "weight": 0,
+    "power": 5,
+    "source": "Workbench",
+    "durab": "0",
+    "craft": "0",
+    "repair": "0",
+    "mats": {
+        "Leather scraps": "5",
+        "Ooze": "5",
+        "Resin": "3"
+    },
+    "attack": {
+        "Blunt": "5",
+        "Knockback": "40",
+        "Stamina": "8",
+        "Stagger": "5",
+        "Backstab": "3x"
+    },
+    "block": {
+        "Block armor": "2-3",
+        "Parry block armor": "3-4.5",
+        "Parry bonus": "1.5x"
+    }
+}

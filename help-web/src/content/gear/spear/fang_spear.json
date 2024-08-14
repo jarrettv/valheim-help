@@ -1,0 +1,39 @@
+{
+    "id": "fang_spear",
+    "code": "SpearWolfFang",
+    "name": "Fang spear",
+    "desc": "Even in death, the wolf's tooth aches for flesh.",
+    "type": "Spear",
+    "image": "./fang_spear.png",
+    "usage": "Weapon",
+    "wield": "One-handed",
+    "weight": 1.5,
+    "power": 90,
+    "source": "Forge",
+    "durab": "100>150>200>250",
+    "craft": "3>4>5>6",
+    "repair": "3>3>3>3",
+    "mats": {
+        "Ancient bark": "10>5>10>15",
+        "Wolf fang": "4>2>4>6",
+        "Leather scraps": "2>1>2>3",
+        "Silver": "2>1>2>3"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Pierce": "75>81>87>93;112.5>121.5>130.5>139.5",
+        "Knockback": "20;30",
+        "Attack speed": "0.68 s;1.57 s (includes picking up)",
+        "Stamina": "12;14",
+        "Stagger": "75>81>87>93;112.5>121.5>130.5>139.5",
+        "Backstab": "3x;3x"
+    },
+    "block": {
+        "Block armor": "30-45>30-45>30-45>30-45",
+        "Parry block armor": "60-90>60-90>60-90>60-90",
+        "Block force": "20>25>30>35",
+        "Parry bonus": "2x"
+    }
+}

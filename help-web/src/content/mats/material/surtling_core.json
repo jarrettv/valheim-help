@@ -1,0 +1,13 @@
+{
+    "id": "surtling_core",
+    "image": "./surtling_core.png",
+    "name": "Surtling core",
+    "desc": "It throbs with inner heat.",
+    "code": "SurtlingCore",
+    "type": "Material",
+    "drop": "Surtlings",
+    "usage": "Crafting, Building, Portals",
+    "weight": 5.0,
+    "stack": 10,
+    "mats": {}
+}

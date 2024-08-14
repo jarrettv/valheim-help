@@ -1,0 +1,27 @@
+{
+    "id": "silver_arrow",
+    "code": "ArrowSilver",
+    "name": "Silver arrow",
+    "desc": "A needle to calm restless spirits.",
+    "type": "Arrow",
+    "image": "./silver_arrow.png",
+    "usage": "Bow ammunition",
+    "wield": "Unknown",
+    "weight": 0,
+    "power": 0,
+    "source": "Forge",
+    "durab": "0",
+    "craft": "3",
+    "repair": "0",
+    "mats": {
+        "Wood": "8",
+        "Silver": "1",
+        "Feathers": "2"
+    },
+    "attack": {
+        "Pierce": "52",
+        "Spirit": "20",
+        "Knockback": "10",
+        "Stagger": "52"
+    }
+}

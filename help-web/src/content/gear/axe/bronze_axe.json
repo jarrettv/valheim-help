@@ -1,0 +1,39 @@
+{
+    "id": "bronze_axe",
+    "code": "AxeBronze",
+    "name": "Bronze axe",
+    "desc": "A bright and burnished blade, curved like a smile.",
+    "type": "Axe",
+    "image": "./bronze_axe.png",
+    "usage": "Wood cutting",
+    "wield": "One-handed",
+    "weight": 2.0,
+    "power": 36,
+    "source": "Forge",
+    "durab": "125>175>225>275",
+    "craft": "1>2>3>4",
+    "repair": "1>1>1>1",
+    "mats": {
+        "Wood": "4>0>0>0",
+        "Bronze": "8>4>8>12",
+        "Leather Scraps": "2>1>2>3"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Slash": "40>45>50>55;60>67.5>75>82.5",
+        "Chop": "40>43>46>49;60>64.5>69>73.5",
+        "Knockback": "50;75",
+        "Attack speed": "2.58 s (1.11 + 0.65 + 0.82);2.0 s",
+        "Stamina": "8;16",
+        "Stagger": "40>45>50>55;60>67.5>75>82.5",
+        "Backstab": "3x;3x"
+    },
+    "block": {
+        "Block armor": "12-18>12-18>12-18>12-18",
+        "Parry block armor": "24-36>24-36>24-36>24-36",
+        "Block force": "20>25>30>35",
+        "Parry bonus": "2x"
+    }
+}

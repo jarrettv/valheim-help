@@ -1,0 +1,38 @@
+{
+    "id": "ancient_bark_spear",
+    "code": "SpearElderbark",
+    "name": "Ancient bark spear",
+    "desc": "Despite its gnarled look, this spear is strong and perfectly balanced.",
+    "type": "Spear",
+    "image": "./ancient_bark_spear.png",
+    "usage": "Weapon",
+    "wield": "One-handed",
+    "weight": 1.5,
+    "power": 63,
+    "source": "Forge",
+    "durab": "100>150>200>250",
+    "craft": "3>4>5>6",
+    "repair": "3>3>3>3",
+    "mats": {
+        "Troll hide": "4>1>2>3",
+        "Iron": "10>5>10>15",
+        "Ancient bark": "10>5>10>15"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Pierce": "55>61>67>73;82.5>91.5>100.5>109.5",
+        "Knockback": "20;30",
+        "Attack speed": "0.68 s;1.57 s (includes picking up)",
+        "Stamina": "10;12",
+        "Stagger": "55>61>67>73;82.5>91.5>100.5>109.5",
+        "Backstab": "3x;3x"
+    },
+    "block": {
+        "Block armor": "21-31.5>21-31.5>21-31.5>21-31.5",
+        "Parry block armor": "42-63>42-63>42-63>42-63",
+        "Block force": "20>25>30>35",
+        "Parry bonus": "2x"
+    }
+}

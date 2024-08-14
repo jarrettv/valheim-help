@@ -1,0 +1,35 @@
+{
+    "id": "staff_of_frost",
+    "code": "StaffIceShards",
+    "name": "Staff of Frost",
+    "desc": "A staff as cold as the three-year winter that will herald the end of times.",
+    "type": "Elemental magic",
+    "image": "./staff_of_frost.png",
+    "usage": "Magic weapon",
+    "wield": "Two-handed",
+    "weight": 0.3,
+    "power": 144,
+    "source": "Galdr table",
+    "durab": "200>250>300>350",
+    "craft": "1>2>3>4",
+    "repair": "1>1>1>1",
+    "mats": {
+        "Yggdrasil wood": "20>10>20>30",
+        "Freeze gland": "4>2>4>6",
+        "Refined eitr": "16>8>16>24"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Frost": "30>32>34>36",
+        "Knockback": "10",
+        "Eitr": "5>5>5>5"
+    },
+    "block": {
+        "Block armor": "48-72>48-72>48-72>48-72",
+        "Parry block armor": "96-144>96-144>96-144>96-144",
+        "Block force": "20>25>30>35",
+        "Parry bonus": "2x"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "id": "sulfur",
+    "image": "./sulfur.png",
+    "name": "Sulfur",
+    "desc": "Smells like rotten eggs.",
+    "code": "SulfurStone",
+    "type": "Material",
+    "drop": "Lava Blob",
+    "usage": "Crafting",
+    "weight": 2.0,
+    "stack": 50,
+    "mats": {}
+}

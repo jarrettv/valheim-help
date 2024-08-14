@@ -1,0 +1,13 @@
+{
+    "id": "wood",
+    "image": "./wood.png",
+    "name": "Wood",
+    "desc": "Good strong wood to build with.",
+    "code": "Wood",
+    "type": "Wood",
+    "drop": "Trees",
+    "usage": "Crafting, Building",
+    "weight": 2.0,
+    "stack": 50,
+    "mats": {}
+}

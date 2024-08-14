@@ -1,0 +1,13 @@
+{
+    "id": "freeze_gland",
+    "image": "./freeze_gland.png",
+    "name": "Freeze gland",
+    "desc": "This mysterious organ keeps a perfect temperature.",
+    "code": "FreezeGland",
+    "type": "Material",
+    "drop": "Drake",
+    "usage": "Crafting",
+    "weight": 0.5,
+    "stack": 50,
+    "mats": {}
+}

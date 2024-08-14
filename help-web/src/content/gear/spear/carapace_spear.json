@@ -1,0 +1,38 @@
+{
+    "id": "carapace_spear",
+    "code": "SpearCarapace",
+    "name": "Carapace spear",
+    "desc": "Sharpened to jagged perfection, this spear is sure to be deadly.",
+    "type": "Spear",
+    "image": "./carapace_spear.png",
+    "usage": "Weapon",
+    "wield": "One-handed",
+    "weight": 1.5,
+    "power": 144,
+    "source": "Black forge",
+    "durab": "100>150>200>250",
+    "craft": "1>2>3>4",
+    "repair": "1>1>1>1",
+    "mats": {
+        "Yggdrasil wood": "10>5>10>15",
+        "Carapace": "4>4>8>12",
+        "Mandible": "2>1>2>3"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Pierce": "115>121>127>133;172.5>181.5>190.5>199.5",
+        "Knockback": "20;30",
+        "Attack speed": "0.68 s;1.57 s (includes picking up)",
+        "Stamina": "16;18",
+        "Stagger": "115>121>127>133;172.5>181.5>190.5>199.5",
+        "Backstab": "3x;3x"
+    },
+    "block": {
+        "Block armor": "48-72>48-72>48-72>48-72",
+        "Parry block armor": "96-144>96-144>96-144>96-144",
+        "Block force": "20>25>30>35",
+        "Parry bonus": "2x"
+    }
+}

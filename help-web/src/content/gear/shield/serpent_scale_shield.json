@@ -1,0 +1,28 @@
+{
+    "id": "serpent_scale_shield",
+    "code": "ShieldSerpentscale",
+    "name": "Serpent scale shield",
+    "desc": "A sturdy shield of overlapping scales.",
+    "type": "Shield",
+    "image": "./serpent_scale_shield.png",
+    "usage": "Blocking",
+    "wield": "Off-hand",
+    "weight": 5.0,
+    "power": 72,
+    "source": "Forge",
+    "durab": "250>300>350",
+    "craft": "3>4>5",
+    "repair": "3>3>3",
+    "mats": {
+        "Fine wood": "10>10>20",
+        "Iron": "4>2>4",
+        "Serpent scale": "8>4>8"
+    },
+    "passive": {
+        "Movement speed": -15
+    },
+    "block": {
+        "Block armor": "60-90>66-99>72-108",
+        "Block force": "100>105>110"
+    }
+}

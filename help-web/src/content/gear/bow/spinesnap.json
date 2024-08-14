@@ -1,0 +1,38 @@
+{
+    "id": "spinesnap",
+    "code": "BowSpineSnap",
+    "name": "Spinesnap",
+    "desc": "Using this bow is backbreaking work but so worth it.",
+    "type": "Bow",
+    "image": "./spinesnap.png",
+    "usage": "Ranged weapon",
+    "wield": "Two-handed",
+    "weight": 1.5,
+    "power": 3,
+    "source": "Black forge",
+    "durab": "100>150>200>250",
+    "craft": "1>2>3>4",
+    "repair": "1>1>1>1",
+    "mats": {
+        "Fine wood": "10>5>10>15",
+        "Bone fragments": "40>20>40>60",
+        "Refined eitr": "10>0>0>0"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Pierce": "72>76>80>84",
+        "Spirit": "5>10>15>20",
+        "Knockback": "25",
+        "Attack speed": "0.8 s + 2.5 s draw time",
+        "Stamina": "14 / s",
+        "Stagger": "72>76>80>84",
+        "Backstab": "3x"
+    },
+    "block": {
+        "Block armor": "3-4.5>3-4.5>3-4.5>3-4.5",
+        "Parry block armor": "4.5-6.75>4.5-6.75>4.5-6.75>4.5-6.75",
+        "Parry bonus": "1.5x"
+    }
+}

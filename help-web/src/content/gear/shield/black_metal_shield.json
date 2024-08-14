@@ -1,0 +1,30 @@
+{
+    "id": "black_metal_shield",
+    "code": "ShieldBlackmetal",
+    "name": "Black metal shield",
+    "desc": "Fashioned from the strongest metal, able to turn even the deadliest blades.",
+    "type": "Shield",
+    "image": "./black_metal_shield.png",
+    "usage": "Blocking",
+    "wield": "Off-hand",
+    "weight": 5.0,
+    "power": 225,
+    "source": "Forge",
+    "durab": "200>250>300",
+    "craft": "3>4>5",
+    "repair": "3>3>3",
+    "mats": {
+        "Fine wood": "10>10>20",
+        "Black metal": "8>4>8",
+        "Chain": "5>2>4"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "block": {
+        "Block armor": "78-117>84-126>90-135",
+        "Parry block armor": "117-175.5>126-189>135-202.5",
+        "Block force": "50>55>60",
+        "Parry bonus": "1.5x"
+    }
+}

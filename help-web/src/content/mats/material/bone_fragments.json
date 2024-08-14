@@ -1,0 +1,13 @@
+{
+    "id": "bone_fragments",
+    "image": "./bone_fragments.png",
+    "name": "Bone fragments",
+    "desc": "A pile of shattered bones.",
+    "code": "BoneFragments",
+    "type": "Material",
+    "drop": "Skeleton",
+    "usage": "Crafting",
+    "weight": 0.5,
+    "stack": 50,
+    "mats": {}
+}

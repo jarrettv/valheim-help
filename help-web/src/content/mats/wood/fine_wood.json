@@ -1,0 +1,13 @@
+{
+    "id": "fine_wood",
+    "image": "./fine_wood.png",
+    "name": "Fine wood",
+    "desc": "High quality wood for fine carpentry.",
+    "code": "FineWood",
+    "type": "Wood",
+    "drop": "Birch",
+    "usage": "Crafting, Building",
+    "weight": 2.0,
+    "stack": 50,
+    "mats": {}
+}

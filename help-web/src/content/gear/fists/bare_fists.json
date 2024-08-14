@@ -1,0 +1,29 @@
+{
+    "id": "bare_fists",
+    "code": "PlayerUnarmed",
+    "name": "Bare fists",
+    "desc": "",
+    "type": "Fists",
+    "image": "./bare_fists.png",
+    "usage": "Weapon",
+    "wield": "One-handed",
+    "weight": 0,
+    "power": 5,
+    "source": "",
+    "durab": "0",
+    "craft": "0",
+    "repair": "0",
+    "mats": {},
+    "attack": {
+        "Blunt": "5",
+        "Knockback": "40",
+        "Stamina": "4",
+        "Stagger": "5",
+        "Backstab": "3x"
+    },
+    "block": {
+        "Block armor": "2-3",
+        "Parry block armor": "3-4.5",
+        "Parry bonus": "1.5x"
+    }
+}

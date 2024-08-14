@@ -26,8 +26,9 @@ for trophy in trophies:
 for i in range(3):
     trophies.append(
         {
+            "id": f"death{i + 1}",
             "biome": "Penalty",
-            "iconUrl": "trophies/death.webp",
+            "image": "./death.webp",
             "name": "Death #" + str(i + 1),
             "dropChance": "",
             "group": "Ocean/Penalty",
@@ -39,8 +40,9 @@ for i in range(3):
 for i in range(3):
     trophies.append(
         {
+            "id": f"relog{i + 1}",
             "biome": "Penalty",
-            "iconUrl": "trophies/rested.webp",
+            "image": "./rested.webp",
             "name": "Relog #" + str(i + 1),
             "dropChance": "",
             "group": "Ocean/Penalty",

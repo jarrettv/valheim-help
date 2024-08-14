@@ -1,0 +1,41 @@
+{
+    "id": "jotun_bane",
+    "code": "AxeJotunBane",
+    "name": "Jotun Bane",
+    "desc": "Not even the giants of old could weather the poisonous bite of this weapon.",
+    "type": "Axe",
+    "image": "./jotun_bane.png",
+    "usage": "Wood cutting",
+    "wield": "One-handed",
+    "weight": 2.0,
+    "power": 144,
+    "source": "Black forge",
+    "durab": "175>225>275>325",
+    "craft": "1>2>3>4",
+    "repair": "1>1>1>1",
+    "mats": {
+        "Yggdrasil wood": "5>0>0>0",
+        "Iron": "15>10>20>30",
+        "Bilebag": "3>1>2>3",
+        "Refined eitr": "10>1>2>3"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Slash": "80>85>90>95;120>127.5>135>142.5",
+        "Poison": "40>40>40>40;60>60>60>60",
+        "Chop": "70>73>76>79;105>109.5>114>118.5",
+        "Knockback": "50;75",
+        "Attack speed": "2.58 s (1.11 + 0.65 + 0.82);2.0 s",
+        "Stamina": "16;32",
+        "Stagger": "80>85>90>95;120>127.5>135>142.5",
+        "Backstab": "3x;3x"
+    },
+    "block": {
+        "Block armor": "48-72>48-72>48-72>48-72",
+        "Parry block armor": "96-144>96-144>96-144>96-144",
+        "Block force": "20>25>30>35",
+        "Parry bonus": "2x"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "id": "draugr_trophy",
+    "biome": "Swamp",
+    "image": "./draugr_trophy.png",
+    "name": "Draugr",
+    "dropChance": "10%",
+    "score": 20,
+    "group": "Swamp"
+}

@@ -1,0 +1,39 @@
+{
+    "id": "blackmetal_axe",
+    "code": "AxeBlackMetal",
+    "name": "Blackmetal axe",
+    "desc": "A perfectly-balanced axe forged from dark metal with an emerald sheen.",
+    "type": "Axe",
+    "image": "./blackmetal_axe.png",
+    "usage": "Wood cutting",
+    "wield": "One-handed",
+    "weight": 2.0,
+    "power": 117,
+    "source": "Forge",
+    "durab": "175>225>275>325",
+    "craft": "4>5>6>7",
+    "repair": "4>4>4>4",
+    "mats": {
+        "Fine wood": "6>0>0>0",
+        "Black metal": "20>10>20>30",
+        "Linen thread": "5>5>10>15"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Slash": "100>105>110>115;150>157.5>165>172.5",
+        "Chop": "60>63>66>69;90>94.5>99>103.5",
+        "Knockback": "60;90",
+        "Attack speed": "2.58 s (1.11 + 0.65 + 0.82);2.0 s",
+        "Stamina": "14;28",
+        "Stagger": "100>105>110>115;150>157.5>165>172.5",
+        "Backstab": "3x;3x"
+    },
+    "block": {
+        "Block armor": "39-58.5>39-58.5>39-58.5>39-58.5",
+        "Parry block armor": "78-117>78-117>78-117>78-117",
+        "Block force": "20>25>30>35",
+        "Parry bonus": "2x"
+    }
+}

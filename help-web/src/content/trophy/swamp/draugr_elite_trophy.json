@@ -1,0 +1,9 @@
+{
+    "id": "draugr_elite_trophy",
+    "biome": "Swamp",
+    "image": "./draugr_elite_trophy.png",
+    "name": "Draugr Elite",
+    "dropChance": "10%",
+    "score": 20,
+    "group": "Swamp"
+}

@@ -1,0 +1,9 @@
+{
+    "id": "fallen_valkyrie_trophy",
+    "biome": "Ashlands",
+    "image": "./fallen_valkyrie_trophy.png",
+    "name": "Fallen Valkyrie",
+    "dropChance": "5%",
+    "score": 50,
+    "group": "Ashlands"
+}

@@ -1,0 +1,30 @@
+{
+    "id": "dead_raiser",
+    "code": "StaffSkeleton",
+    "name": "Dead Raiser",
+    "desc": "Sacrifice a bit of blood to raise the dead. Upgrade the skull to spawn multiple skeletons, and increase your blood magic to make them stronger.",
+    "type": "Blood magic",
+    "image": "./dead_raiser.png",
+    "usage": "Magic weapon",
+    "wield": "Two-handed",
+    "weight": 0.3,
+    "power": 144,
+    "source": "Galdr table",
+    "durab": "200>250",
+    "craft": "1>2",
+    "repair": "1>1",
+    "mats": {
+        "Bone fragments": "10>5",
+        "Refined eitr": "16>8",
+        "Skeleton trophy": "4>2"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "block": {
+        "Block armor": "48-72>48-72",
+        "Parry block armor": "96-144>96-144",
+        "Block force": "20>25",
+        "Parry bonus": "2x"
+    }
+}

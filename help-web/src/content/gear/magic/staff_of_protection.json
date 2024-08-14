@@ -1,0 +1,30 @@
+{
+    "id": "staff_of_protection",
+    "code": "StaffShield",
+    "name": "Staff of Protection",
+    "desc": "For a slight blood offering it will protect the caster in a magical shell.",
+    "type": "Blood magic",
+    "image": "./staff_of_protection.png",
+    "usage": "Magic weapon",
+    "wield": "Two-handed",
+    "weight": 0.3,
+    "power": 144,
+    "source": "Galdr table",
+    "durab": "200>250>300",
+    "craft": "1>2>3",
+    "repair": "1>1>1",
+    "mats": {
+        "Yggdrasil wood": "20>10>20",
+        "Blood clot": "4>2>4",
+        "Refined eitr": "16>8>16"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "block": {
+        "Block armor": "48-72>48-72>48-72",
+        "Parry block armor": "96-144>96-144>96-144",
+        "Block force": "20>25>30",
+        "Parry bonus": "2x"
+    }
+}

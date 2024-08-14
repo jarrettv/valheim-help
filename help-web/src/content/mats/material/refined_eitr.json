@@ -1,0 +1,16 @@
+{
+    "id": "refined_eitr",
+    "image": "./refined_eitr.png",
+    "name": "Refined eitr",
+    "desc": "This is the stuff of life, the poison that consumes itself. The Dvergr refine it to use in their esoteric designs.",
+    "code": "Eitr",
+    "type": "Material",
+    "drop": "Eitr refinery",
+    "usage": "Crafting",
+    "weight": 5.0,
+    "stack": 30,
+    "mats": {
+        "Sap": 1,
+        "Soft tissue": 1
+    }
+}

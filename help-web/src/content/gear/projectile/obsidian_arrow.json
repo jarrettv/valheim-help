@@ -1,0 +1,26 @@
+{
+    "id": "obsidian_arrow",
+    "code": "ArrowObsidian",
+    "name": "Obsidian arrow",
+    "desc": "A sliver of darkness.",
+    "type": "Arrow",
+    "image": "./obsidian_arrow.png",
+    "usage": "Bow ammunition",
+    "wield": "Unknown",
+    "weight": 0,
+    "power": 0,
+    "source": "Workbench",
+    "durab": "0",
+    "craft": "3",
+    "repair": "0",
+    "mats": {
+        "Wood": "8",
+        "Obsidian": "4",
+        "Feathers": "2"
+    },
+    "attack": {
+        "Pierce": "52",
+        "Knockback": "10",
+        "Stagger": "52"
+    }
+}

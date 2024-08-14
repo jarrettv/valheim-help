@@ -1,0 +1,39 @@
+{
+    "id": "trollstav",
+    "code": "StaffRedTroll",
+    "name": "Trollstav",
+    "desc": "Summons a raging beast to cause death and destruction.",
+    "type": "Blood magic",
+    "image": "./trollstav.png",
+    "usage": "Magic weapon",
+    "wield": "Two-handed",
+    "weight": 0.3,
+    "power": 144,
+    "source": "Galdr table",
+    "durab": "200>250>300>350",
+    "craft": "2>3>4>5",
+    "repair": "2>2>2>2",
+    "mats": {
+        "Charred bone": "15>5>10>15",
+        "Troll trophy": "1>1>2>3",
+        "Flametal": "3>3>6>9",
+        "Bloodstone": "1>1>2>3"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Fire": "300>300>300>300",
+        "Chop": "100>100>100>100",
+        "Pickaxe": "100>100>100>100",
+        "Pure": "50>50>50>50",
+        "Eitr": "120>120>120>120",
+        "Health": "60%>60%>60%>60%"
+    },
+    "block": {
+        "Block armor": "48-72>48-72>48-72>48-72",
+        "Parry block armor": "96-144>96-144>96-144>96-144",
+        "Block force": "20>25>30>35",
+        "Parry bonus": "2x"
+    }
+}

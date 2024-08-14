@@ -1,0 +1,15 @@
+{
+    "id": "tin",
+    "image": "./tin.png",
+    "name": "Tin",
+    "desc": "A bar of pure tin ready to be worked.",
+    "code": "Tin",
+    "type": "Metal",
+    "drop": "Smelter",
+    "usage": "Crafting, Building",
+    "weight": 8.0,
+    "stack": 30,
+    "mats": {
+        "Tin ore": 1
+    }
+}

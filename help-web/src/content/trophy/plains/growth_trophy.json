@@ -1,0 +1,9 @@
+{
+    "id": "growth_trophy",
+    "biome": "Plains",
+    "image": "./growth_trophy.png",
+    "name": "Growth",
+    "dropChance": "10%",
+    "score": 30,
+    "group": "Plains"
+}

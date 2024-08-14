@@ -1,0 +1,32 @@
+{
+    "id": "butcher_knife",
+    "code": "KnifeButcher",
+    "name": "Butcher knife",
+    "desc": "A butcher's knife designed specifically for slaughtering tamed animals.",
+    "type": "Knife",
+    "image": "./butcher_knife.png",
+    "usage": "Killing tamed animals",
+    "wield": "One-handed",
+    "weight": 0.3,
+    "power": 10,
+    "source": "Forge",
+    "durab": "200",
+    "craft": "1",
+    "repair": "1",
+    "mats": {
+        "Wood": "2",
+        "Tin": "4"
+    },
+    "attack": {
+        "Pure": "1000",
+        "Attack speed": "1.74 s (0.6 + 0.44 + 0.7)",
+        "Stamina": "5",
+        "Backstab": "1x"
+    },
+    "block": {
+        "Block armor": "2-3",
+        "Parry block armor": "8-12",
+        "Block force": "10",
+        "Parry bonus": "4x"
+    }
+}

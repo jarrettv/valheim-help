@@ -1,0 +1,9 @@
+{
+    "id": "eikthyr_trophy",
+    "biome": "Meadows",
+    "image": "./eikthyr_trophy.png",
+    "name": "Eikthyr",
+    "dropChance": "100%",
+    "score": 50,
+    "group": "Meadows"
+}

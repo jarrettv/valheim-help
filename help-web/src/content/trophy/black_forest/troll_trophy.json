@@ -1,0 +1,9 @@
+{
+    "id": "troll_trophy",
+    "biome": "Black Forest",
+    "image": "./troll_trophy.png",
+    "name": "Troll",
+    "dropChance": "50%",
+    "score": 20,
+    "group": "Black Forest"
+}

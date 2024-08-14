@@ -1,0 +1,29 @@
+{
+    "id": "banded_shield",
+    "code": "ShieldBanded",
+    "name": "Banded shield",
+    "desc": "Banded with hoops of iron, a true warrior's companion.",
+    "type": "Shield",
+    "image": "./banded_shield.png",
+    "usage": "Blocking",
+    "wield": "Off-hand",
+    "weight": 5.0,
+    "power": 135,
+    "source": "Forge",
+    "durab": "200>250>300",
+    "craft": "2>3>4",
+    "repair": "2>2>2",
+    "mats": {
+        "Fine wood": "10>10>20",
+        "Iron": "8>4>8"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "block": {
+        "Block armor": "42-63>48-72>54-81",
+        "Parry block armor": "63-94.5>72-108>81-121.5",
+        "Block force": "40>45>50",
+        "Parry bonus": "1.5x"
+    }
+}

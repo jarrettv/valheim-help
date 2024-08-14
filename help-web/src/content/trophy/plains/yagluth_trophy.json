@@ -1,0 +1,9 @@
+{
+    "id": "yagluth_trophy",
+    "biome": "Plains",
+    "image": "./yagluth_trophy.png",
+    "name": "Yagluth",
+    "dropChance": "100%",
+    "score": 100,
+    "group": "Plains"
+}

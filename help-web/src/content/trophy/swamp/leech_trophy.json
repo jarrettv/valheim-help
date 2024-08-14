@@ -1,0 +1,9 @@
+{
+    "id": "leech_trophy",
+    "biome": "Swamp",
+    "image": "./leech_trophy.png",
+    "name": "Leech",
+    "dropChance": "10%",
+    "score": 20,
+    "group": "Swamp"
+}

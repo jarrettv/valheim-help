@@ -1,0 +1,36 @@
+{
+    "id": "blackmetal_knife",
+    "code": "KnifeBlackMetal",
+    "name": "Blackmetal knife",
+    "desc": "A darkling blade. Strong and sharp.",
+    "type": "Knife",
+    "image": "./blackmetal_knife.png",
+    "usage": "Weapon",
+    "wield": "One-handed",
+    "weight": 0.3,
+    "power": 10,
+    "source": "Forge",
+    "durab": "200>250>300>350",
+    "craft": "4>5>6>7",
+    "repair": "4>4>4>4",
+    "mats": {
+        "Fine wood": "4>0>0>0",
+        "Black metal": "10>4>8>12",
+        "Linen thread": "5>5>10>15"
+    },
+    "attack": {
+        "Pierce": "34>35>36>37;102>105>108>111",
+        "Slash": "34>35>36>37;102>105>108>111",
+        "Knockback": "10;40",
+        "Attack speed": "1.74 s (0.6 + 0.44 + 0.7);1.52 s",
+        "Stamina": "12;36",
+        "Stagger": "68>70>72>74;204>210>216>222",
+        "Backstab": "6x;6x"
+    },
+    "block": {
+        "Block armor": "2-3>2-3>2-3>2-3",
+        "Parry block armor": "8-12>8-12>8-12>8-12",
+        "Block force": "10>15>20>25",
+        "Parry bonus": "4x"
+    }
+}

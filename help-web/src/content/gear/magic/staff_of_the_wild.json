@@ -1,0 +1,36 @@
+{
+    "id": "staff_of_the_wild",
+    "code": "StaffGreenRoots",
+    "name": "Staff of the Wild",
+    "desc": "Ancient natural forces lie curled and dormant within this staff, ready to be unleashed.",
+    "type": "Elemental magic",
+    "image": "./staff_of_the_wild.png",
+    "usage": "Magic weapon",
+    "wield": "Two-handed",
+    "weight": 0.3,
+    "power": 144,
+    "source": "Galdr table",
+    "durab": "200>250>300>350",
+    "craft": "2>3>4>5",
+    "repair": "2>2>2>2",
+    "mats": {
+        "Ashwood": "15>5>10>15",
+        "Fiddlehead": "10>2>4>6",
+        "Celestial feather": "3>3>6>9",
+        "Jade": "1>1>2>3"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Blunt": "20>40>60>80",
+        "Poison": "20>40>60>80",
+        "Stagger": "20>40>60>80"
+    },
+    "block": {
+        "Block armor": "48-72>48-72>48-72>48-72",
+        "Parry block armor": "96-144>96-144>96-144>96-144",
+        "Block force": "20>25>30>35",
+        "Parry bonus": "2x"
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "id": "krom",
+    "code": "THSwordKrom",
+    "name": "Krom",
+    "desc": "As deadly as it is shiny, and it's very shiny.",
+    "type": "Sword",
+    "image": "./krom.png",
+    "usage": "Weapon",
+    "wield": "Two-handed",
+    "weight": 4.0,
+    "power": 156,
+    "source": "Black forge",
+    "durab": "200>250>300>350",
+    "craft": "1>2>3>4",
+    "repair": "1>1>1>1",
+    "mats": {
+        "Iron": "30>15>30>45",
+        "Bronze": "20>10>20>30",
+        "Scale hide": "5>5>10>15"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Slash": "150>156>162>168;450>468>486>504",
+        "Knockback": "55;55",
+        "Attack speed": "3.45 s (0.72 + 1.12 + 1.61);2.16 s",
+        "Stamina": "20;40",
+        "Stagger": "150>156>162>168;450>468>486>504",
+        "Backstab": "3x;3x"
+    },
+    "block": {
+        "Block armor": "52-78>52-78>52-78>52-78",
+        "Parry block armor": "104-156>104-156>104-156>104-156",
+        "Block force": "50>60>70>80",
+        "Parry bonus": "2x"
+    }
+}

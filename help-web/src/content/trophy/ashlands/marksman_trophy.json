@@ -1,0 +1,9 @@
+{
+    "id": "marksman_trophy",
+    "biome": "Ashlands",
+    "image": "./marksman_trophy.png",
+    "name": "Marksman",
+    "dropChance": "5%",
+    "score": 50,
+    "group": "Ashlands"
+}

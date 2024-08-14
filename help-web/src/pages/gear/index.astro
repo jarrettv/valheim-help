@@ -1,11 +1,10 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import allGear from './gear.json';
-import { type Gear } from '../../domain/gear.ts';
+import { getCollection } from 'astro:content';
 
 const groups = ["Spear", "Sword", "Club", "Knife", "Axe", "Polearm", "Fists", "Bow", "Crossbow", "Shield", "Blood magic", "Elemental magic", "Arrow", "Bolt", "Missle"];
 
-const gears: Gear[] = allGear as any;
+const gears = await getCollection('gear')
 
 ---
 
@@ -13,11 +12,11 @@ const gears: Gear[] = allGear as any;
   <section class="gear-index">
   {groups.map(group => (
     <div class="gear-group">
-      {gears.filter(gear => gear.type === group).map(gear => (
+      {gears.filter(gear => gear.data.type === group).map(gear => (
         <a href=`/gear/${gear.id}` class="gear">
-          <img src={gear.image} alt={gear.name} />
+          <img src={gear.data.image.src} alt={gear.data.name} />
           <div class="name">
-            {gear.name}
+            {gear.data.name}
           </div>
         </a>
       ))}

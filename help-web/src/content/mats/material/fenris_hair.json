@@ -1,0 +1,12 @@
+{
+    "id": "fenris_hair",
+    "image": "./fenris_hair.png",
+    "name": "Fenris hair",
+    "desc": "A bundle of thick, rough hair. It has a strong smell.",
+    "code": "WolfHairBundle",
+    "type": "Material",
+    "usage": "Crafting",
+    "weight": 1.0,
+    "stack": 50,
+    "mats": {}
+}

@@ -1,0 +1,13 @@
+{
+    "id": "sap",
+    "image": "./sap.png",
+    "name": "Sap",
+    "desc": "Sacred blood from the Great Tree.",
+    "code": "Sap",
+    "type": "Material",
+    "drop": "Mistlands",
+    "usage": "Crafting",
+    "weight": 0.2,
+    "stack": 50,
+    "mats": {}
+}

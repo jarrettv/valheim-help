@@ -1,0 +1,9 @@
+{
+    "id": "fenring_trophy",
+    "biome": "Mountain",
+    "image": "./fenring_trophy.png",
+    "name": "Fenring",
+    "dropChance": "10%",
+    "score": 30,
+    "group": "Mountain"
+}

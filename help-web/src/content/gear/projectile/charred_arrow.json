@@ -1,0 +1,26 @@
+{
+    "id": "charred_arrow",
+    "code": "ArrowCharred",
+    "name": "Charred arrow",
+    "desc": "This arrow has been whittled into shape from a charred femur, and it's as hard as any metal.",
+    "type": "Arrow",
+    "image": "./charred_arrow.png",
+    "usage": "Bow ammunition",
+    "wield": "Unknown",
+    "weight": 0,
+    "power": 0,
+    "source": "Black forge",
+    "durab": "0",
+    "craft": "1",
+    "repair": "0",
+    "mats": {
+        "Charred bone": "4",
+        "Feathers": "2",
+        "Ashwood": "8"
+    },
+    "attack": {
+        "Pierce": "82",
+        "Knockback": "15",
+        "Stagger": "82"
+    }
+}

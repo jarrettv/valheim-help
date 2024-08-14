@@ -1,0 +1,13 @@
+{
+    "id": "draugr_elite_trophy",
+    "image": "./draugr_elite_trophy.png",
+    "name": "Draugr Elite trophy",
+    "desc": "The dead stare of the glowing red eyes sends a shiver through your bones.",
+    "code": "TrophyDraugrElite",
+    "type": "Trophy",
+    "drop": "Draugr elite",
+    "usage": "Crafting, Decoration",
+    "weight": 1.0,
+    "stack": 20,
+    "mats": {}
+}

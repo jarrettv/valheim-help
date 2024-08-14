@@ -1,0 +1,9 @@
+{
+    "id": "death1",
+    "biome": "Penalty",
+    "image": "./death.webp",
+    "name": "Death #1",
+    "dropChance": "",
+    "group": "Ocean/Penalty",
+    "score": -20
+}

@@ -1,0 +1,38 @@
+{
+    "id": "bronze_spear",
+    "code": "SpearBronze",
+    "name": "Bronze spear",
+    "desc": "A sturdy spear with a head of burnished bronze.",
+    "type": "Spear",
+    "image": "./bronze_spear.png",
+    "usage": "Weapon",
+    "wield": "One-handed",
+    "weight": 1.5,
+    "power": 36,
+    "source": "Forge",
+    "durab": "100>150>200>250",
+    "craft": "1>2>3>4",
+    "repair": "1>1>1>1",
+    "mats": {
+        "Wood": "5>3>6>9",
+        "Bronze": "6>4>8>12",
+        "Deer hide": "2>1>2>3"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Pierce": "35>41>47>53;52.5>61.5>70.5>79.5",
+        "Knockback": "20;30",
+        "Attack speed": "0.68 s;1.57 s (includes picking up)",
+        "Stamina": "8;10",
+        "Stagger": "35>41>47>53;52.5>61.5>70.5>79.5",
+        "Backstab": "3x;3x"
+    },
+    "block": {
+        "Block armor": "12-18>12-18>12-18>12-18",
+        "Parry block armor": "24-36>24-36>24-36>24-36",
+        "Block force": "20>25>30>35",
+        "Parry bonus": "2x"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "id": "serpent_trophy",
+    "biome": "Ocean",
+    "image": "./serpent_trophy.png",
+    "name": "Serpent",
+    "dropChance": "33%",
+    "score": 25,
+    "group": "Ocean/Penalty"
+}

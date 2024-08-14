@@ -1,0 +1,25 @@
+{
+    "id": "charred_bolt",
+    "code": "BoltCharred",
+    "name": "Charred bolt",
+    "desc": "A sturdy bone from a forearm, shaped into a deadly bolt.",
+    "type": "Bolt",
+    "image": "./charred_bolt.png",
+    "usage": "Weapon",
+    "wield": "Unknown",
+    "weight": 0,
+    "power": 0,
+    "source": "Black forge",
+    "durab": "0",
+    "craft": "1",
+    "repair": "0",
+    "mats": {
+        "Charred bone": "2",
+        "Ashwood": "8",
+        "Feathers": "2"
+    },
+    "attack": {
+        "Pierce": "82",
+        "Stagger": "82"
+    }
+}

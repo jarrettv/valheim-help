@@ -1,0 +1,9 @@
+{
+    "id": "fuling_trophy",
+    "biome": "Plains",
+    "image": "./fuling_trophy.png",
+    "name": "Fuling",
+    "dropChance": "10%",
+    "score": 30,
+    "group": "Plains"
+}

@@ -1,0 +1,9 @@
+{
+    "id": "hare_trophy",
+    "biome": "Mistlands",
+    "image": "./hare_trophy.png",
+    "name": "Hare",
+    "dropChance": "5%",
+    "score": 40,
+    "group": "Mistlands"
+}

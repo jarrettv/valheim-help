@@ -1,0 +1,40 @@
+{
+    "id": "crystal_battleaxe",
+    "code": "BattleaxeCrystal",
+    "name": "Crystal battleaxe",
+    "desc": "It's see-through and tears through.",
+    "type": "Axe",
+    "image": "./crystal_battleaxe.png",
+    "usage": "Weapon",
+    "wield": "Two-handed",
+    "weight": 2.5,
+    "power": 120,
+    "source": "Forge",
+    "durab": "200>250>300>350",
+    "craft": "3>4>5>6",
+    "repair": "3>3>3>3",
+    "mats": {
+        "Ancient bark": "40>5>10>15",
+        "Silver": "30>15>30>45",
+        "Crystal": "10>0>0>0"
+    },
+    "passive": {
+        "Movement speed": -20
+    },
+    "attack": {
+        "Slash": "90>96>102>108;45>48>51>54",
+        "Spirit": "30>30>30>30;15>15>15>15",
+        "Chop": "50>52.5>55>57.5;25>26.25>27.5>28.75",
+        "Knockback": "70;140",
+        "Attack speed": "3.21 s (1.58 + 0.92 + 0.71);0.84 s",
+        "Stamina": "18;9",
+        "Stagger": "135>144>153>162;180>192>204>216",
+        "Backstab": "3x;3x"
+    },
+    "block": {
+        "Block armor": "40-60>40-60>40-60>40-60",
+        "Parry block armor": "80-120>80-120>80-120>80-120",
+        "Block force": "70>75>80>85",
+        "Parry bonus": "2x"
+    }
+}

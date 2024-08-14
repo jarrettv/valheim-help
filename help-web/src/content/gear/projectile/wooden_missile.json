@@ -1,0 +1,25 @@
+{
+    "id": "wooden_missile",
+    "code": "TurretBoltWood",
+    "name": "Wooden missile",
+    "desc": "Sturdy wooden missiles that can provide a tough defense against foes.",
+    "type": "Missile",
+    "image": "./wooden_missile.png",
+    "usage": "Ballista ammunition",
+    "wield": "Unknown",
+    "weight": 0,
+    "power": 0,
+    "source": "Artisan table",
+    "durab": "0",
+    "craft": "1",
+    "repair": "0",
+    "mats": {
+        "Core wood": "5",
+        "Feathers": "2"
+    },
+    "attack": {
+        "Pierce": "75",
+        "Knockback": "45",
+        "Stagger": "75"
+    }
+}

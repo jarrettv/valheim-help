@@ -1,0 +1,35 @@
+{
+    "id": "copper_knife",
+    "code": "KnifeCopper",
+    "name": "Copper knife",
+    "desc": "A glittering copper knife.",
+    "type": "Knife",
+    "image": "./copper_knife.png",
+    "usage": "Weapon",
+    "wield": "One-handed",
+    "weight": 0.3,
+    "power": 10,
+    "source": "Forge",
+    "durab": "200>250>300>350",
+    "craft": "1>2>3>4",
+    "repair": "1>1>1>1",
+    "mats": {
+        "Wood": "2>0>0>0",
+        "Copper": "8>4>8>12"
+    },
+    "attack": {
+        "Pierce": "12>13>14>15;36>39>42>45",
+        "Slash": "12>13>14>15;36>39>42>45",
+        "Knockback": "10;40",
+        "Attack speed": "1.74 s (0.6 + 0.44 + 0.7);1.52 s",
+        "Stamina": "6;18",
+        "Stagger": "24>26>28>30;72>78>84>90",
+        "Backstab": "6x;6x"
+    },
+    "block": {
+        "Block armor": "2-3>2-3>2-3>2-3",
+        "Parry block armor": "8-12>8-12>8-12>8-12",
+        "Block force": "10>15>20>25",
+        "Parry bonus": "4x"
+    }
+}

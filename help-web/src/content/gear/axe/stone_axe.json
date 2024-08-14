@@ -1,0 +1,38 @@
+{
+    "id": "stone_axe",
+    "code": "AxeStone",
+    "name": "Stone axe",
+    "desc": "A crude axe for tree-felling.",
+    "type": "Axe",
+    "image": "./stone_axe.png",
+    "usage": "Wood cutting",
+    "wield": "One-handed",
+    "weight": 1.5,
+    "power": 9,
+    "source": "Player crafting menu",
+    "durab": "100>130>160>190",
+    "craft": "1>2>3>4",
+    "repair": "1>1>1>1",
+    "mats": {
+        "Wood": "5>0>0>0",
+        "Stone": "4>2>4>6"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Slash": "15>20>25>30;22.5>30>37.5>45",
+        "Chop": "20>23>26>29;30>34.5>39>43.5",
+        "Knockback": "50;75",
+        "Attack speed": "2.58 s (1.11 + 0.65 + 0.82);2.0 s",
+        "Stamina": "5;10",
+        "Stagger": "15>20>25>30;22.5>30>37.5>45",
+        "Backstab": "3x;3x"
+    },
+    "block": {
+        "Block armor": "3-4.5>3-4.5>3-4.5>3-4.5",
+        "Parry block armor": "6-9>6-9>6-9>6-9",
+        "Block force": "20>25>30>35",
+        "Parry bonus": "2x"
+    }
+}

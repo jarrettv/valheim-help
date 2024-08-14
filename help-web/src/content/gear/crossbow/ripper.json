@@ -1,0 +1,38 @@
+{
+    "id": "ripper",
+    "code": "CrossbowRipper",
+    "name": "Ripper",
+    "desc": "Rips your foes apart, simple as that.",
+    "type": "Crossbow",
+    "image": "./ripper.png",
+    "usage": "Weapon",
+    "wield": "Two-handed",
+    "weight": 1.5,
+    "power": 3,
+    "source": "Black forge",
+    "durab": "50>100>150>200",
+    "craft": "3>4>5>6",
+    "repair": "3>3>3>3",
+    "mats": {
+        "Ashwood": "10>5>10>15",
+        "Flametal": "8>4>8>12",
+        "Morgen sinew": "2>1>2>3",
+        "Bonemaw tooth": "4>4>8>12"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Pierce": "220>223>226>229",
+        "Knockback": "210",
+        "Recoil force": "40>40>40>40",
+        "Stamina": "1/s x 3.5s (3)",
+        "Stagger": "220>223>226>229",
+        "Backstab": "3x"
+    },
+    "block": {
+        "Block armor": "3-4.5>3-4.5>3-4.5>3-4.5",
+        "Parry block armor": "4.5-6.75>4.5-6.75>4.5-6.75>4.5-6.75",
+        "Parry bonus": "1.5x"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "id": "guck",
+    "image": "./guck.png",
+    "name": "Guck",
+    "desc": "It smells like fermented fish.",
+    "code": "Guck",
+    "type": "Material",
+    "drop": "Abomination",
+    "usage": "Crafting, Building",
+    "weight": 0.5,
+    "stack": 50,
+    "mats": {}
+}

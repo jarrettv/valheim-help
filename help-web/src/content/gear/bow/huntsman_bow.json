@@ -1,0 +1,38 @@
+{
+    "id": "huntsman_bow",
+    "code": "BowHuntsman",
+    "name": "Huntsman bow",
+    "desc": "Finely worked and strung. A huntsman's joy.",
+    "type": "Bow",
+    "image": "./huntsman_bow.png",
+    "usage": "Ranged weapon",
+    "wield": "Two-handed",
+    "weight": 1.5,
+    "power": 5,
+    "source": "Forge",
+    "durab": "100>150>200>250",
+    "craft": "1>2>3>4",
+    "repair": "1>1>1>1",
+    "mats": {
+        "Fine wood": "10>5>10>15",
+        "Iron": "20>10>20>30",
+        "Feathers": "10>5>10>15",
+        "Deer hide": "2>2>4>6"
+    },
+    "passive": {
+        "Movement speed": -5
+    },
+    "attack": {
+        "Pierce": "42>45>48>51",
+        "Knockback": "10",
+        "Attack speed": "0.8 s + 2.5 s draw time",
+        "Stamina": "8 / s",
+        "Stagger": "42>45>48>51",
+        "Backstab": "3x"
+    },
+    "block": {
+        "Block armor": "5-7.5>5-7.5>5-7.5>5-7.5",
+        "Parry block armor": "7.5-11.25>7.5-11.25>7.5-11.25>7.5-11.25",
+        "Parry bonus": "1.5x"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "id": "linen_thread",
+    "image": "./linen_thread.png",
+    "name": "Linen thread",
+    "desc": "A fine linen thread made out of a strong flax filament.",
+    "code": "LinenThread",
+    "type": "Material",
+    "drop": "Spinning wheel",
+    "usage": "Crafting",
+    "weight": 2.0,
+    "stack": 50,
+    "mats": {
+        "Flax": 1
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "id": "ashwood",
+    "image": "./ashwood.png",
+    "name": "Ashwood",
+    "desc": "Wood hardened by fire and ash.",
+    "code": "blackwood",
+    "type": "Material",
+    "drop": "Scorched Tree",
+    "usage": "Building, Crafting",
+    "weight": 2.0,
+    "stack": 50,
+    "mats": {}
+}

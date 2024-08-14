@@ -1,0 +1,13 @@
+{
+    "id": "wisp",
+    "image": "./wisp.png",
+    "name": "Wisp",
+    "desc": "It keeps whispering jibberish...",
+    "code": "Wisp",
+    "type": "Material",
+    "drop": "Wisp fountain",
+    "usage": "Crafting, Building",
+    "weight": 0.5,
+    "stack": 50,
+    "mats": {}
+}
