@@ -10,13 +10,17 @@
     "weight": 0.3,
     "power": 144,
     "source": "Galdr table",
-    "durab": "200>250",
-    "craft": "1>2",
-    "repair": "1>1",
+    "durab": "200>250>300>350",
+    "craft": "1>2>3>4",
+    "repair": "1>1>1>1",
     "mats": {
-        "Bone fragments": "10>5",
-        "Refined eitr": "16>8",
-        "Skeleton trophy": "4>2"
+        "Bone fragments": "10>5>10>15",
+        "Refined eitr": "16>8>16>24",
+        "Skeleton trophy": "4>2>4>6"
+    },
+    "attack": {
+        "Eitr": "100>100>100>100",
+        "Blood": "1spawn>2spawn>3spawn>4spawn"
     },
     "passive": {
         "Movement speed": -5

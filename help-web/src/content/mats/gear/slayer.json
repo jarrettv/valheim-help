@@ -1,0 +1,13 @@
+{
+    "id": "slayer",
+    "image": "./slayer.png",
+    "name": "Slayer",
+    "desc": "This mighty blade thirsts for the blood of foes.",
+    "code": "THSwordSlayer",
+    "type": "Gear",
+    "drop": "",
+    "usage": "Sword, Crafting",
+    "weight": 4,
+    "stack": 1,
+    "mats": {}
+}

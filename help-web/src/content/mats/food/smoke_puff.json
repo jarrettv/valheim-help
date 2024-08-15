@@ -1,0 +1,13 @@
+{
+    "id": "smoke_puff",
+    "image": "./smoke_puff.png",
+    "name": "Smoke puff",
+    "desc": "Hopefully it tastes better after cooking.",
+    "code": "MushroomSmokePuff",
+    "type": "Food",
+    "drop": "Ashlands",
+    "usage": "Crafting, Eating, Taming",
+    "weight": 0.1,
+    "stack": 50,
+    "mats": {}
+}

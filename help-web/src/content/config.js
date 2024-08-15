@@ -18,7 +18,7 @@ const matsCollection = defineCollection({ type: 'data', schema: ({ image }) => z
   name: z.string(),
   desc: z.string(),
   code: z.string(),
-  type: z.enum(['Food', 'Material', 'Metal', 'Trophy', 'Wood']),
+  type: z.enum(['Food', 'Material', 'Metal', 'Trophy', 'Wood', 'Fragment', 'Gear']),
   drop: z.string().optional(),
   usage: z.string(),
   weight: z.number(),

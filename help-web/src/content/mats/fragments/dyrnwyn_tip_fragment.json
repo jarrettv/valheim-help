@@ -1,0 +1,13 @@
+{
+  "id": "dyrnwyn_tip_fragment",
+  "image": "./dyrnwyn_tip_fragment.webp",
+  "name": "Dyrnwyn tip fragment",
+  "desc": "This shard of metal looks like the tip of a sword. One might be able to reforge the blade if more pieces are found…",
+  "code": "DyrnwynTipFragment",
+  "type": "Fragment",
+  "drop": "",
+  "usage": "Crafting",
+  "weight": 0.5,
+  "stack": 1,
+  "mats": {}
+}

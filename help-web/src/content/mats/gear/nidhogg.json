@@ -1,0 +1,13 @@
+{
+  "id": "nidhogg",
+  "image": "./nidhogg.png",
+  "name": "Nidh\u00f6gg",
+  "desc": "Named after the evil dragon that dwells by the roots of the world tree, this sword heralds doom for those who cross its path.",
+  "code": "SwordNiedhogg",
+  "type": "Gear",
+  "drop": "",
+  "usage": "Sword, Crafting",
+  "weight": 0.8,
+  "stack": 1,
+  "mats": {}
+}

@@ -22,8 +22,8 @@
         "Movement speed": -5
     },
     "attack": {
-        "Blunt": "12>12>12>12",
-        "Fire": "12>18>24>30",
+        "Blunt": "12>12>12>12 per fireball",
+        "Fire": "12>18>24>30 per fireball",
         "Knockback": "100",
         "Eitr": "30>30>30>30",
         "Stagger": "12>12>12>12"

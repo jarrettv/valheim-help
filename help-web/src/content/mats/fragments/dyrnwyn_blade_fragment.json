@@ -1,0 +1,13 @@
+{
+  "id": "dyrnwyn_blade_fragment",
+  "image": "./dyrnwyn_blade_fragment.webp",
+  "name": "Dyrnwyn blade fragment",
+  "desc": "Parts of an old blade. If all the pieces were reassembled it could likely be made whole.",
+  "code": "DyrnwynBladeFragment",
+  "type": "Fragment",
+  "drop": "",
+  "usage": "Crafting",
+  "weight": 0.5,
+  "stack": 1,
+  "mats": {}
+}

@@ -1,0 +1,13 @@
+{
+    "id": "iolite",
+    "image": "./iolite.webp",
+    "name": "Iolite",
+    "desc": "Light is reflected sharply off of this gem, or does it come from within the stone itself?",
+    "code": "gemstoneblue",
+    "type": "Material",
+    "drop": "Charred Fortress",
+    "usage": "Crafting",
+    "weight": 2.0,
+    "stack": 50,
+    "mats": {}
+}

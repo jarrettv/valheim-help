@@ -10,13 +10,17 @@
     "weight": 0.3,
     "power": 144,
     "source": "Galdr table",
-    "durab": "200>250>300",
-    "craft": "1>2>3",
-    "repair": "1>1>1",
+    "durab": "200>250>300>350",
+    "craft": "1>2>3>4",
+    "repair": "1>1>1>1",
+    "attack": {
+        "Blood": "60s>120s>180s>240s magic barrier",
+        "Eitr": "30>30>30>30"
+    },
     "mats": {
-        "Yggdrasil wood": "20>10>20",
-        "Blood clot": "4>2>4",
-        "Refined eitr": "16>8>16"
+        "Yggdrasil wood": "20>10>20>30",
+        "Blood clot": "4>2>4>6",
+        "Refined eitr": "16>8>16>24"
     },
     "passive": {
         "Movement speed": -5

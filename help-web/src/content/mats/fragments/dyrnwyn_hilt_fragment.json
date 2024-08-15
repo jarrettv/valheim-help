@@ -1,0 +1,13 @@
+{
+  "id": "dyrnwyn_hilt_fragment",
+  "image": "./dyrnwyn_hilt_fragment.webp",
+  "name": "Dyrnwyn hilt fragment",
+  "desc": "The hilt of a long forgotten sword. Perhaps it could reforged if one had all the pieces…",
+  "code": "DyrnwynHiltFragment",
+  "type": "Fragment",
+  "drop": "",
+  "usage": "Crafting",
+  "weight": 0.5,
+  "stack": 1,
+  "mats": {}
+}
