@@ -1,4 +1,6 @@
 ---
+import User from '../components/User.astro';
+
 interface Props {
 	title: string;
 	name: string;
@@ -25,12 +27,64 @@ const { title, name } = Astro.props;
 						<img src="/valheim-logo.webp" alt="Valheim" />
 					</a>
 					<h1>{name}</h1>
+          <div id="user-icon" style="display:none">
+            <User width="32" height="32" style="vertical-align:middle;margin:0 0.5rem" />
+            <span id="user-name">Unknown</span>
+          </div>
+          <a href="/auth/login" id="user-login" style="margin:0.5rem 0 0 1rem">Login</a>
 				</div>
 			</header>
 			<article>
 				<slot />
 			</article>
 		</main>
+    <script>
+      
+
+import * as supabase from '@supabase/supabase-js';
+
+const sb = supabase.createClient(
+  "https://kkvszipvbsxezcdrgsut.supabase.co",
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtrdnN6aXB2YnN4ZXpjZHJnc3V0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjM2OTk4MDcsImV4cCI6MjAzOTI3NTgwN30.UlRIl7wtwzNr8jW6pjehojKhPjSDE0imkw_IAHgPdIQ",
+);
+
+  function showUserIcon() {
+    const userIcon = document.getElementById('user-icon');
+    const loginLink = document.getElementById('user-login');
+    if (userIcon) {
+      userIcon.style.display = 'block';
+    }
+    if (loginLink) {
+      loginLink.style.display = 'none';
+    }
+  }
+
+window.addEventListener('load', async () => {
+  const hash = window.location.hash;
+  const params = new URLSearchParams(hash.substring(1));
+  const accessToken = params.get('access_token');
+  const refreshToken = params.get('refresh_token');
+  if (accessToken && refreshToken) {
+    localStorage.setItem('access_token', accessToken);
+    localStorage.setItem('refresh_token', refreshToken);
+    window.history.replaceState(null, "", ' ');
+    console.log('Access token and refresh token stored in local storage');
+    showUserIcon();
+  }
+
+  const { data: {user}} = await sb.auth.getUser();
+  if (user) {
+    console.log(user);
+    const userName = user.user_metadata?.custom_claims?.global_name || user.email || user.phone || user.user_metadata.full_name || user.user_metadata.name || 'Unknown';
+    const userNameElement = document.getElementById('user-name');
+    if (userNameElement) {
+      userNameElement.textContent = userName;
+    }
+    showUserIcon();
+  }
+});
+
+    </script>
 	</body>
 </html>
 <style is:global>

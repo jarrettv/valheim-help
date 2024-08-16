@@ -1,0 +1,65 @@
+---
+import Discord from '../../components/Discord.astro';
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Login" name="Login">
+  <div style="margin:2rem;max-width:600px">
+  <p>If you want to track your trophies during the trophy hunt, you can login using your existing discord login.</p>
+  <button id="discord">
+    <Discord width="20" height="20" style="vertical-align:middle" /> Login with Discord
+  </button></div>
+</Layout>
+
+<style>
+  #discord {
+    background-color: #7289DA;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+</style>
+
+<script>
+  import * as supabase from '@supabase/supabase-js';
+
+  const sb = supabase.createClient(
+    "https://kkvszipvbsxezcdrgsut.supabase.co",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtrdnN6aXB2YnN4ZXpjZHJnc3V0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjM2OTk4MDcsImV4cCI6MjAzOTI3NTgwN30.UlRIl7wtwzNr8jW6pjehojKhPjSDE0imkw_IAHgPdIQ",
+  );
+
+  // Handle auth state changes
+  sb.auth.onAuthStateChange((event, session) => {
+    console.log('onAuthStateChange', event, session);
+    if (session) {
+      window.localStorage.setItem('access_token', session.access_token);
+      window.localStorage.setItem('refresh_token', session.refresh_token);
+    }
+
+    if (event === 'SIGNED_OUT') {
+      window.localStorage.removeItem('access_token');
+      window.localStorage.removeItem('refresh_token');
+    }
+  });
+
+  document.getElementById('discord')!.addEventListener('click', signInWithDiscord);
+  const loginLink = document.getElementById('user-login');
+  if (loginLink) {
+    loginLink.style.display = 'none';
+  }
+
+  async function signInWithDiscord() {
+    const { data, error } = await sb.auth.signInWithOAuth({
+      provider: 'discord',
+    });
+    if (error) console.error('OAuth error', error);
+    console.log('OAuth data', data);
+  }
+</script>

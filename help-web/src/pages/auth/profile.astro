@@ -1,0 +1,38 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Valheim Help User Profile" name="User Profile">
+  <button id="logout">Logout</button>
+</Layout>
+
+<script>
+  import * as supabase from '@supabase/supabase-js';
+
+  const sb = supabase.createClient(
+    "https://kkvszipvbsxezcdrgsut.supabase.co",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtrdnN6aXB2YnN4ZXpjZHJnc3V0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjM2OTk4MDcsImV4cCI6MjAzOTI3NTgwN30.UlRIl7wtwzNr8jW6pjehojKhPjSDE0imkw_IAHgPdIQ",
+  );
+
+  // Handle auth state changes
+  sb.auth.onAuthStateChange((event, session) => {
+    console.log('onAuthStateChange', event, session);
+    if (session) {
+      window.localStorage.setItem('access_token', session.access_token);
+      window.localStorage.setItem('refresh_token', session.refresh_token);
+    }
+
+    if (event === 'SIGNED_OUT') {
+      window.localStorage.removeItem('access_token');
+      window.localStorage.removeItem('refresh_token');
+    }
+  });
+
+  document.getElementById('logout')!.addEventListener('click', signOut);
+
+  async function signOut() {
+    const { error } = await sb.auth.signOut();
+    if (error) console.error('Logout error', error);
+    else location.href = '/';
+  }
+</script>
