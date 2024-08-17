@@ -6,8 +6,6 @@ import CountdownTimer from "../../components/Countdown";
 // const trophies = (await getCollection("trophy")).map((trophy) => trophy.data);
 // const groups = ['Meadows', 'Black Forest', 'Swamp', 'Mountain', 'Plains', 'Mistlands', 'Ashlands', 'Ocean/Penalty'];
 
-// Define the start and end times in UTC  }
-const now = new Date();
 const start = new Date(Date.UTC(2024, 7, 17, 18, 0, 0)); // August 17, 2024 18:00:00 UTC
 const end = new Date(start.getTime() + 4 * 60 * 60 * 1000); // 4 hours later
 ---
@@ -22,9 +20,6 @@ const end = new Date(start.getTime() + 4 * 60 * 60 * 1000); // 4 hours later
     post={['Hunt is over!', '+5;Great job hunter!', '+10;See you at the next hunt.']}
     client:only="react"
   />
-
-  <Hunt client:only="react"/>
-
   <p>Come back soon to register and track your hunt</p>
 </div>
 </Layout>

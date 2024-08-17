@@ -74,7 +74,6 @@ window.addEventListener('load', async () => {
 
   const { data: {user}} = await sb.auth.getUser();
   if (user) {
-    console.log(user);
     const userName = user.user_metadata?.custom_claims?.global_name || user.email || user.phone || user.user_metadata.full_name || user.user_metadata.name || 'Unknown';
     const userNameElement = document.getElementById('user-name');
     if (userNameElement) {
