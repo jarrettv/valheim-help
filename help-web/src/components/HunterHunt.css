@@ -24,3 +24,37 @@
   max-height: 50vh;
   max-width:860px;
 }
+
+.hunt .info {
+  width:10rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hunter {
+  font-size:1.4rem;
+  font-weight: bold;
+}
+
+.stat {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 1rem 0 0;
+}
+.stat.score {
+  display:block;
+  font-size:larger;
+  color:gold;
+}
+.stat.score>strong {
+  font-size:2.4rem;
+}
+
+.trophies {
+  display:flex;
+  gap:0.2rem;
+  justify-content: right;
+  flex-wrap: wrap;
+}

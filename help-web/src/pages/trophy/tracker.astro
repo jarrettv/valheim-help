@@ -3,21 +3,23 @@ import Layout from "../../layouts/Layout.astro";
 import Hunt from "../../components/Hunt";
 import CountdownTimer from "../../components/Countdown";
 import HunterHunt from "../../components/HunterHunt";
+import HunterTracker from "../../components/HunterTracker";
 
 const start = new Date(Date.UTC(2024, 7, 17, 23, 0, 0)); // August 17, 2024 18:00:00 UTC
 const end = new Date(start.getTime() + 4 * 60 * 60 * 1000); // 4 hours later
 ---
 
 <Layout title="Valheim Trophy Hunt Tracker" name="Trophy Hunt Tracker">
-  <div style="margin:2rem">
-    <CountdownTimer
-    start={start}
-    end={end}
-    pre={['Get ready to hunt!', '-10;Seed incoming!', '-5;Seed now available!']}
-    mid={['Hunt those trophies!', '-15;Time is running out!', '-6;Five minute warning!', '-4;Finish the hunt!']}
-    post={['Hunt is over!', '+5;Great job hunter!', '+10;See you at the next hunt.']}
-    client:only="react"
-  />
-  <HunterHunt client:only="react"/>
-</div>
+    <div style="margin:0 2rem 1rem 2rem">
+      <CountdownTimer
+      start={start}
+      end={end}
+      pre={['Get ready to hunt!', '-10;Seed incoming!', '-5;Seed now available!']}
+      mid={['Hunt those trophies!', '-15;Time is running out!', '-6;Five minute warning!', '-4;Finish the hunt!']}
+      post={['Hunt is over!', '+5;Great job hunter!', '+10;See you at the next hunt.']}
+      client:only="react"
+    />
+    <HunterHunt client:only="react"/>
+    <HunterTracker client:only="react"/>
+  </div>
 </Layout>

@@ -1,0 +1,36 @@
+
+
+.trophy {
+  width: 11%;
+  text-align: center;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border 0.3s;
+  overflow-x: hidden;
+  position: relative;
+}
+.trophy img {
+  width: 90%;
+}
+
+.trophy:hover {
+  border: 2px solid rgb(22, 68, 127);
+  background-color: #2a313e;
+}
+.trophy.selected {
+  border: 2px solid gold;
+  background-color: #303022;
+}
+
+.trophy .score {
+  position:relative;
+  top:0;
+  left: 0;
+  margin-top:-1.8rem;
+  color:white;
+  opacity: 0.3;
+}
+.trophy.selected .score {
+  color: gold;
+  opacity:1;
+}

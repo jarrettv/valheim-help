@@ -11,7 +11,7 @@ interface CountdownProps {
   post: string[];
 }
 
-const CountdownTimer: React.FC<CountdownProps> = ({ start, end, pre, mid, post }) => {
+export default function CountdownTimer({ start, end, pre, mid, post }: CountdownProps) {
   const [message, setMessage] = useState<string>('');
   const [timeLeft, setTimeLeft] = useState<number>(start.getTime() - new Date().getTime());
   const [pulse, setPulse] = useState<boolean>(false);
@@ -98,5 +98,3 @@ const CountdownTimer: React.FC<CountdownProps> = ({ start, end, pre, mid, post }
     </div>
   );
 };
-
-export default CountdownTimer;

@@ -4,6 +4,9 @@ import { useState, useEffect } from "react";
 import type { TrophyHunt } from "../domain";
 import './HunterHunt.css';
 import { getCollection } from "astro:content";
+import NumericInput from "./NumericInput";
+import TrophyOption from "./TrophyOption";
+import Spinner from "./Spinner";
 
 const trophies = (await getCollection("trophy"))
   .map((trophy) => trophy.data)
@@ -14,6 +17,7 @@ export default function HunterHunt() {
 
   const [user, setUser] = useState<User | null>(null);
   const [hunt, setHunt] = useState<TrophyHunt | null>(null);
+  const [loading, setLoading] = useState('');
 
   const sb = createClient(
     "https://kkvszipvbsxezcdrgsut.supabase.co",
@@ -32,8 +36,6 @@ export default function HunterHunt() {
         // Filters
         .eq('hunt', '2024-08-16')
         .eq('user_id', resp.data.user!.id);
-
-      console.log(data);
       if (data) {
         setHunt(data[0]);
       }
@@ -43,13 +45,9 @@ export default function HunterHunt() {
 
   
   const register = async () => {
-    if (!user) {
-      console.log('User not logged in');
-      return;
-    }
+    const newHunt = { hunt: '2024-08-16', user_id: user!.id, trophies: [] }
 
-    const newHunt = { hunt: '2024-08-16', user_id: user.id, trophies: '' }
-
+    setLoading('loading');
     const { data, error } = await sb
       .from('trophy_hunts')
       .insert([newHunt]);
@@ -58,8 +56,46 @@ export default function HunterHunt() {
       console.error('Error inserting data:', error);
     } else {
       console.log('Registration successful:', data);
-      setHunt({ ...newHunt, created_at: new Date(), updated_at: new Date()});
+      setHunt({ ...newHunt, created_at: new Date(), updated_at: new Date(), score: 0, deaths: 0, relogs: 0});
     }
+    setLoading('');
+  };
+  
+  const calculateScore = (updatedHunt: TrophyHunt) => {
+    const selectedTrophies = trophies.filter((trophy) =>
+      updatedHunt.trophies.includes(trophy.name)
+    );
+
+    const trophyScore = selectedTrophies.reduce(
+      (totalScore, trophy) => totalScore + trophy.score,
+      0
+    );
+
+    const deathPenalty = updatedHunt.deaths * 20;
+    const relogPenalty = updatedHunt.relogs * 10;
+
+    return trophyScore - (deathPenalty + relogPenalty);
+  };
+
+  const updateHunt = async (updatedHunt: TrophyHunt) => {
+    const updatedScore = calculateScore(updatedHunt);
+    const scoredHunt = { ...updatedHunt, score: updatedScore };
+
+    setLoading('loading');
+    const { data, error } = await sb
+      .from("trophy_hunts")
+      .update(scoredHunt)
+      .eq("hunt", "2024-08-16")
+      .eq("user_id", user!.id);
+
+    if (error) {
+      console.error("Error updating data:", error);
+    } else {
+      console.log("Update successful:", data);
+      setHunt(scoredHunt);
+    }
+    
+    setLoading('');
   };
 
   return (
@@ -83,15 +119,26 @@ export default function HunterHunt() {
       )}
       {hunt && user && (
         <div className="hunt">
-          <div style={{minWidth:'8rem'}}>
-            <div>{user.user_metadata?.custom_claims?.global_name}</div>
-            <div>Score 0</div>
+          <div className="info">
+            <div className="hunter">{user.user_metadata?.custom_claims?.global_name}</div>
+            <div className="stat"><div>Deaths</div><strong>{hunt.deaths * -20}</strong></div>
+            <div><NumericInput initialValue={hunt.deaths} onChange={(value) => updateHunt({...hunt, deaths: value})} /></div>
+            <div className="stat"><div>Relogs</div><strong>{hunt.relogs * -10}</strong></div>
+            <div><NumericInput initialValue={hunt.relogs} onChange={(value) => updateHunt({...hunt, relogs: value})} /></div>
+            <div className="stat score"><div>Score</div><strong>{hunt.score}</strong></div>
+            <div><Spinner status={loading} /></div>
           </div>
-          <div style={{flex:1,display:'flex',flexWrap:'wrap'}}>
+          <div className="trophies">
             {groups.map((group) => (
               <>
                   {trophies.filter(t => t.group === group).map((trophy) => (
-                    <img src={trophy.image.src} alt={trophy.name} style={{width:'12%'}} />
+                    <TrophyOption key={trophy.name} name={trophy.name} imgSrc={trophy.image.src} score={trophy.score} isSelected={hunt.trophies.includes(trophy.name)} onSelect={() => {
+                      if (hunt.trophies.includes(trophy.name)) {
+                        updateHunt({...hunt, trophies: hunt.trophies.filter(t => t !== trophy.name)});
+                      } else {
+                        updateHunt({...hunt, trophies: [...hunt.trophies, trophy.name]});
+                      }
+                    }} />
                   ))}
               </>
             ))}
