@@ -45,7 +45,7 @@ export default function HunterHunt() {
 
   
   const register = async () => {
-    const newHunt = { hunt: '2024-08-16', user_id: user!.id, trophies: [] }
+    const newHunt = { hunt: '2024-08-16', user_id: user!.id, hunter:user!.user_metadata?.custom_claims?.global_name, trophies: [] }
 
     setLoading('loading');
     const { data, error } = await sb
@@ -121,7 +121,7 @@ export default function HunterHunt() {
       {hunt && user && (
         <div className="hunt">
           <div className="info">
-            <div className="hunter">{user.user_metadata?.custom_claims?.global_name}</div>
+            <div className="hunter">{hunt.hunter}</div>
             <div className="stat"><div>Deaths</div><strong>{hunt.deaths * -20}</strong></div>
             <div><NumericInput initialValue={hunt.deaths} onChange={(value) => updateHunt({...hunt, deaths: value})} /></div>
             <div className="stat"><div>Relogs</div><strong>{hunt.relogs * -10}</strong></div>
