@@ -58,7 +58,7 @@ import Layout from '../../layouts/Layout.astro';
   async function signInWithDiscord() {
     const { data, error } = await sb.auth.signInWithOAuth({
       provider: 'discord',
-      options: { redirectTo: 'http://localhost:4321' },
+      options: { redirectTo: location.protocol + '//' + location.host },
     });
     if (error) console.error('OAuth error', error);
     console.log('OAuth data', data);
