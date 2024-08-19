@@ -5,5 +5,6 @@
     "name": "Abomination",
     "dropChance": "50%",
     "score": 20,
-    "group": "Swamp"
+    "group": "Swamp",
+    "order": 17
 }

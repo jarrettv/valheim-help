@@ -8,10 +8,10 @@ import NumericInput from "./NumericInput";
 import TrophyOption from "./TrophyOption";
 import Spinner from "./Spinner";
 
+const biomes = ['Meadows', 'Black Forest', 'Swamp', 'Mountain', 'Plains', 'Mistlands', 'Ashlands', 'Ocean'];
 const trophies = (await getCollection("trophy"))
   .map((trophy) => trophy.data)
-  .filter((trophy) => trophy.group !== 'Ocean/Penalty');
-const groups = ['Meadows', 'Black Forest', 'Swamp', 'Mountain', 'Plains', 'Mistlands', 'Ashlands', 'Ocean/Penalty'];
+  .filter((trophy) => biomes.includes(trophy.biome));
 
 export default function HunterHunt() {
 
@@ -130,7 +130,7 @@ export default function HunterHunt() {
             <div><Spinner status={loading} /></div>
           </div>
           <div className="trophies">
-            {trophies.sort((a, b) => groups.indexOf(a.group) - groups.indexOf(b.group)).map((trophy) => (
+            {trophies.sort((a, b) => a.order - b.order).map((trophy) => (
               <TrophyOption key={trophy.name} name={trophy.name} imgSrc={trophy.image.src} score={trophy.score} isSelected={hunt.trophies.includes(trophy.name)} onSelect={() => {
                 if (hunt.trophies.includes(trophy.name)) {
                   updateHunt({...hunt, trophies: hunt.trophies.filter(t => t !== trophy.name)});

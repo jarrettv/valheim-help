@@ -5,5 +5,6 @@
     "name": "Greydwarf Shaman",
     "dropChance": "10%",
     "score": 20,
-    "group": "Black Forest"
+    "group": "Black Forest",
+    "order": 11
 }

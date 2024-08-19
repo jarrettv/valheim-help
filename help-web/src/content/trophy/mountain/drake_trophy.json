@@ -5,5 +5,6 @@
     "name": "Drake",
     "dropChance": "10%",
     "score": 30,
-    "group": "Mountain"
+    "group": "Mountain",
+    "order": 27
 }

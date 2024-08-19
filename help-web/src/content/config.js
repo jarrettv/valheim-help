@@ -9,6 +9,7 @@ const trophyCollection = defineCollection({ type: 'data', schema: ({ image }) =>
   dropChance: z.string(),
   score: z.number(),
   group: z.string(),
+  order: z.number(),
   })
 });
 

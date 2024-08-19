@@ -5,5 +5,6 @@
     "name": "Seeker",
     "dropChance": "10%",
     "score": 40,
-    "group": "Mistlands"
+    "group": "Mistlands",
+    "order": 43
 }

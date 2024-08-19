@@ -5,5 +5,6 @@
     "name": "Greydwarf",
     "dropChance": "5%",
     "score": 20,
-    "group": "Black Forest"
+    "group": "Black Forest",
+    "order": 4
 }

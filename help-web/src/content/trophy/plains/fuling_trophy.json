@@ -5,5 +5,6 @@
     "name": "Fuling",
     "dropChance": "10%",
     "score": 30,
-    "group": "Plains"
+    "group": "Plains",
+    "order": 34
 }

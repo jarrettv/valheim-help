@@ -5,5 +5,6 @@
     "name": "Fuling berserker",
     "dropChance": "5%",
     "score": 30,
-    "group": "Plains"
+    "group": "Plains",
+    "order": 29
 }

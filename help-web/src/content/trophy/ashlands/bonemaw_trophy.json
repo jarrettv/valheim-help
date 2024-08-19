@@ -5,5 +5,6 @@
     "name": "Bonemaw",
     "dropChance": "33%",
     "score": 50,
-    "group": "Ashlands"
+    "group": "Ashlands",
+    "order": 47
 }
