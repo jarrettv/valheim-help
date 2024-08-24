@@ -1,0 +1,7 @@
+###
+POST http://localhost:4321/api/tracker
+Content-Type: application/json
+
+{
+  "test": "test"
+}
