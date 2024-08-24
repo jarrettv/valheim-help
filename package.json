@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@astrojs/check": "0.9.3",
-    "@astrojs/node": "^8.3.3",
     "@astrojs/react": "^3.6.2",
     "@supabase/supabase-js": "^2.45.1",
     "@types/react": "^18.3.3",
@@ -23,5 +22,8 @@
   },
   "devDependencies": {
     "@types/bun": "^1.1.6"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
