@@ -6,3 +6,9 @@ export const POST: APIRoute = async ({ request }) => {
     })
   )
 }
+export const GET: APIRoute = async ({ request }) => {
+  return new Response(JSON.stringify({
+      request: { "hello" : "world" }
+    })
+  )
+}
