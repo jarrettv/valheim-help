@@ -27,26 +27,28 @@ export default function HunterHunt() {
   useEffect(() => {
     const fetchData = async () => {
       const resp = await sb.auth.getUser();
-      setUser(resp.data.user);
       console.log(resp);
+      if (resp.data.user) {
+        setUser(resp.data.user);
 
-      let { data } = await sb
-        .from('trophy_hunts')
-        .select("*")
-        // Filters
-        .eq('hunt', '2024-08-16')
-        .eq('user_id', resp.data.user!.id);
-      if (data) {
-        setHunt(data[0]);
+        let { data } = await sb
+          .from('trophy_hunts')
+          .select("*")
+          // Filters
+          .eq('hunt', '2024-08-16')
+          .eq('user_id', resp.data.user!.id);
+        if (data) {
+          setHunt(data[0]);
+        }
       }
     };
     fetchData();
   }, [])
 
-  
+
   const register = async () => {
     var userName = localStorage.getItem('username') ?? 'Hunter';
-    const newHunt = { hunt: '2024-08-16', user_id: user!.id, hunter:userName, trophies: [] }
+    const newHunt = { hunt: '2024-08-16', user_id: user!.id, hunter: userName, trophies: [] }
 
     setLoading('loading');
     const { data, error } = await sb
@@ -57,12 +59,12 @@ export default function HunterHunt() {
       console.error('Error inserting data:', error);
     } else {
       console.log('Registration successful:', data);
-      setHunt({ ...newHunt, created_at: new Date(), updated_at: new Date(), score: 0, deaths: 0, relogs: 0});
+      setHunt({ ...newHunt, created_at: new Date(), updated_at: new Date(), score: 0, deaths: 0, relogs: 0 });
     }
     setLoading('');
   };
-  
-  
+
+
   const calculateScore = (updatedHunt: TrophyHunt) => {
     const selectedTrophies = trophies.filter((trophy) =>
       updatedHunt.trophies.includes(trophy.name)
@@ -96,7 +98,7 @@ export default function HunterHunt() {
       console.log("Update successful:", data);
       setHunt(scoredHunt);
     }
-    
+
     setLoading('');
   };
 
@@ -108,7 +110,7 @@ export default function HunterHunt() {
         </div>
       )}
       {!hunt && user && (
-        <div className="join" style={{display:'flex'}}>
+        <div className="join" style={{ display: 'flex' }}>
           <div>2024-08-16 Hunt</div>
           <button className='discord' style={{ display: 'flex', gap: '1rem' }} onClick={register}>
             <div>Register</div>
@@ -124,9 +126,9 @@ export default function HunterHunt() {
           <div className="info">
             <div className="hunter">{hunt.hunter}</div>
             <div className="stat"><div>Deaths</div><strong>{hunt.deaths * -20}</strong></div>
-            <div><NumericInput initialValue={hunt.deaths} onChange={(value) => updateHunt({...hunt, deaths: value})} /></div>
+            <div><NumericInput initialValue={hunt.deaths} onChange={(value) => updateHunt({ ...hunt, deaths: value })} /></div>
             <div className="stat"><div>Relogs</div><strong>{hunt.relogs * -10}</strong></div>
-            <div><NumericInput initialValue={hunt.relogs} onChange={(value) => updateHunt({...hunt, relogs: value})} /></div>
+            <div><NumericInput initialValue={hunt.relogs} onChange={(value) => updateHunt({ ...hunt, relogs: value })} /></div>
             <div className="stat score"><div>Score</div><strong>{hunt.score}</strong></div>
             <div><Spinner status={loading} /></div>
           </div>
@@ -134,9 +136,9 @@ export default function HunterHunt() {
             {trophies.sort((a, b) => a.order - b.order).map((trophy) => (
               <TrophyOption key={trophy.name} name={trophy.name} imgSrc={trophy.image.src} score={trophy.score} isSelected={hunt.trophies.includes(trophy.name)} onSelect={() => {
                 if (hunt.trophies.includes(trophy.name)) {
-                  updateHunt({...hunt, trophies: hunt.trophies.filter(t => t !== trophy.name)});
+                  updateHunt({ ...hunt, trophies: hunt.trophies.filter(t => t !== trophy.name) });
                 } else {
-                  updateHunt({...hunt, trophies: [...hunt.trophies, trophy.name]});
+                  updateHunt({ ...hunt, trophies: [...hunt.trophies, trophy.name] });
                 }
               }} />
             ))}

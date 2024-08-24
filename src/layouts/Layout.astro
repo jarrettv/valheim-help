@@ -49,23 +49,23 @@ const sb = supabase.createClient(
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtrdnN6aXB2YnN4ZXpjZHJnc3V0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjM2OTk4MDcsImV4cCI6MjAzOTI3NTgwN30.UlRIl7wtwzNr8jW6pjehojKhPjSDE0imkw_IAHgPdIQ",
 );
 
-  function showUserIcon() {
-    var userName = localStorage.getItem('username');
-    const userNameElement = document.getElementById('user-name');
-    if (userNameElement) {
-      userNameElement.textContent = userName;
-    }
+  function updateUser() {
     const userIcon = document.getElementById('user-icon');
-    const loginLink = document.getElementById('user-login');
-    if (userIcon) {
-      userIcon.style.display = 'block';
-    }
-    if (loginLink) {
-      loginLink.style.display = 'none';
+    const userLogin = document.getElementById('user-login');
+    const userSpan = document.getElementById('user-name');
+    var userName = localStorage.getItem('username');
+    if (userName) {
+      if (userSpan) userSpan.textContent = userName;
+      if (userIcon) userIcon.style.display = 'block';
+      if (userLogin) userLogin.style.display = 'none';
+    } else {
+      if (userSpan) userSpan.textContent = '(blank)';
+      if (userIcon) userIcon.style.display = 'none';
+      if (userLogin)  userLogin.style.display = 'block';
     }
   }
 
-window.addEventListener('load', async () => {
+window.addEventListener('DOMContentLoaded', async () => {
   const hash = window.location.hash;
   const params = new URLSearchParams(hash.substring(1));
   const accessToken = params.get('access_token');
@@ -73,21 +73,23 @@ window.addEventListener('load', async () => {
   if (accessToken && refreshToken) {
     localStorage.setItem('access_token', accessToken);
     localStorage.setItem('refresh_token', refreshToken);
+    sb.auth.setSession({ access_token: accessToken, refresh_token: refreshToken});
     window.history.replaceState(null, "", ' ');
-    console.info('Access token and refresh token stored in local storage');
-    showUserIcon();
+    console.info('Access token and refresh token stored in local storage and set on session');
+    updateUser();
   }
 
   
   if (localStorage.getItem('username')) {
-    showUserIcon();
-  } else {    
-    const { data: {user}} = await sb.auth.getUser();
-    if (user) {
+    updateUser();
+  } else {
+    const data = await sb.auth.getUser();
+    console.debug(data);
+    if (data.data.user) {
+      var user = data.data.user;
       const userName = user.user_metadata?.custom_claims?.global_name || user.user_metadata?.full_name || user.email || user.phone || user.user_metadata?.name || 'Unknown';
-      console.debug(user);
       localStorage.setItem('username', userName);
-      showUserIcon();
+      updateUser();
     }
   }
 });
