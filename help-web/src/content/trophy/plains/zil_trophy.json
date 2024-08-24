@@ -4,7 +4,7 @@
     "image": "./zil_trophy.png",
     "name": "Zil",
     "dropChance": "100%",
-    "score": 30,
+    "score": 65,
     "group": "Plains",
     "order": 30
 }

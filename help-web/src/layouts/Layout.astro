@@ -50,6 +50,11 @@ const sb = supabase.createClient(
 );
 
   function showUserIcon() {
+    var userName = localStorage.getItem('username');
+    const userNameElement = document.getElementById('user-name');
+    if (userNameElement) {
+      userNameElement.textContent = userName;
+    }
     const userIcon = document.getElementById('user-icon');
     const loginLink = document.getElementById('user-login');
     if (userIcon) {
@@ -69,18 +74,21 @@ window.addEventListener('load', async () => {
     localStorage.setItem('access_token', accessToken);
     localStorage.setItem('refresh_token', refreshToken);
     window.history.replaceState(null, "", ' ');
-    console.log('Access token and refresh token stored in local storage');
+    console.info('Access token and refresh token stored in local storage');
     showUserIcon();
   }
 
-  const { data: {user}} = await sb.auth.getUser();
-  if (user) {
-    const userName = user.user_metadata?.custom_claims?.global_name || user.email || user.phone || user.user_metadata.full_name || user.user_metadata.name || 'Unknown';
-    const userNameElement = document.getElementById('user-name');
-    if (userNameElement) {
-      userNameElement.textContent = userName;
-    }
+  
+  if (localStorage.getItem('username')) {
     showUserIcon();
+  } else {    
+    const { data: {user}} = await sb.auth.getUser();
+    if (user) {
+      const userName = user.user_metadata?.custom_claims?.global_name || user.user_metadata?.full_name || user.email || user.phone || user.user_metadata?.name || 'Unknown';
+      console.debug(user);
+      localStorage.setItem('username', userName);
+      showUserIcon();
+    }
   }
 });
 

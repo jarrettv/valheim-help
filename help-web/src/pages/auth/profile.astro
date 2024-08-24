@@ -25,6 +25,7 @@ import Layout from '../../layouts/Layout.astro';
     if (event === 'SIGNED_OUT') {
       window.localStorage.removeItem('access_token');
       window.localStorage.removeItem('refresh_token');
+      window.localStorage.removeItem('username');
     }
   });
 

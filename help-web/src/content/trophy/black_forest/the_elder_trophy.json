@@ -4,7 +4,7 @@
     "image": "./the_elder_trophy.png",
     "name": "The Elder",
     "dropChance": "100%",
-    "score": 50,
+    "score": 60,
     "group": "Black Forest",
     "order": 8
 }
