@@ -29,9 +29,9 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
           action: "upload"
           app_location: "dist/client" # App source code path
-          api_location: "dist/server"
+          #api_location: "dist/server"
           skip_app_build: true
-          skip_api_build: true
+          #skip_api_build: true
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
