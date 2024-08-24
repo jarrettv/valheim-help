@@ -1,9 +1,5 @@
 name: Azure Static Web Apps CI/CD
 
-env:
-  PLATFORM_NAME: 'nodejs'
-  PLATFORM_VERSION: '20.14.0'
-
 on:
   push:
     branches:
@@ -35,6 +31,7 @@ jobs:
           app_location: "dist/client" # App source code path
           api_location: "dist/server"
           skip_app_build: true
+          skip_api_build: true
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
