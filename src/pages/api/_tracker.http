@@ -1,5 +1,5 @@
 ###
-POST http://localhost:4321/api/tracker
+POST https://valheim.help/api/tracker
 Content-Type: application/json
 
 {
