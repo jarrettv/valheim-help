@@ -9,6 +9,7 @@ import TrophyOption from "./TrophyOption";
 import Spinner from "./Spinner";
 
 const huntCode = 'hunt_6';
+const huntName = 'Trophy Hunt Tournament #6';
 
 const biomes = ['Meadows', 'Black Forest', 'Swamp', 'Mountain', 'Plains', 'Mistlands', 'Ashlands', 'Ocean'];
 const trophies = (await getCollection("trophy"))
@@ -69,7 +70,7 @@ export default function HunterHunt() {
 
   const calculateScore = (updatedHunt: TrophyHunt) => {
     const selectedTrophies = trophies.filter((trophy) =>
-      updatedHunt.trophies.includes(trophy.name)
+      updatedHunt.trophies.includes(trophy.id)
     );
 
     const trophyScore = selectedTrophies.reduce(
@@ -113,7 +114,7 @@ export default function HunterHunt() {
       )}
       {!hunt && user && (
         <div className="join" style={{ display: 'flex' }}>
-          <div>Trophy Hunt Tournament #6</div>
+          <div>{huntName}</div>
           <button className='discord' style={{ display: 'flex', gap: '1rem' }} onClick={register}>
             <div>Register</div>
             <svg width="22" height="22" viewBox="0 0 256 199">
@@ -133,14 +134,15 @@ export default function HunterHunt() {
             <div><NumericInput initialValue={hunt.relogs} onChange={(value) => updateHunt({ ...hunt, relogs: value })} /></div>
             <div className="stat score"><div>Score</div><strong>{hunt.score}</strong></div>
             <div><Spinner status={loading} /></div>
+            <div style={{opacity:0.7,fontSize:'0.8rem',fontWeight:'normal'}}>{huntCode}</div>
           </div>
           <div className="trophies">
             {trophies.sort((a, b) => a.order - b.order).map((trophy) => (
-              <TrophyOption key={trophy.name} name={trophy.name} imgSrc={trophy.image.src} score={trophy.score} isSelected={hunt.trophies.includes(trophy.name)} onSelect={() => {
-                if (hunt.trophies.includes(trophy.name)) {
-                  updateHunt({ ...hunt, trophies: hunt.trophies.filter(t => t !== trophy.name) });
+              <TrophyOption key={trophy.id} name={trophy.name} imgSrc={trophy.image.src} score={trophy.score} isSelected={hunt.trophies.includes(trophy.id)} onSelect={() => {
+                if (hunt.trophies.includes(trophy.id)) {
+                  updateHunt({ ...hunt, trophies: hunt.trophies.filter(t => t !== trophy.id) });
                 } else {
-                  updateHunt({ ...hunt, trophies: [...hunt.trophies, trophy.name] });
+                  updateHunt({ ...hunt, trophies: [...hunt.trophies, trophy.id] });
                 }
               }} />
             ))}
