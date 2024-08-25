@@ -11,7 +11,6 @@ const trophies = (await getCollection("trophy"))
 
 function TrophyNode({trophyId, score}: {trophyId: string, score: number}) {
   const trophy = trophies.find((trophy) => trophy.id === trophyId);
-  console.log(trophies, trophyId, trophy);
   if (trophy && trophy.image && trophy.image.src) {
     return (
     <div className="trophy-node" style={{backgroundImage:`url(${trophy.image.src})`}}>
@@ -25,7 +24,6 @@ function TrophyNode({trophyId, score}: {trophyId: string, score: number}) {
 
 function PenaltyNode({trophyId, score}: {trophyId: string, score: number}) {
   const trophy = trophies.find((trophy) => trophy.id === trophyId);
-  console.log(trophies, trophyId, trophy);
   if (trophy && trophy.image && trophy.image.src) {
     return (
     <div className="trophy-node penalty" style={{backgroundImage:`url(${trophy.image.src})`}}>
@@ -82,6 +80,7 @@ export default function HunterTracker() {
             {trophies.sort((a, b) => a.score - b.score).filter(x => hunt.trophies.includes(x.id)).map((trophy) => (
               <TrophyNode key={trophy.id} trophyId={trophy.id} score={trophy.score} />))}
             {hunt.deaths > 0 && <PenaltyNode key="death" trophyId="death1" score={-(hunt.deaths * 20)} />}
+            {hunt.relogs > 0 && <PenaltyNode key="relog" trophyId="relog1" score={-(hunt.relogs * 10)} />}
           </td>
         </tr>
       ))}
