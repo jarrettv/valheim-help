@@ -54,7 +54,7 @@ export default function HunterTracker() {
       .from('trophy_hunts')
       .select("*")
       .eq('hunt', huntCode)
-      .order('created_at', { ascending: false });
+      .order('score', { ascending: false });
       if (data) {
         setHunts(data);
       }
