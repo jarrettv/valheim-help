@@ -8,6 +8,8 @@ import NumericInput from "./NumericInput";
 import TrophyOption from "./TrophyOption";
 import Spinner from "./Spinner";
 
+const huntCode = 'hunt_6';
+
 const biomes = ['Meadows', 'Black Forest', 'Swamp', 'Mountain', 'Plains', 'Mistlands', 'Ashlands', 'Ocean'];
 const trophies = (await getCollection("trophy"))
   .map((trophy) => trophy.data)
@@ -35,7 +37,7 @@ export default function HunterHunt() {
           .from('trophy_hunts')
           .select("*")
           // Filters
-          .eq('hunt', '2024-08-16')
+          .eq('hunt', huntCode)
           .eq('user_id', resp.data.user!.id);
         if (data) {
           setHunt(data[0]);
@@ -48,7 +50,7 @@ export default function HunterHunt() {
 
   const register = async () => {
     var userName = localStorage.getItem('username') ?? 'Hunter';
-    const newHunt = { hunt: '2024-08-16', user_id: user!.id, hunter: userName, trophies: [] }
+    const newHunt = { hunt: huntCode, user_id: user!.id, hunter: userName, trophies: [] }
 
     setLoading('loading');
     const { data, error } = await sb
@@ -89,7 +91,7 @@ export default function HunterHunt() {
     const { data, error } = await sb
       .from("trophy_hunts")
       .update(scoredHunt)
-      .eq("hunt", "2024-08-16")
+      .eq("hunt", huntCode)
       .eq("user_id", user!.id);
 
     if (error) {
@@ -111,7 +113,7 @@ export default function HunterHunt() {
       )}
       {!hunt && user && (
         <div className="join" style={{ display: 'flex' }}>
-          <div>2024-08-16 Hunt</div>
+          <div>Trophy Hunt Tournament #6</div>
           <button className='discord' style={{ display: 'flex', gap: '1rem' }} onClick={register}>
             <div>Register</div>
             <svg width="22" height="22" viewBox="0 0 256 199">
