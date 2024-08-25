@@ -62,6 +62,9 @@ export default function HunterTracker() {
     };
     setLoading('loading');
     fetchData();
+    
+    const intervalId = setInterval(fetchData, 30000); // Fetch every 30 seconds
+    return () => clearInterval(intervalId); // Cleanup interval on component unmount
   }, [])
 
 
