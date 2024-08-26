@@ -59,3 +59,9 @@
   gap:0.2rem;
   flex-wrap: wrap;
 }
+
+.warn { font-size: 1.4rem;
+background-color: #0003;
+padding: 0.4rem 1rem;
+margin: 1rem 0;
+}

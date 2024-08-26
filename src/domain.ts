@@ -8,4 +8,5 @@ export type TrophyHunt = {
   deaths: number
   relogs: number
   score: number
+  locked: boolean
 }

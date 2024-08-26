@@ -77,7 +77,7 @@ export default function HunterTracker() {
           <td width="16%" className="hunter">{hunt.hunter}</td>
           <td width="38px" className="score">{hunt.score}</td>
           <td className="items">
-            {trophies.sort((a, b) => a.score - b.score).filter(x => hunt.trophies.includes(x.id)).map((trophy) => (
+            {trophies.sort((a, b) => a.order - b.order).filter(x => hunt.trophies.includes(x.id)).map((trophy) => (
               <TrophyNode key={trophy.id} trophyId={trophy.id} score={trophy.score} />))}
             {hunt.deaths > 0 && <PenaltyNode key="death" trophyId="death1" score={-(hunt.deaths * 20)} />}
             {hunt.relogs > 0 && <PenaltyNode key="relog" trophyId="relog1" score={-(hunt.relogs * 10)} />}

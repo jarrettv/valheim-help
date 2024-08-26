@@ -62,7 +62,7 @@ export default function HunterHunt() {
       console.error('Error inserting data:', error);
     } else {
       console.log('Registration successful:', data);
-      setHunt({ ...newHunt, created_at: new Date(), updated_at: new Date(), score: 0, deaths: 0, relogs: 0 });
+      setHunt({ ...newHunt, created_at: new Date(), updated_at: new Date(), score: 0, deaths: 0, relogs: 0, locked: false });
     }
     setLoading('');
   };
@@ -124,7 +124,7 @@ export default function HunterHunt() {
           </button>
         </div>
       )}
-      {hunt && user && (
+      {hunt && user && !hunt.locked && (
         <div className="hunt">
           <div className="info">
             <div className="hunter">{hunt.hunter}</div>
@@ -147,6 +147,11 @@ export default function HunterHunt() {
               }} />
             ))}
           </div>
+        </div>
+      )}
+      {hunt && user && hunt.locked && (
+        <div className="warn">
+          🔒Your hunt is locked. Please contact a moderator to unlock.
         </div>
       )}
     </div>
