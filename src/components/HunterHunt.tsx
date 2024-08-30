@@ -8,8 +8,8 @@ import NumericInput from "./NumericInput";
 import TrophyOption from "./TrophyOption";
 import Spinner from "./Spinner";
 
-const huntCode = 'hunt_6';
-const huntName = 'Trophy Hunt Tournament #6';
+const huntCode = 'hunt_7';
+const huntName = 'Trophy Hunt Tournament #7';
 
 const biomes = ['Meadows', 'Black Forest', 'Swamp', 'Mountain', 'Plains', 'Mistlands', 'Ashlands', 'Ocean'];
 const trophies = (await getCollection("trophy"))
