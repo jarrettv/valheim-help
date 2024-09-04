@@ -1,13 +1,15 @@
 const { app } = require('@azure/functions');
 
-app.http('TrackTrophies', {
-    methods: ['GET', 'POST'],
+app.http('trackhunt', {
+    methods: ['POST'],
     authLevel: 'anonymous',
     handler: async (request, context) => {
         context.log(`Http function processed request for url "${request.url}"`);
 
-        const name = request.query.get('name') || await request.text() || 'world';
+        const data = await request.json();
+        
+        context.log(`Received data: ${JSON.stringify(data)}`);
 
-        return { body: `Hello, ${name}!` };
+        return {jsonBody: data};
     }
 });
