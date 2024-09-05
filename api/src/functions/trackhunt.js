@@ -7,9 +7,7 @@ app.http('trackhunt', {
     authLevel: 'anonymous',
     handler: async (request, context) => {
         const supabase = createClient(supabaseUrl, process.env.SUPABASE_SERVICE_KEY);
-
         const input = await request.json();
-
         // Insert data into Supabase
         const { data, error } = await supabase
             .from('track_hunts')
@@ -20,8 +18,6 @@ app.http('trackhunt', {
             context.log(`Error inserting data: ${error.message}`);
             return { status: 500, body: { error: error.message } };
         }
-        
-        context.log('Data inserted:', data);
         return { jsonBody: { id: data[0].id } };
     }
 });
