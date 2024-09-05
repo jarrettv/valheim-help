@@ -1,14 +1,12 @@
 const { app } = require('@azure/functions');
 const { createClient } = require('@supabase/supabase-js');
-
-// Initialize Supabase client
-const supabaseUrl = 'https://kkvszipvbsxezcdrgsut.supabase.co';
-const supabase = createClient(supabaseUrl, process.env.SUPABASE_SERVICE_KEY);
+const supabaseUrl = "https://kkvszipvbsxezcdrgsut.supabase.co";
 
 app.http('trackhunt', {
     methods: ['POST'],
     authLevel: 'anonymous',
     handler: async (request, context) => {
+        const supabase = createClient(supabaseUrl, process.env.SUPABASE_SERVICE_KEY);
 
         const input = await request.json();
 
