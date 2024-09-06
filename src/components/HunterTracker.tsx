@@ -4,8 +4,8 @@ import { createClient } from "@supabase/supabase-js";
 import { getCollection, getEntry } from "astro:content";
 import './HunterTracker.css';
 
-const huntCode = 'hunt_6';
-const huntName = 'Trophy Hunt Tournament #6';
+const huntCode = 'hunt_7';
+const huntName = 'Trophy Hunt Tournament #7';
 const trophies = (await getCollection("trophy"))
   .map((trophy) => trophy.data);
 
