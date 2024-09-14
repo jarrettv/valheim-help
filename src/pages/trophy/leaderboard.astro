@@ -1,0 +1,13 @@
+---
+import HunterLeaderboard from "../../components/HunterLeaderboard";
+import Layout from "../../layouts/Layout.astro";
+
+
+---
+
+<Layout title="Valheim Trophy Hunt Leaderboard" name="Trophy Hunt Leaderboard">
+  <div style="margin:0 2rem 1rem 2rem">
+
+    <HunterLeaderboard client:only="react"/>
+  </div>
+</Layout>

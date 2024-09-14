@@ -21,11 +21,11 @@ POST http://localhost:7071/api/trackhunt
 Content-Type: application/json
 
 {
-    "current_score": 50,
-    "deaths": 2,
+    "current_score": 80,
+    "deaths": 0,
     "logouts": 0,
     "player_location": "(5.73, 35.53, 3.60)",
     "player_name": "jarrettv",
-    "session_id": "372745983",
+    "session_id": "JJJqEfFUeF",
     "trophies": "TrophyGreydwarf, TrophyDeer, TrophyBoar, TrophyNeck, TrophyEikthyr"
 }
