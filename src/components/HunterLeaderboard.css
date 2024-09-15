@@ -1,0 +1,127 @@
+.hunter-leaderboard {
+  margin: 0 2rem;
+  width: 100%;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.hunter-leaderboard .hunts {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tab {
+  padding: 0.5rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border 0.3s;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.tab:hover {
+  border: 2px solid rgb(22, 68, 127);
+  background-color: #2a313e;
+}
+
+.tab.active {
+  color: gold;
+  border: 2px solid gold;
+  background-color: #303022;
+}
+
+.hunt-details {
+  padding: 0 1rem 1rem 1rem;
+  background-color: #0004;
+  border-radius: 8px;
+  min-width: 710px;
+}
+.hunt-details h1 {
+  margin: 0;
+  padding-top: 0.4rem;
+}
+.hunt-details .hunt-head {
+  justify-content: space-between;
+  display:flex;
+  align-items: center;
+  margin: 0 0 1rem 0;
+}
+.hunt-seed { font-size: larger; margin-top: -0.3rem }
+.hunt-status {
+  color: gold;}
+
+.hunt-details nav {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-evenly;
+}
+.hunt-details nav>div {
+  font-size: 1.2rem;
+  min-width: 8rem;
+  text-align: center;
+}
+.hunt-details nav>div>svg {
+  margin: -0.2rem 0.5rem 0 0;
+  vertical-align: middle;
+  width: 28px; height: 28px;
+}
+
+.leaderboard {
+  margin-top:1.5rem;
+  width:100%;
+  border-collapse: collapse;
+  background-color: #0002;
+}
+.leaderboard tr:nth-child(odd) {
+  background-color: #0004;
+}
+
+.leaderboard .hunter {
+  padding-left: 0.8rem;
+  font-weight: bold;
+}
+
+.leaderboard .score {
+  color: gold;
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding: 0 0.8rem;
+}
+.leaderboard .items {
+  display:flex;
+}
+.leaderboard .trophy-node {
+ width: 2.6rem; height: 2.6rem;
+text-align: center;
+ background-size: contain;
+}
+.leaderboard .trophy-node>div {
+  max-height: 1rem;
+  line-height: 1rem;
+  font-size: smaller;
+  margin-top: 1.65rem;
+  background-color: #0005;
+}
+
+.leaderboard .trophy-node.penalty {
+  color:red;
+}
+
+.scoring {
+  max-width: 700px;
+  margin-top:2rem;
+  display:flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.scoring .item img {
+  width: 56px; height: 56px;
+}
+
+.scoring .item .score {
+  margin-top: -1rem;
+  text-align: center;
+}

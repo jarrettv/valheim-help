@@ -8,7 +8,7 @@ output_dir = "out/trophy"
 os.makedirs(output_dir, exist_ok=True)
 
 # Load the trophies data from the JSON file
-with open("out/trophies.json", "r") as f:
+with open("out/trophies_codes.json", "r") as f:
     trophies = json.load(f)
 
 skip = []

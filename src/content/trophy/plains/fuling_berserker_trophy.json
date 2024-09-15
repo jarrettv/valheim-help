@@ -1,10 +1,11 @@
 {
-    "id": "fuling_berserker_trophy",
-    "biome": "Plains",
-    "image": "./fuling_berserker_trophy.png",
-    "name": "Fuling berserker",
-    "dropChance": "5%",
-    "score": 30,
-    "group": "Plains",
-    "order": 29
+  "id": "fuling_berserker_trophy",
+  "biome": "Plains",
+  "image": "./fuling_berserker_trophy.png",
+  "name": "Fuling berserker",
+  "dropChance": "5%",
+  "score": 30,
+  "group": "Plains",
+  "order": 29,
+  "code": "TrophyGoblinBrute"
 }

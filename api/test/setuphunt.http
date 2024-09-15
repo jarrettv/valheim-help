@@ -409,5 +409,5 @@ POST http://localhost:7071/api/hunts/players
 Content-Type: application/json
 
 [
-  { "hunt_id": 4, "name": "Xmal", "player_id": "mike.r.lemoine" }
+  { "hunt_id": 4, "name": "da_Keepa", "player_id": "da_keepa" }
 ]

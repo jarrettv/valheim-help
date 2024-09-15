@@ -1,10 +1,11 @@
 {
-    "id": "the_queen_trophy",
-    "biome": "Mistlands",
-    "image": "./the_queen_trophy.png",
-    "name": "The Queen",
-    "dropChance": "100%",
-    "score": 1000,
-    "group": "Mistlands",
-    "order": 40
+  "id": "the_queen_trophy",
+  "biome": "Mistlands",
+  "image": "./the_queen_trophy.png",
+  "name": "The Queen",
+  "dropChance": "100%",
+  "score": 1000,
+  "group": "Mistlands",
+  "order": 40,
+  "code": "TrophySeekerQueen"
 }

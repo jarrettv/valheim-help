@@ -1,10 +1,11 @@
 {
-    "id": "death1",
-    "biome": "Penalty",
-    "image": "./death.webp",
-    "name": "Death #1",
-    "dropChance": "",
-    "group": "Ocean/Penalty",
-    "score": -20,
-    "order": 100
+  "id": "death1",
+  "biome": "Penalty",
+  "image": "./death.webp",
+  "name": "Death #1",
+  "dropChance": "",
+  "group": "Ocean/Penalty",
+  "score": -20,
+  "order": 100,
+  "code": "death1"
 }

@@ -1,10 +1,11 @@
 {
-    "id": "stone_golem_trophy",
-    "biome": "Mountain",
-    "image": "./stone_golem_trophy.png",
-    "name": "Stone Golem",
-    "dropChance": "5%",
-    "score": 30,
-    "group": "Mountain",
-    "order": 28
+  "id": "stone_golem_trophy",
+  "biome": "Mountain",
+  "image": "./stone_golem_trophy.png",
+  "name": "Stone Golem",
+  "dropChance": "5%",
+  "score": 30,
+  "group": "Mountain",
+  "order": 28,
+  "code": "TrophySGolem"
 }

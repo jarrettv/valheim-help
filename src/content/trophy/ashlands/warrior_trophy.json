@@ -1,10 +1,11 @@
 {
-    "id": "warrior_trophy",
-    "biome": "Ashlands",
-    "image": "./warrior_trophy.png",
-    "name": "Warrior",
-    "dropChance": "5%",
-    "score": 50,
-    "group": "Ashlands",
-    "order": 53
+  "id": "warrior_trophy",
+  "biome": "Ashlands",
+  "image": "./warrior_trophy.png",
+  "name": "Warrior",
+  "dropChance": "5%",
+  "score": 50,
+  "group": "Ashlands",
+  "order": 53,
+  "code": "TrophyCharredMelee"
 }

@@ -1,10 +1,11 @@
 {
-    "id": "greydwarf_trophy",
-    "biome": "Black Forest",
-    "image": "./greydwarf_trophy.png",
-    "name": "Greydwarf",
-    "dropChance": "5%",
-    "score": 20,
-    "group": "Black Forest",
-    "order": 4
+  "id": "greydwarf_trophy",
+  "biome": "Black Forest",
+  "image": "./greydwarf_trophy.png",
+  "name": "Greydwarf",
+  "dropChance": "5%",
+  "score": 20,
+  "group": "Black Forest",
+  "order": 4,
+  "code": "TrophyGreydwarf"
 }

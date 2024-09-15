@@ -1,10 +1,11 @@
 {
-    "id": "yagluth_trophy",
-    "biome": "Plains",
-    "image": "./yagluth_trophy.png",
-    "name": "Yagluth",
-    "dropChance": "100%",
-    "score": 120,
-    "group": "Plains",
-    "order": 32
+  "id": "yagluth_trophy",
+  "biome": "Plains",
+  "image": "./yagluth_trophy.png",
+  "name": "Yagluth",
+  "dropChance": "100%",
+  "score": 120,
+  "group": "Plains",
+  "order": 32,
+  "code": "TrophyGoblinKing"
 }

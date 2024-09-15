@@ -1,10 +1,11 @@
 {
-    "id": "leech_trophy",
-    "biome": "Swamp",
-    "image": "./leech_trophy.png",
-    "name": "Leech",
-    "dropChance": "10%",
-    "score": 20,
-    "group": "Swamp",
-    "order": 19
+  "id": "leech_trophy",
+  "biome": "Swamp",
+  "image": "./leech_trophy.png",
+  "name": "Leech",
+  "dropChance": "10%",
+  "score": 20,
+  "group": "Swamp",
+  "order": 19,
+  "code": "TrophyLeech"
 }

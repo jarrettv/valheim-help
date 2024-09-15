@@ -1,10 +1,11 @@
 {
-    "id": "surtling_trophy",
-    "biome": "Swamp",
-    "image": "./surtling_trophy.png",
-    "name": "Surtling",
-    "dropChance": "5%",
-    "score": 20,
-    "group": "Swamp",
-    "order": 12
+  "id": "surtling_trophy",
+  "biome": "Swamp",
+  "image": "./surtling_trophy.png",
+  "name": "Surtling",
+  "dropChance": "5%",
+  "score": 20,
+  "group": "Swamp",
+  "order": 12,
+  "code": "TrophySurtling"
 }

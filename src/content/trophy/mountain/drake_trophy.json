@@ -1,10 +1,11 @@
 {
-    "id": "drake_trophy",
-    "biome": "Mountain",
-    "image": "./drake_trophy.png",
-    "name": "Drake",
-    "dropChance": "10%",
-    "score": 30,
-    "group": "Mountain",
-    "order": 27
+  "id": "drake_trophy",
+  "biome": "Mountain",
+  "image": "./drake_trophy.png",
+  "name": "Drake",
+  "dropChance": "10%",
+  "score": 30,
+  "group": "Mountain",
+  "order": 27,
+  "code": "TrophyHatchling"
 }

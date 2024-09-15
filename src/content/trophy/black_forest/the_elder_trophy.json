@@ -1,10 +1,11 @@
 {
-    "id": "the_elder_trophy",
-    "biome": "Black Forest",
-    "image": "./the_elder_trophy.png",
-    "name": "The Elder",
-    "dropChance": "100%",
-    "score": 60,
-    "group": "Black Forest",
-    "order": 8
+  "id": "the_elder_trophy",
+  "biome": "Black Forest",
+  "image": "./the_elder_trophy.png",
+  "name": "The Elder",
+  "dropChance": "100%",
+  "score": 60,
+  "group": "Black Forest",
+  "order": 8,
+  "code": "TrophyTheElder"
 }

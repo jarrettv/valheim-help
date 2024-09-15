@@ -1,10 +1,11 @@
 {
-    "id": "blob_trophy",
-    "biome": "Swamp",
-    "image": "./blob_trophy.png",
-    "name": "Blob",
-    "dropChance": "10%",
-    "score": 20,
-    "group": "Swamp",
-    "order": 13
+  "id": "blob_trophy",
+  "biome": "Swamp",
+  "image": "./blob_trophy.png",
+  "name": "Blob",
+  "dropChance": "10%",
+  "score": 20,
+  "group": "Swamp",
+  "order": 13,
+  "code": "TrophyBlob"
 }

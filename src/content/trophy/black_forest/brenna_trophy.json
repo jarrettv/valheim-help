@@ -1,10 +1,11 @@
 {
-    "id": "brenna_trophy",
-    "biome": "Black Forest",
-    "image": "./brenna_trophy.png",
-    "name": "Brenna",
-    "dropChance": "100%",
-    "score": 25,
-    "group": "Black Forest",
-    "order": 7
+  "id": "brenna_trophy",
+  "biome": "Black Forest",
+  "image": "./brenna_trophy.png",
+  "name": "Brenna",
+  "dropChance": "100%",
+  "score": 25,
+  "group": "Black Forest",
+  "order": 7,
+  "code": "TrophySkeletonHildir"
 }

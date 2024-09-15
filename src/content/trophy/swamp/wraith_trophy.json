@@ -1,10 +1,11 @@
 {
-    "id": "wraith_trophy",
-    "biome": "Swamp",
-    "image": "./wraith_trophy.png",
-    "name": "Wraith",
-    "dropChance": "5%",
-    "score": 20,
-    "group": "Swamp",
-    "order": 20
+  "id": "wraith_trophy",
+  "biome": "Swamp",
+  "image": "./wraith_trophy.png",
+  "name": "Wraith",
+  "dropChance": "5%",
+  "score": 20,
+  "group": "Swamp",
+  "order": 20,
+  "code": "TrophyWraith"
 }

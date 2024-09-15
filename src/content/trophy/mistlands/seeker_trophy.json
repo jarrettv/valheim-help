@@ -1,10 +1,11 @@
 {
-    "id": "seeker_trophy",
-    "biome": "Mistlands",
-    "image": "./seeker_trophy.png",
-    "name": "Seeker",
-    "dropChance": "10%",
-    "score": 40,
-    "group": "Mistlands",
-    "order": 43
+  "id": "seeker_trophy",
+  "biome": "Mistlands",
+  "image": "./seeker_trophy.png",
+  "name": "Seeker",
+  "dropChance": "10%",
+  "score": 40,
+  "group": "Mistlands",
+  "order": 43,
+  "code": "TrophySeeker"
 }

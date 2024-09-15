@@ -1,10 +1,11 @@
 {
-    "id": "dvergr_trophy",
-    "biome": "Mistlands",
-    "image": "./dvergr_trophy.png",
-    "name": "Dvergr",
-    "dropChance": "5%",
-    "score": 40,
-    "group": "Mistlands",
-    "order": 38
+  "id": "dvergr_trophy",
+  "biome": "Mistlands",
+  "image": "./dvergr_trophy.png",
+  "name": "Dvergr",
+  "dropChance": "5%",
+  "score": 40,
+  "group": "Mistlands",
+  "order": 38,
+  "code": "TrophyDvergr"
 }

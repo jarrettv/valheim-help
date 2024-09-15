@@ -1,10 +1,11 @@
 {
-    "id": "deer_trophy",
-    "biome": "Meadows",
-    "image": "./deer_trophy.png",
-    "name": "Deer",
-    "dropChance": "50%",
-    "score": 10,
-    "group": "Meadows",
-    "order": 2
+  "id": "deer_trophy",
+  "biome": "Meadows",
+  "image": "./deer_trophy.png",
+  "name": "Deer",
+  "dropChance": "50%",
+  "score": 10,
+  "group": "Meadows",
+  "order": 2,
+  "code": "TrophyDeer"
 }

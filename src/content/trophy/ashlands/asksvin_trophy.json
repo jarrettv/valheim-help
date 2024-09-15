@@ -1,10 +1,11 @@
 {
-    "id": "asksvin_trophy",
-    "biome": "Ashlands",
-    "image": "./asksvin_trophy.png",
-    "name": "Asksvin",
-    "dropChance": "50%",
-    "score": 50,
-    "group": "Ashlands",
-    "order": 51
+  "id": "asksvin_trophy",
+  "biome": "Ashlands",
+  "image": "./asksvin_trophy.png",
+  "name": "Asksvin",
+  "dropChance": "50%",
+  "score": 50,
+  "group": "Ashlands",
+  "order": 51,
+  "code": "TrophyAsksvin"
 }

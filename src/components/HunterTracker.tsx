@@ -9,31 +9,7 @@ const huntName = 'Trophy Hunt Tournament #7';
 const trophies = (await getCollection("trophy"))
   .map((trophy) => trophy.data);
 
-function TrophyNode({trophyId, score}: {trophyId: string, score: number}) {
-  const trophy = trophies.find((trophy) => trophy.id === trophyId);
-  if (trophy && trophy.image && trophy.image.src) {
-    return (
-    <div className="trophy-node" style={{backgroundImage:`url(${trophy.image.src})`}}>
-      <div>
-        {score}
-      </div>
-    </div>);
-  }
-  return (<span>{trophyId}</span>);
-}
 
-function PenaltyNode({trophyId, score}: {trophyId: string, score: number}) {
-  const trophy = trophies.find((trophy) => trophy.id === trophyId);
-  if (trophy && trophy.image && trophy.image.src) {
-    return (
-    <div className="trophy-node penalty" style={{backgroundImage:`url(${trophy.image.src})`}}>
-      <div>
-        {score}
-      </div>
-    </div>);
-  }
-  return (<span>{trophyId}</span>);
-}
 
 
 export default function HunterTracker() {

@@ -1,10 +1,11 @@
 {
-    "id": "zil_trophy",
-    "biome": "Plains",
-    "image": "./zil_trophy.png",
-    "name": "Zil",
-    "dropChance": "100%",
-    "score": 65,
-    "group": "Plains",
-    "order": 30
+  "id": "zil_trophy",
+  "biome": "Plains",
+  "image": "./zil_trophy.png",
+  "name": "Zil",
+  "dropChance": "100%",
+  "score": 65,
+  "group": "Plains",
+  "order": 30,
+  "code": "TrophyGoblinBruteBrosShaman"
 }

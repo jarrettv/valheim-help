@@ -1,10 +1,11 @@
 {
-    "id": "bonemass_trophy",
-    "biome": "Swamp",
-    "image": "./bonemass_trophy.png",
-    "name": "Bonemass",
-    "dropChance": "100%",
-    "score": 80,
-    "group": "Swamp",
-    "order": 16
+  "id": "bonemass_trophy",
+  "biome": "Swamp",
+  "image": "./bonemass_trophy.png",
+  "name": "Bonemass",
+  "dropChance": "100%",
+  "score": 80,
+  "group": "Swamp",
+  "order": 16,
+  "code": "TrophyBonemass"
 }

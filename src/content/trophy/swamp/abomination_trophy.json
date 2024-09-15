@@ -1,10 +1,11 @@
 {
-    "id": "abomination_trophy",
-    "biome": "Swamp",
-    "image": "./abomination_trophy.png",
-    "name": "Abomination",
-    "dropChance": "50%",
-    "score": 20,
-    "group": "Swamp",
-    "order": 17
+  "id": "abomination_trophy",
+  "biome": "Swamp",
+  "image": "./abomination_trophy.png",
+  "name": "Abomination",
+  "dropChance": "50%",
+  "score": 20,
+  "group": "Swamp",
+  "order": 17,
+  "code": "TrophyAbomination"
 }

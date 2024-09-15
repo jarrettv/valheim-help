@@ -1,10 +1,11 @@
 {
-    "id": "greydwarf_brute_trophy",
-    "biome": "Black Forest",
-    "image": "./greydwarf_brute_trophy.png",
-    "name": "Greydwarf Brute",
-    "dropChance": "10%",
-    "score": 20,
-    "group": "Black Forest",
-    "order": 5
+  "id": "greydwarf_brute_trophy",
+  "biome": "Black Forest",
+  "image": "./greydwarf_brute_trophy.png",
+  "name": "Greydwarf Brute",
+  "dropChance": "10%",
+  "score": 20,
+  "group": "Black Forest",
+  "order": 5,
+  "code": "TrophyGreydwarfBrute"
 }

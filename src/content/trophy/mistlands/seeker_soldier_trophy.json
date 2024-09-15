@@ -1,10 +1,11 @@
 {
-    "id": "seeker_soldier_trophy",
-    "biome": "Mistlands",
-    "image": "./seeker_soldier_trophy.png",
-    "name": "Seeker soldier",
-    "dropChance": "5%",
-    "score": 40,
-    "group": "Mistlands",
-    "order": 39
+  "id": "seeker_soldier_trophy",
+  "biome": "Mistlands",
+  "image": "./seeker_soldier_trophy.png",
+  "name": "Seeker soldier",
+  "dropChance": "5%",
+  "score": 40,
+  "group": "Mistlands",
+  "order": 39,
+  "code": "TrophySeekersoldier"
 }

@@ -1,10 +1,11 @@
 {
-    "id": "volture_trophy",
-    "biome": "Ashlands",
-    "image": "./volture_trophy.png",
-    "name": "Volture",
-    "dropChance": "50%",
-    "score": 50,
-    "group": "Ashlands",
-    "order": 49
+  "id": "volture_trophy",
+  "biome": "Ashlands",
+  "image": "./volture_trophy.png",
+  "name": "Volture",
+  "dropChance": "50%",
+  "score": 50,
+  "group": "Ashlands",
+  "order": 49,
+  "code": "TrophyVolture"
 }

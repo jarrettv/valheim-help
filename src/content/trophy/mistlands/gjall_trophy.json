@@ -1,10 +1,11 @@
 {
-    "id": "gjall_trophy",
-    "biome": "Mistlands",
-    "image": "./gjall_trophy.png",
-    "name": "Gjall",
-    "dropChance": "30%",
-    "score": 40,
-    "group": "Mistlands",
-    "order": 44
+  "id": "gjall_trophy",
+  "biome": "Mistlands",
+  "image": "./gjall_trophy.png",
+  "name": "Gjall",
+  "dropChance": "30%",
+  "score": 40,
+  "group": "Mistlands",
+  "order": 44,
+  "code": "TrophyGjall"
 }

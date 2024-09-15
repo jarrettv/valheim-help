@@ -1,10 +1,11 @@
 {
-    "id": "cultist_trophy",
-    "biome": "Mountain",
-    "image": "./cultist_trophy.png",
-    "name": "Cultist",
-    "dropChance": "10%",
-    "score": 30,
-    "group": "Mountain",
-    "order": 21
+  "id": "cultist_trophy",
+  "biome": "Mountain",
+  "image": "./cultist_trophy.png",
+  "name": "Cultist",
+  "dropChance": "10%",
+  "score": 30,
+  "group": "Mountain",
+  "order": 21,
+  "code": "TrophyCultist"
 }

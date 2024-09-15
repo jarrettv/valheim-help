@@ -1,10 +1,11 @@
 {
-    "id": "morgen_trophy",
-    "biome": "Ashlands",
-    "image": "./morgen_trophy.png",
-    "name": "Morgen",
-    "dropChance": "5%",
-    "score": 50,
-    "group": "Ashlands",
-    "order": 52
+  "id": "morgen_trophy",
+  "biome": "Ashlands",
+  "image": "./morgen_trophy.png",
+  "name": "Morgen",
+  "dropChance": "5%",
+  "score": 50,
+  "group": "Ashlands",
+  "order": 52,
+  "code": "TrophyMorgen"
 }

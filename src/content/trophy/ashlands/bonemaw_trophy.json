@@ -1,10 +1,11 @@
 {
-    "id": "bonemaw_trophy",
-    "biome": "Ashlands",
-    "image": "./bonemaw_trophy.png",
-    "name": "Bonemaw",
-    "dropChance": "33%",
-    "score": 50,
-    "group": "Ashlands",
-    "order": 47
+  "id": "bonemaw_trophy",
+  "biome": "Ashlands",
+  "image": "./bonemaw_trophy.png",
+  "name": "Bonemaw",
+  "dropChance": "33%",
+  "score": 50,
+  "group": "Ashlands",
+  "order": 47,
+  "code": "TrophyBonemawSerpent"
 }

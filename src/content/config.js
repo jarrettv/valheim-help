@@ -3,6 +3,7 @@ import { defineCollection, z } from "astro:content";
 
 const trophyCollection = defineCollection({ type: 'data', schema: ({ image }) => z.object({
   id: z.string(),
+  code: z.string(),
   biome: z.string(),
   image: image(),
   name: z.string(),

@@ -1,10 +1,11 @@
 {
-    "id": "wolf_trophy",
-    "biome": "Mountain",
-    "image": "./wolf_trophy.png",
-    "name": "Wolf",
-    "dropChance": "10%",
-    "score": 30,
-    "group": "Mountain",
-    "order": 26
+  "id": "wolf_trophy",
+  "biome": "Mountain",
+  "image": "./wolf_trophy.png",
+  "name": "Wolf",
+  "dropChance": "10%",
+  "score": 30,
+  "group": "Mountain",
+  "order": 26,
+  "code": "TrophyWolf"
 }

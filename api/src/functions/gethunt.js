@@ -17,6 +17,7 @@ app.http('gethunt', {
             context.log(`Error inserting data: ${error.message}`);
             return { status: 500, body: { error: error.message } };
         }
-        return { jsonBody: data };
+        console.log(data);
+        return { jsonBody: data[0] };
     }
 });

@@ -1,10 +1,11 @@
 {
-    "id": "fuling_shaman_trophy",
-    "biome": "Plains",
-    "image": "./fuling_shaman_trophy.png",
-    "name": "Fuling shaman",
-    "dropChance": "10%",
-    "score": 30,
-    "group": "Plains",
-    "order": 36
+  "id": "fuling_shaman_trophy",
+  "biome": "Plains",
+  "image": "./fuling_shaman_trophy.png",
+  "name": "Fuling shaman",
+  "dropChance": "10%",
+  "score": 30,
+  "group": "Plains",
+  "order": 36,
+  "code": "TrophyGoblinShaman"
 }

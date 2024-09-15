@@ -1,10 +1,11 @@
 {
-    "id": "marksman_trophy",
-    "biome": "Ashlands",
-    "image": "./marksman_trophy.png",
-    "name": "Marksman",
-    "dropChance": "5%",
-    "score": 50,
-    "group": "Ashlands",
-    "order": 50
+  "id": "marksman_trophy",
+  "biome": "Ashlands",
+  "image": "./marksman_trophy.png",
+  "name": "Marksman",
+  "dropChance": "5%",
+  "score": 50,
+  "group": "Ashlands",
+  "order": 50,
+  "code": "TrophyCharredArcher"
 }

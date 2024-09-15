@@ -1,10 +1,11 @@
 {
-    "id": "tick_trophy",
-    "biome": "Mistlands",
-    "image": "./tick_trophy.png",
-    "name": "Tick",
-    "dropChance": "5%",
-    "score": 40,
-    "group": "Mistlands",
-    "order": 42
+  "id": "tick_trophy",
+  "biome": "Mistlands",
+  "image": "./tick_trophy.png",
+  "name": "Tick",
+  "dropChance": "5%",
+  "score": 40,
+  "group": "Mistlands",
+  "order": 42,
+  "code": "TrophyTick"
 }

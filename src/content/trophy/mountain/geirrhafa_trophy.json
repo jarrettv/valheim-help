@@ -1,10 +1,11 @@
 {
-    "id": "geirrhafa_trophy",
-    "biome": "Mountain",
-    "image": "./geirrhafa_trophy.png",
-    "name": "Geirrhafa",
-    "dropChance": "100%",
-    "score": 45,
-    "group": "Mountain",
-    "order": 23
+  "id": "geirrhafa_trophy",
+  "biome": "Mountain",
+  "image": "./geirrhafa_trophy.png",
+  "name": "Geirrhafa",
+  "dropChance": "100%",
+  "score": 45,
+  "group": "Mountain",
+  "order": 23,
+  "code": "TrophyCultist_Hildir"
 }
