@@ -14,6 +14,7 @@ import { GameIconsStrong } from '../icons/GameIconsStrong';
 import { PhTwitchLogoDuotone } from '../icons/PhTwitchLogoDuotone';
 import { IcTwotoneLocalPlay } from '../icons/IcTowtoneLocalPlay';
 import RegisterCompetitor from './RegisterCompetitor';
+import TimeUntil from './TimeUntil';
 
 const trophies = (await getCollection("trophy")).map((trophy) => trophy.data);
 
@@ -46,7 +47,7 @@ export default function HunterLeaderboard() {
   return(
   <div className="hunter-leaderboard">
     <div className="hunts">
-        {huntsData.map((hunt) => (
+        {huntsData.sort((a, b) => new Date(b.start_at).getTime() - new Date(a.start_at).getTime()).map((hunt) => (
           <div className={hunt.id === selectedHunt ? 'tab active' : 'tab'} key={hunt.id} onClick={() => handleSelectHunt(hunt)}>{hunt.name}</div>
         ))}
     </div>
@@ -117,6 +118,7 @@ function HuntDetailsWatch({ huntPlayers } : { huntPlayers: HuntPlayer[] }) {
 }
 
 function HuntDetailsCompetitors({ huntPlayers } : { huntPlayers: HuntPlayer[] }) {
+  
   if (!huntPlayers) {
     return <div>Loading...</div>;
   }
@@ -182,7 +184,11 @@ function HuntDetails({ huntData } : { huntData: Hunt }) {
         <div>
           <h1>{huntData.name}</h1>
           <div style={{opacity:0.8,marginTop:'-0.25rem'}}>{new Date(huntData.start_at).toLocaleDateString(undefined, { weekday: "long", year: "numeric", month: "long", day: "numeric" })} {new Date(huntData.start_at).toLocaleTimeString().replace(':00:00 ', '').toLowerCase()}-{new Date(huntData.end_at).toLocaleTimeString().replace(':00:00 ', '').toLowerCase()}</div>
-          <div style={{marginTop:'-0.15rem'}} className="hunt-status">{huntData.status < 20 ? 'Tournament is starting in 00:00:00' : 'Tournament is over'}</div>
+          <div style={{marginTop:'-0.15rem'}} className="hunt-status">
+            {huntData.status > 20 && <> Tournament is over</>}
+            {huntData.status === 20 && <> Tournament is LIVE for another <TimeUntil targetTime={new Date(huntData.end_at)}/></>}
+            {huntData.status < 20 && <> Tournament is starting in <TimeUntil targetTime={new Date(huntData.start_at)}/> </>}
+          </div>
         </div>
         <div style={{textAlign:'center'}}>
           <div style={{opacity:0.6}}>Seed</div>

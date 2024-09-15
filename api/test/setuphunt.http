@@ -335,8 +335,8 @@ POST http://localhost:7071/api/hunts
 Content-Type: application/json
 
 {
-  "name": "Trophy Hunt Tournament #8",
-  "desc": "Best score Wins! New Game, Fresh Character, Seed will be chosen 5 minutes before the event begins\n\nHOW TO BEGIN:\nCreate a new character\nHave the seed created and ready by :00 on the hour\nStart the world at :00 (don't preload the world)\n\nRules:\nUsing Valheim seed finder is not allowed\nNo stream sniping other competitors\nNo clipping\nNo console commands\nUsing /printseeds is banned.\nUsing /die is allowed (however -20 points)\nNo emote animation cancelling.\nIf PC crashes, you may relog in and continue just make sure to immediately restart stream\n\nMUST BE STREAMING (Visible gameplay + audio is required)\nPreferred Youtube/Twitch as livestreaming service.\nPlease turn on past broadcasting on twitch so we can review video if needed.\n\nPoint system (All trophies only count once) example: 37 deer trophies = 10 points",
+  "name": "Trophy Hunt Tournament #9",
+  "desc": "Find the most unique trophies in 4 hours.\n\nNew Game, Fresh Character, Seed will be chosen 5 minutes before the event begins\n\nHOW TO BEGIN:\nCreate a new character\nHave the seed created and ready by :00 on the hour\nStart the world at :00 (don't preload the world)\n\nRules:\nUsing Valheim seed finder is not allowed\nNo stream sniping other competitors\nNo clipping\nNo console commands\nUsing /printseeds is banned.\nUsing /die is allowed (however -20 points)\nNo emote animation cancelling.\nIf PC crashes, you may relog in and continue just make sure to immediately restart stream\n\nMUST BE STREAMING (Visible gameplay + audio is required)\nPreferred Youtube/Twitch as livestreaming service.\nPlease turn on past broadcasting on twitch so we can review video if needed.\n\nPoint system (All trophies only count once) example: 37 deer trophies = 10 points",
   "scoring": {
     "Death": -20,
     "Relog": -10,
@@ -395,8 +395,8 @@ Content-Type: application/json
     "TrophyFader": 1000,
     "TrophySerpent": 25
   },
-  "start_at": "2021-09-18T12:00:00Z",
-  "end_at": "2021-09-18T16:00:00Z",
+  "start_at": "2024-09-26T05:00:00Z",
+  "end_at": "2024-09-26T09:00:00Z",
   "seed": "",
   "prizes": { "1st": "$75", "2nd": "$25" },
   "status": 0,
