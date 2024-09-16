@@ -15,6 +15,7 @@ import { PhTwitchLogoDuotone } from '../icons/PhTwitchLogoDuotone';
 import { IcTwotoneLocalPlay } from '../icons/IcTowtoneLocalPlay';
 import RegisterCompetitor from './RegisterCompetitor';
 import TimeUntil from './TimeUntil';
+import Spinner from './Spinner';
 
 const biomes = ['Meadows', 'Black Forest', 'Ocean', 'Swamp', 'Mountain', 'Plains', 'Mistlands', 'Ashlands']
 const trophies = (await getCollection("trophy"))
@@ -26,8 +27,6 @@ const trophies = (await getCollection("trophy"))
 const deathsrc = trophies.find(x => x.id === 'death1')!.image.src;
 const relogsrc = trophies.find(x => x.id === 'relog1')!.image.src;
 
-console.log('trophies', trophies);
-
 export default function HunterLeaderboard() {
   const { data: huntsData, loading: huntsLoading } = useStore($hunts);
   const selectedHunt = useStore($huntId);
@@ -36,14 +35,21 @@ export default function HunterLeaderboard() {
   useEffect(() => {
     if (huntsData && huntsData.length > 0) {
       var currentHunt = huntsData.find((h) => h.status === 20) ?? huntsData[0];
-      console.log('currentHunt', currentHunt)
       $huntId.set(currentHunt.id);
     }
   }, [huntsData]);
+  
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      if (huntData.data?.status === 20) $huntPlayers.invalidate();
+    }, 20000); // Invalidate and refresh every 20 seconds
+    return () => clearInterval(intervalId); // Cleanup interval on component unmount
+  }, [huntData]);
 
   if (huntsLoading || !huntsData) {
     return <div>Loading...</div>;
   }
+  
 
   function handleSelectHunt(hunt: HuntItem): void {
     $huntId.set(hunt.id);
@@ -152,11 +158,17 @@ function HuntDetailsCompetitors({ huntPlayers } : { huntPlayers: HuntPlayer[] })
 }
 
 function HuntDetailsResults({ huntData, huntPlayers } : { huntData: Hunt, huntPlayers: HuntPlayer[] }) {
+
   if (!huntPlayers) {
     return <div>Loading...</div>;
   }
+
   return (
-  <table className="leaderboard">
+    <>
+    { huntData.status === 20 && <div className="pulse">Tournament is LIVE so results will refresh periodically</div> }
+
+
+  <table className={huntData.status === 20 ? 'leaderboard live' : 'leaderboard'}>
     <tbody>
     {huntPlayers.sort((a, b) => b.score - a.score).map((hunt) => (
         <tr key={(hunt.hunt_id, hunt.player_id)}>
@@ -171,7 +183,7 @@ function HuntDetailsResults({ huntData, huntPlayers } : { huntData: Hunt, huntPl
         </tr>
       ))}
     </tbody>
-  </table>);
+  </table></>);
 }
 
 function HuntDetails({ huntData } : { huntData: Hunt }) {
