@@ -40,11 +40,17 @@ export default function HunterLeaderboard() {
   
   useEffect(() => {
     const intervalId = setInterval(() => {
+      const now = new Date();
       if (huntData.data?.status === 20) {
-        if (new Date(huntData.data?.end_at) < new Date()){
+        if (new Date(huntData.data!.end_at) < now){
           $hunt.invalidate();
           $huntPlayers.invalidate();
         } else {          
+          $huntPlayers.invalidate();
+        }
+      } else if (huntData.data?.status === 10) {
+        if (new Date(huntData.data!.start_at) > now){
+          $hunt.invalidate();
           $huntPlayers.invalidate();
         }
       }
