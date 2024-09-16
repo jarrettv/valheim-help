@@ -16,7 +16,12 @@ import { IcTwotoneLocalPlay } from '../icons/IcTowtoneLocalPlay';
 import RegisterCompetitor from './RegisterCompetitor';
 import TimeUntil from './TimeUntil';
 
-const trophies = (await getCollection("trophy")).map((trophy) => trophy.data);
+const biomes = ['Meadows', 'Black Forest', 'Ocean', 'Swamp', 'Mountain', 'Plains', 'Mistlands', 'Ashlands']
+const trophies = (await getCollection("trophy"))
+  .map((trophy) => trophy.data)
+  .sort((a, b) => a.score - b.score)
+  .sort((a, b) => biomes.indexOf(a.biome) - biomes.indexOf(b.biome))
+
 
 const deathsrc = trophies.find(x => x.id === 'death1')!.image.src;
 const relogsrc = trophies.find(x => x.id === 'relog1')!.image.src;
@@ -158,7 +163,7 @@ function HuntDetailsResults({ huntData, huntPlayers } : { huntData: Hunt, huntPl
           <td width="16%" className="hunter">{hunt.name}</td>
           <td width="38px" className="score">{hunt.score}</td>
           <td className="items">
-            {trophies.sort((a, b) => a.order - b.order).filter(x => hunt.trophies.includes(x.code)).map((trophy) => (
+            {trophies.filter(x => hunt.trophies.includes(x.code)).map((trophy) => (
               <TrophyNode key={trophy.id} imgsrc={trophy.image.src} score={huntData.scoring[trophy.code]} />))}
             {hunt.deaths > 0 && <PenaltyNode key="death" imgsrc={deathsrc} score={(hunt.deaths * huntData.scoring['Death'])} />}
             {hunt.relogs > 0 && <PenaltyNode key="relog" imgsrc={relogsrc} score={(hunt.relogs * huntData.scoring['Relog'])} />}

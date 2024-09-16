@@ -329,7 +329,7 @@ Content-Type: application/json
 ]
 
 
-### setup hunt 8
+### setup hunt 9
 
 POST http://localhost:7071/api/hunts
 Content-Type: application/json
@@ -411,3 +411,396 @@ Content-Type: application/json
 [
   { "hunt_id": 4, "name": "da_Keepa", "player_id": "da_keepa" }
 ]
+
+
+### setup hunt 6
+
+POST http://localhost:7071/api/hunts
+Content-Type: application/json
+
+{
+  "name": "Trophy Hunt Tournament #6",
+  "desc": "New scores this tournament for bosses and Hilder mini-bosses.\n\nNew Game, Fresh Character, Seed will be chosen 5 minutes before the event begins\n\nHOW TO BEGIN:\nCreate a new character\nHave the seed created and ready by :00 on the hour\nStart the world at :00 (don't preload the world)\n\nRules:\nUsing Valheim seed finder is not allowed\nNo stream sniping other competitors\nNo clipping\nNo console commands\nUsing /printseeds is banned.\nUsing /die is allowed (however -20 points)\nNo emote animation cancelling.\nIf PC crashes, you may relog in and continue just make sure to immediately restart stream\n\nMUST BE STREAMING (Visible gameplay + audio is required)\nPreferred Youtube/Twitch as livestreaming service.\nPlease turn on past broadcasting on twitch so we can review video if needed.\n\nPoint system (All trophies only count once) example: 37 deer trophies = 10 points",
+  "scoring": {
+    "Death": -20,
+    "Relog": -10,
+    "TrophyBoar": 10,
+    "TrophyDeer": 10,
+    "TrophyNeck": 10,
+    "TrophyEikthyr": 40,
+    "TrophyGreydwarf": 20,
+    "TrophyGreydwarfBrute": 20,
+    "TrophyGreydwarfShaman": 20,
+    "TrophySkeletonPoison": 20,
+    "TrophySkeleton": 20,
+    "TrophyFrostTroll": 20,
+    "TrophySkeletonHildir": 25,
+    "TrophyTheElder": 60,
+    "TrophyAbomination": 20,
+    "TrophyBlob": 20,
+    "TrophyDraugr": 20,
+    "TrophyDraugrElite": 20,
+    "TrophyLeech": 20,
+    "TrophySurtling": 20,
+    "TrophyWraith": 20,
+    "TrophyBonemass": 80,
+    "TrophyCultist": 30,
+    "TrophyHatchling": 30,
+    "TrophyFenring": 30,
+    "TrophySGolem": 30,
+    "TrophyUlv": 30,
+    "TrophyWolf": 30,
+    "TrophyCultist_Hildir": 45,
+    "TrophyDragonQueen": 100,
+    "TrophyDeathsquito": 30,
+    "TrophyGoblin": 30,
+    "TrophyGoblinBrute": 30,
+    "TrophyGoblinShaman": 30,
+    "TrophyGrowth": 30,
+    "TrophyLox": 30,
+    "TrophyGoblinBruteBrosShaman": 65,
+    "TrophyGoblinBruteBrosBrute": 65,
+    "TrophyGoblinKing": 120,
+    "TrophyDvergr": 40,
+    "TrophyHare": 40,
+    "TrophyGjall": 40,
+    "TrophySeeker": 40,
+    "TrophySeekersoldier": 40,
+    "TrophyTick": 40,
+    "TrophySeekerQueen": 1000,
+    "TrophyAsksvin": 50,
+    "TrophyBonemawSerpent": 50,
+    "TrophyFallenValkyrie": 50,
+    "TrophyCharredArcher": 50,
+    "TrophyMorgen": 50,
+    "TrophyVolture": 50,
+    "TrophyWarlock": 50,
+    "TrophyCharredMelee": 50,
+    "TrophyFader": 1000,
+    "TrophySerpent": 25
+  },
+  "start_at": "2024-08-25T05:00:00Z",
+  "end_at": "2024-08-25T09:00:00Z",
+  "seed": "fwecxvwwe",
+  "prizes": { "1st": "$75", "2nd": "$25" },
+  "status": 50,
+  "created_by": "jarrettv",
+  "updated_by": "jarrettv"
+}
+
+### insert players
+POST http://localhost:7071/api/hunts/players
+Content-Type: application/json
+
+[
+  {
+    "hunt_id": 6,
+    "name": "Warband",
+    "player_id": "Warband",
+    "stream": "https://www.youtube.com/live/XXXXX",
+    "status": 0,
+    "score": 430,
+    "deaths": 0,
+    "relogs": 0,
+    "trophies": [
+      "TrophyBoar",
+      "TrophyDeer",
+      "TrophyNeck",
+      "TrophyGreydwarf",
+      "TrophyGreydwarfBrute",
+      "TrophyGreydwarfShaman",
+      "TrophySkeleton",
+      "TrophyFrostTroll",
+      "TrophyAbomination",
+      "TrophyBlob",
+      "TrophyDraugr",
+      "TrophyLeech",
+      "TrophyHatchling",
+      "TrophyWolf",
+      "TrophyDeathsquito",
+      "TrophyGoblin",
+      "TrophyEikthyr",
+      "TrophyTheElder"
+    ]
+  },
+  {
+    "hunt_id": 6,
+    "name": "da_Keepa",
+    "player_id": "da_Keepa",
+    "stream": "https://www.twitch.tv/da_Keepa",
+    "status": 0,
+    "score": 280,
+    "deaths": 6,
+    "relogs": 0,
+    "trophies": [
+      "TrophyBoar",
+      "TrophyDeer",
+      "TrophyGreydwarfShaman",
+      "TrophyGreydwarf",
+      "TrophySkeleton",
+      "TrophyFrostTroll",
+      "TrophyAbomination",
+      "TrophyBlob",
+      "TrophyDraugr",
+      "TrophyLeech",
+      "TrophyWolf",
+      "TrophyDeathsquito",
+      "TrophyGoblin",
+      "TrophyGrowth",
+      "TrophyEikthyr",
+      "TrophyTheElder"
+    ]
+  },
+  {
+    "hunt_id": 6,
+    "name": "SpazzyJones",
+    "player_id": "spazzyjones",
+    "stream": "https://www.youtube.com/live/Ey8NpN4iMtU",
+    "status": 0,
+    "score": 210,
+    "deaths": 4,
+    "relogs": 0,
+    "trophies": [
+      "TrophyBoar",
+      "TrophyDeer",
+      "TrophyNeck",
+      "TrophyGreydwarf",
+      "TrophySkeletonPoison",
+      "TrophySkeleton",
+      "TrophyFrostTroll",
+      "TrophyAbomination",
+      "TrophyBlob",
+      "TrophyDraugr",
+      "TrophyDraugrElite",
+      "TrophyLeech",
+      "TrophyEikthyr",
+      "TrophyTheElder"
+    ]
+  },
+  {
+    "hunt_id": 6,
+    "name": "Hawk3y3",
+    "player_id": "Hawk3y3",
+    "stream": "https://www.twitch.tv/ohawk3y3o",
+    "status": 0,
+    "score": 170,
+    "deaths": 3,
+    "relogs": 0,
+    "trophies": [
+      "TrophyBoar",
+      "TrophyDeer",
+      "TrophyNeck",
+      "TrophyGreydwarf",
+      "TrophyGreydwarfBrute",
+      "TrophyGreydwarfShaman",
+      "TrophySkeleton",
+      "TrophyFrostTroll",
+      "TrophyEikthyr",
+      "TrophyTheElder"
+    ]
+  },
+  {
+    "hunt_id": 6,
+    "name": "Rusty Cali",
+    "player_id": "rustycali",
+    "stream": "https://youtube.com/live/86ehYTkdbf8",
+    "status": 0,
+    "score": 100,
+    "deaths": 3,
+    "relogs": 0,
+    "trophies": [
+      "TrophyBoar",
+      "TrophyDeer",
+      "TrophyGreydwarf",
+      "TrophyFrostTroll",
+      "TrophyEikthyr",
+      "TrophyTheElder"
+    ]
+  },
+  {
+    "hunt_id": 6,
+    "name": "Greg",
+    "player_id": "Greg",
+    "stream": "https://youtube.com/gregscottbailey",
+    "status": 0,
+    "score": 50,
+    "deaths": 5,
+    "relogs": 0,
+    "trophies": [
+      "TrophyBoar",
+      "TrophyDeer",
+      "TrophyNeck",
+      "TrophyGreydwarfShaman",
+      "TrophyGreydwarf",
+      "TrophySkeleton",
+      "TrophyFrostTroll",
+      "TrophyEikthyr"
+    ]
+  }
+]
+
+### other players
+POST http://localhost:7071/api/hunts/players
+Content-Type: application/json
+
+[
+  {
+    "hunt_id": 6,
+    "name": "Archy",
+    "player_id": "Archy",
+    "stream": "https://www.youtube.com/live/XXXXX",
+    "status": 0,
+    "score": 260,
+    "deaths": 2,
+    "relogs": 0,
+    "trophies": [
+      "TrophyBoar",
+      "TrophyDeer",
+      "TrophyNeck",
+      "TrophyGreydwarf",
+      "TrophyGreydwarfShaman",
+      "TrophySkeleton",
+      "TrophyFrostTroll",
+      "TrophyAbomination",
+      "TrophyBlob",
+      "TrophyDraugr",
+      "TrophyGrowth",
+      "TrophyEikthyr",
+      "TrophyTheElder"
+    ]
+  },
+  {
+    "hunt_id": 6,
+    "name": "Xmal",
+    "player_id": "xmal",
+    "stream": "https://www.youtube.com/live/XXXX",
+    "status": 0,
+    "score": 250,
+    "deaths": 2,
+    "relogs": 0,
+    "trophies": [
+      "TrophyBoar",
+      "TrophyDeer",
+      "TrophyNeck",
+      "TrophyGreydwarf",
+      "TrophySkeleton",
+      "TrophyFrostTroll",
+      "TrophyDraugr",
+      "TrophyLeech",
+      "TrophyDeathsquito",
+      "TrophyGoblin",
+      "TrophyEikthyr",
+      "TrophyTheElder"
+    ]
+  }
+]
+
+
+### setup hunt 5
+
+POST http://localhost:7071/api/hunts
+Content-Type: application/json
+
+{
+  "name": "Trophy Hunt Tournament #5",
+  "desc": "New scores this tournament for Queen and Fader (will nerf if someone completes)\n\nNew Game, Fresh Character, Seed will be chosen 5 minutes before the event begins\n\nHOW TO BEGIN:\nCreate a new character\nHave the seed created and ready by :00 on the hour\nStart the world at :00 (don't preload the world)\n\nRules:\nUsing Valheim seed finder is not allowed\nNo stream sniping other competitors\nNo clipping\nNo console commands\nUsing /printseeds is banned.\nUsing /die is allowed (however -20 points)\nNo emote animation cancelling.\nIf PC crashes, you may relog in and continue just make sure to immediately restart stream\n\nMUST BE STREAMING (Visible gameplay + audio is required)\nPreferred Youtube/Twitch as livestreaming service.\nPlease turn on past broadcasting on twitch so we can review video if needed.\n\nPoint system (All trophies only count once) example: 37 deer trophies = 10 points",
+  "scoring": {
+    "Death": -20,
+    "Relog": -10,
+    "TrophyBoar": 10,
+    "TrophyDeer": 10,
+    "TrophyNeck": 10,
+    "TrophyEikthyr": 50,
+    "TrophyGreydwarf": 20,
+    "TrophyGreydwarfBrute": 20,
+    "TrophyGreydwarfShaman": 20,
+    "TrophySkeletonPoison": 20,
+    "TrophySkeleton": 20,
+    "TrophyFrostTroll": 20,
+    "TrophySkeletonHildir": 20,
+    "TrophyTheElder": 50,
+    "TrophyAbomination": 20,
+    "TrophyBlob": 20,
+    "TrophyDraugr": 20,
+    "TrophyDraugrElite": 20,
+    "TrophyLeech": 20,
+    "TrophySurtling": 20,
+    "TrophyWraith": 20,
+    "TrophyBonemass": 80,
+    "TrophyCultist": 30,
+    "TrophyHatchling": 30,
+    "TrophyFenring": 30,
+    "TrophySGolem": 30,
+    "TrophyUlv": 30,
+    "TrophyWolf": 30,
+    "TrophyCultist_Hildir": 30,
+    "TrophyDragonQueen": 100,
+    "TrophyDeathsquito": 30,
+    "TrophyGoblin": 30,
+    "TrophyGoblinBrute": 30,
+    "TrophyGoblinShaman": 30,
+    "TrophyGrowth": 30,
+    "TrophyLox": 30,
+    "TrophyGoblinBruteBrosShaman": 30,
+    "TrophyGoblinBruteBrosBrute": 30,
+    "TrophyGoblinKing": 100,
+    "TrophyDvergr": 40,
+    "TrophyHare": 40,
+    "TrophyGjall": 40,
+    "TrophySeeker": 40,
+    "TrophySeekersoldier": 40,
+    "TrophyTick": 40,
+    "TrophySeekerQueen": 1000,
+    "TrophyAsksvin": 50,
+    "TrophyBonemawSerpent": 50,
+    "TrophyFallenValkyrie": 50,
+    "TrophyCharredArcher": 50,
+    "TrophyMorgen": 50,
+    "TrophyVolture": 50,
+    "TrophyWarlock": 50,
+    "TrophyCharredMelee": 50,
+    "TrophyFader": 1000,
+    "TrophySerpent": 25
+  },
+  "start_at": "2024-08-17T22:00:00Z",
+  "end_at": "2024-08-18T02:00:00Z",
+  "seed": "opsfiweof",
+  "prizes": { "1st": "$50" },
+  "status": 50,
+  "created_by": "jarrettv",
+  "updated_by": "jarrettv"
+}
+
+
+### 
+POST http://localhost:7071/api/hunts/players
+Content-Type: application/json
+
+[{
+  "hunt_id": 7,
+  "name": "Henrik",
+  "player_id": "Henrik",
+  "stream": "https://www.youtube.com/live/sxpOzXfOMmw",
+  "status": 0,
+  "score": 430,
+  "deaths": 2,
+  "relogs": 0,
+  "trophies": [
+    "TrophyBoar",
+    "TrophyDeer",
+    "TrophyNeck",
+    "TrophyEikthyr",
+    "TrophyGreydwarfShaman",
+    "TrophySkeleton",
+    "TrophyFrostTroll",
+    "TrophyTheElder",
+    "TrophyAbomination",
+    "TrophyDraugr",
+    "TrophyLeech",
+    "TrophyHatchling",
+    "TrophyUlv",
+    "TrophyWolf",
+    "TrophyDragonQueen",
+    "TrophyGoblinShaman"
+  ]
+}]
