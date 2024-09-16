@@ -15,7 +15,6 @@ import { PhTwitchLogoDuotone } from '../icons/PhTwitchLogoDuotone';
 import { IcTwotoneLocalPlay } from '../icons/IcTowtoneLocalPlay';
 import RegisterCompetitor from './RegisterCompetitor';
 import TimeUntil from './TimeUntil';
-import Spinner from './Spinner';
 
 const biomes = ['Meadows', 'Black Forest', 'Ocean', 'Swamp', 'Mountain', 'Plains', 'Mistlands', 'Ashlands']
 const trophies = (await getCollection("trophy"))
@@ -34,14 +33,21 @@ export default function HunterLeaderboard() {
 
   useEffect(() => {
     if (huntsData && huntsData.length > 0) {
-      var currentHunt = huntsData.find((h) => h.status === 20) ?? huntsData[0];
+      var currentHunt = huntsData.find((h) => h.status === 20) ?? huntsData.find((h) => h.status === 10) ?? huntsData[0];
       $huntId.set(currentHunt.id);
     }
   }, [huntsData]);
   
   useEffect(() => {
     const intervalId = setInterval(() => {
-      if (huntData.data?.status === 20) $huntPlayers.invalidate();
+      if (huntData.data?.status === 20) {
+        if (new Date(huntData.data?.end_at) < new Date()){
+          $hunt.invalidate();
+          $huntPlayers.invalidate();
+        } else {          
+          $huntPlayers.invalidate();
+        }
+      }
     }, 20000); // Invalidate and refresh every 20 seconds
     return () => clearInterval(intervalId); // Cleanup interval on component unmount
   }, [huntData]);
