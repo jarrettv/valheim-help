@@ -33,23 +33,25 @@ export default function HunterLeaderboard() {
 
   useEffect(() => {
     if (huntsData && huntsData.length > 0) {
-      var currentHunt = huntsData.find((h) => h.status === 20) ?? huntsData.find((h) => h.status === 10) ?? huntsData[0];
+      var currentHunt = huntsData.find((h) => h.status === 20) ?? huntsData.find((h) => h.status === 10) ?? huntsData.find((h) => h.status === 30) ?? huntsData[0];
       $huntId.set(currentHunt.id);
     }
   }, [huntsData]);
-  
+
   useEffect(() => {
     const intervalId = setInterval(() => {
       const now = new Date();
       if (huntData.data?.status === 20) {
-        if (new Date(huntData.data!.end_at) < now){
+        if (now > new Date(huntData.data!.end_at)) {
+          console.log('Hunt just ended');
           $hunt.invalidate();
           $huntPlayers.invalidate();
-        } else {          
+        } else {
           $huntPlayers.invalidate();
         }
       } else if (huntData.data?.status === 10) {
-        if (new Date(huntData.data!.start_at) > now){
+        if (now > new Date(huntData.data!.start_at)) {
+          console.log('Hunt just started');
           $hunt.invalidate();
           $huntPlayers.invalidate();
         }
@@ -61,27 +63,27 @@ export default function HunterLeaderboard() {
   if (huntsLoading || !huntsData) {
     return <div>Loading...</div>;
   }
-  
+
 
   function handleSelectHunt(hunt: HuntItem): void {
     $huntId.set(hunt.id);
   }
 
-  return(
-  <div className="hunter-leaderboard">
-    <div className="hunts">
+  return (
+    <div className="hunter-leaderboard">
+      <div className="hunts">
         {huntsData.sort((a, b) => new Date(b.start_at).getTime() - new Date(a.start_at).getTime()).map((hunt) => (
           <div className={hunt.id === selectedHunt ? 'tab active' : 'tab'} key={hunt.id} onClick={() => handleSelectHunt(hunt)}>{hunt.name}</div>
         ))}
-    </div>
-    <div>
-      {huntData.data ? <HuntDetails huntData={huntData.data!} /> : <div>Loading...</div>}
-    </div>
-  </div>);
+      </div>
+      <div>
+        {huntData.data ? <HuntDetails huntData={huntData.data!} /> : <div>Loading...</div>}
+      </div>
+    </div>);
 
-  };
+};
 
-function HuntDetailsInfo({ huntData } : { huntData: Hunt }) {
+function HuntDetailsInfo({ huntData }: { huntData: Hunt }) {
   return (
     <p>
       {huntData.desc.split('\n').map((item, idx) => {
@@ -95,9 +97,9 @@ function HuntDetailsInfo({ huntData } : { huntData: Hunt }) {
     </p>);
 }
 
-function HuntDetailsScoring({ huntData } : { huntData: Hunt }) {
+function HuntDetailsScoring({ huntData }: { huntData: Hunt }) {
   return (<>
-    <div className="scoring" style={{backgroundColor:'#0003'}}>
+    <div className="scoring" style={{ backgroundColor: '#0003' }}>
       <div className="item">
         <img src={deathsrc} alt="Death" />
         <div className="score">{huntData.scoring['Death']}</div>
@@ -116,60 +118,60 @@ function HuntDetailsScoring({ huntData } : { huntData: Hunt }) {
     </div></>);
 }
 
-function HuntDetailsWatch({ huntPlayers } : { huntPlayers: HuntPlayer[] }) {
+function HuntDetailsWatch({ huntPlayers }: { huntPlayers: HuntPlayer[] }) {
   if (!huntPlayers) {
     return <div>Loading...</div>;
   }
   return (
-  <table className="leaderboard">
-    <tbody>
-    {huntPlayers.map((hunt) => (
-        <tr key={(hunt.hunt_id, hunt.player_id)}>
-          <td width="16%" className="hunter">{hunt.name}</td>
-          <td style={{padding:'0 1rem', textAlign:'right'}}>
-            {hunt.stream && hunt.stream.includes('twitch') && <PhTwitchLogoDuotone fontSize="1.8rem" color="#6141A5" />}  
-            {hunt.stream && hunt.stream.includes('youtube') && <LineMdYoutubeTwotone fontSize="1.8rem" color="red" />} 
-          </td>
-          <td className="watch">
-            {hunt.stream && <a href={hunt.stream} target="_blank" rel="noreferrer">{hunt.stream}</a>}
-            {!hunt.stream && <span>Not available yet</span>}
-          </td>
-        </tr>
-      ))}
-    </tbody>
-  </table>);
+    <table className="leaderboard">
+      <tbody>
+        {huntPlayers.map((hunt) => (
+          <tr key={(hunt.hunt_id, hunt.player_id)}>
+            <td width="16%" className="hunter">{hunt.name}</td>
+            <td style={{ padding: '0 1rem', textAlign: 'right' }}>
+              {hunt.stream && hunt.stream.includes('twitch') && <PhTwitchLogoDuotone fontSize="1.8rem" color="#6141A5" />}
+              {hunt.stream && hunt.stream.includes('youtube') && <LineMdYoutubeTwotone fontSize="1.8rem" color="red" />}
+            </td>
+            <td className="watch">
+              {hunt.stream && <a href={hunt.stream} target="_blank" rel="noreferrer">{hunt.stream}</a>}
+              {!hunt.stream && <span>Not available yet</span>}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>);
 }
 
-function HuntDetailsCompetitors({ huntPlayers } : { huntPlayers: HuntPlayer[] }) {
-  
+function HuntDetailsCompetitors({ huntPlayers }: { huntPlayers: HuntPlayer[] }) {
+
   if (!huntPlayers) {
     return <div>Loading...</div>;
   }
   return (
     <>
-  <table className="leaderboard">
-    <tbody>
-    {huntPlayers.map((hunt) => (
-        <tr key={(hunt.hunt_id, hunt.player_id)}>
-          <td width="16%" className="hunter">{hunt.name}</td>
-          <td>Personal best: N/A</td>
-          <td style={{padding:'0 1rem', textAlign:'right'}}>
-            {hunt.stream && hunt.stream.includes('twitch') && <PhTwitchLogoDuotone fontSize="1.8rem" color="#6141A5" />}  
-            {hunt.stream && hunt.stream.includes('youtube') && <LineMdYoutubeTwotone fontSize="1.8rem" color="red" />} 
-          </td>
-          <td className="watch">
-            {hunt.stream && <a href={hunt.stream} target="_blank" rel="noreferrer">{hunt.stream}</a>}
-            {!hunt.stream && <span>Stream not available yet</span>}
-          </td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
-  <RegisterCompetitor />
-</>);
+      <table className="leaderboard">
+        <tbody>
+          {huntPlayers.map((hunt) => (
+            <tr key={(hunt.hunt_id, hunt.player_id)}>
+              <td width="16%" className="hunter">{hunt.name}</td>
+              <td>Personal best: N/A</td>
+              <td style={{ padding: '0 1rem', textAlign: 'right' }}>
+                {hunt.stream && hunt.stream.includes('twitch') && <PhTwitchLogoDuotone fontSize="1.8rem" color="#6141A5" />}
+                {hunt.stream && hunt.stream.includes('youtube') && <LineMdYoutubeTwotone fontSize="1.8rem" color="red" />}
+              </td>
+              <td className="watch">
+                {hunt.stream && <a href={hunt.stream} target="_blank" rel="noreferrer">{hunt.stream}</a>}
+                {!hunt.stream && <span>Stream not available yet</span>}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <RegisterCompetitor />
+    </>);
 }
 
-function HuntDetailsResults({ huntData, huntPlayers } : { huntData: Hunt, huntPlayers: HuntPlayer[] }) {
+function HuntDetailsResults({ huntData, huntPlayers }: { huntData: Hunt, huntPlayers: HuntPlayer[] }) {
 
   if (!huntPlayers) {
     return <div>Loading...</div>;
@@ -177,28 +179,28 @@ function HuntDetailsResults({ huntData, huntPlayers } : { huntData: Hunt, huntPl
 
   return (
     <>
-    { huntData.status === 20 && <div className="pulse">Tournament is LIVE so results will refresh periodically</div> }
+      {huntData.status === 20 && <div className="pulse">Tournament is LIVE so results will refresh periodically</div>}
+      {huntData.status === 30 && <div className="pulse">Tournament is OVER! See you at the next hunt!</div>}
 
-
-  <table className={huntData.status === 20 ? 'leaderboard live' : 'leaderboard'}>
-    <tbody>
-    {huntPlayers.sort((a, b) => b.score - a.score).map((hunt) => (
-        <tr key={(hunt.hunt_id, hunt.player_id)}>
-          <td width="16%" className="hunter">{hunt.name}</td>
-          <td width="38px" className="score">{hunt.score}</td>
-          <td className="items">
-            {trophies.filter(x => hunt.trophies.includes(x.code)).map((trophy) => (
-              <TrophyNode key={trophy.id} imgsrc={trophy.image.src} score={huntData.scoring[trophy.code]} />))}
-            {hunt.deaths > 0 && <PenaltyNode key="death" imgsrc={deathsrc} score={(hunt.deaths * huntData.scoring['Death'])} />}
-            {hunt.relogs > 0 && <PenaltyNode key="relog" imgsrc={relogsrc} score={(hunt.relogs * huntData.scoring['Relog'])} />}
-          </td>
-        </tr>
-      ))}
-    </tbody>
-  </table></>);
+      <table className={huntData.status === 20 ? 'leaderboard live' : 'leaderboard'}>
+        <tbody>
+          {huntPlayers.sort((a, b) => b.score - a.score).map((hunt) => (
+            <tr key={(hunt.hunt_id, hunt.player_id)}>
+              <td width="16%" className="hunter">{hunt.name}</td>
+              <td width="38px" className="score">{hunt.score}</td>
+              <td className="items">
+                {trophies.filter(x => hunt.trophies.includes(x.code)).map((trophy) => (
+                  <TrophyNode key={trophy.id} imgsrc={trophy.image.src} score={huntData.scoring[trophy.code]} />))}
+                {hunt.deaths > 0 && <PenaltyNode key="death" imgsrc={deathsrc} score={(hunt.deaths * huntData.scoring['Death'])} />}
+                {hunt.relogs > 0 && <PenaltyNode key="relog" imgsrc={relogsrc} score={(hunt.relogs * huntData.scoring['Relog'])} />}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table></>);
 }
 
-function HuntDetails({ huntData } : { huntData: Hunt }) {
+function HuntDetails({ huntData }: { huntData: Hunt }) {
   const huntPlayers = useStore($huntPlayers);
   const defaultTab = huntData.status === 20 ? 'results' : 'info';
   const [selectedTab, setSelectedTab] = useState<string>(defaultTab);
@@ -212,19 +214,19 @@ function HuntDetails({ huntData } : { huntData: Hunt }) {
       <div className="hunt-head">
         <div>
           <h1>{huntData.name}</h1>
-          <div style={{opacity:0.8,marginTop:'-0.25rem'}}>{new Date(huntData.start_at).toLocaleDateString(undefined, { weekday: "long", year: "numeric", month: "long", day: "numeric" })} {new Date(huntData.start_at).toLocaleTimeString().replace(':00:00 ', '').toLowerCase()}-{new Date(huntData.end_at).toLocaleTimeString().replace(':00:00 ', '').toLowerCase()}</div>
-          <div style={{marginTop:'-0.15rem'}} className="hunt-status">
+          <div style={{ opacity: 0.8, marginTop: '-0.25rem' }}>{new Date(huntData.start_at).toLocaleDateString(undefined, { weekday: "long", year: "numeric", month: "long", day: "numeric" })} {new Date(huntData.start_at).toLocaleTimeString().replace(':00:00 ', '').toLowerCase()}-{new Date(huntData.end_at).toLocaleTimeString().replace(':00:00 ', '').toLowerCase()}</div>
+          <div style={{ marginTop: '-0.15rem' }} className="hunt-status">
             {huntData.status > 20 && <> Tournament is over</>}
-            {huntData.status === 20 && <> Tournament is LIVE for another <TimeUntil targetTime={new Date(huntData.end_at)}/></>}
-            {huntData.status < 20 && <> Tournament is starting in <TimeUntil targetTime={new Date(huntData.start_at)}/> </>}
+            {huntData.status === 20 && <> Tournament is LIVE for another <TimeUntil targetTime={new Date(huntData.end_at)} /></>}
+            {huntData.status < 20 && <> Tournament is starting in <TimeUntil targetTime={new Date(huntData.start_at)} /> </>}
           </div>
         </div>
-        <div style={{textAlign:'center'}}>
-          <div style={{opacity:0.6}}>Seed</div>
+        <div style={{ textAlign: 'center' }}>
+          <div style={{ opacity: 0.6 }}>Seed</div>
           <div className="hunt-seed">{huntData.seed}</div>
         </div>
       </div>
-      <nav style={{maxWidth:'500px'}}>
+      <nav style={{ maxWidth: '500px' }}>
         <div
           className={selectedTab === 'info' ? 'tab active' : 'tab'}
           onClick={() => handleTabChange('info')}
@@ -240,35 +242,35 @@ function HuntDetails({ huntData } : { huntData: Hunt }) {
           Scoring
         </div>
         {huntData.status < 20 && (
-        <div
-          className={selectedTab === 'competitors' ? 'tab active' : 'tab'}
-          onClick={() => handleTabChange('competitors')}
-        >
-          <GameIconsStrong />
-          Competitors
-        </div>)}
+          <div
+            className={selectedTab === 'competitors' ? 'tab active' : 'tab'}
+            onClick={() => handleTabChange('competitors')}
+          >
+            <GameIconsStrong />
+            Competitors
+          </div>)}
         {huntData.status >= 20 && (
-        <div
-          className={selectedTab === 'watch' ? 'tab active' : 'tab'}
-          onClick={() => handleTabChange('watch')}
-        >
-          <IcTwotoneLocalPlay />
-          Watch
-        </div>)}
+          <div
+            className={selectedTab === 'watch' ? 'tab active' : 'tab'}
+            onClick={() => handleTabChange('watch')}
+          >
+            <IcTwotoneLocalPlay />
+            Watch
+          </div>)}
         {huntData.status >= 20 && (
-        <div
-          className={selectedTab === 'results' ? 'tab active' : 'tab'}
-          onClick={() => handleTabChange('results')}
-        >
-          <IconParkTwotoneTrophy />
-          Results
-        </div>)}
+          <div
+            className={selectedTab === 'results' ? 'tab active' : 'tab'}
+            onClick={() => handleTabChange('results')}
+          >
+            <IconParkTwotoneTrophy />
+            Results
+          </div>)}
       </nav>
-      {selectedTab === 'info' && (<HuntDetailsInfo huntData={huntData} />) }
-      {selectedTab === 'scoring' && (<HuntDetailsScoring huntData={huntData} />) }
-      {selectedTab === 'competitors' && (<HuntDetailsCompetitors huntPlayers={huntPlayers.data!} />) }
-      {selectedTab === 'watch' && (<HuntDetailsWatch huntPlayers={huntPlayers.data!} />) }
-      {selectedTab === 'results' && (<HuntDetailsResults huntData={huntData} huntPlayers={huntPlayers.data!} />) }
+      {selectedTab === 'info' && (<HuntDetailsInfo huntData={huntData} />)}
+      {selectedTab === 'scoring' && (<HuntDetailsScoring huntData={huntData} />)}
+      {selectedTab === 'competitors' && (<HuntDetailsCompetitors huntPlayers={huntPlayers.data!} />)}
+      {selectedTab === 'watch' && (<HuntDetailsWatch huntPlayers={huntPlayers.data!} />)}
+      {selectedTab === 'results' && (<HuntDetailsResults huntData={huntData} huntPlayers={huntPlayers.data!} />)}
     </div>
   );
 };
