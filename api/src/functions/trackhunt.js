@@ -9,6 +9,7 @@ app.http('trackhunt', {
     handler: async (request, context) => {
         const supabase = createClient(supabaseUrl, process.env.SUPABASE_SERVICE_KEY);
         const input = await request.json();
+        
         // Insert data into Supabase
         const { data, error } = await supabase
             .from('track_hunts')

@@ -1,0 +1,11 @@
+{
+  "id": "kvastur_trophy",
+  "biome": "Swamp",
+  "image": "./kvastur_trophy.webp",
+  "name": "Kvastur",
+  "dropChance": "100%",
+  "score": 20,
+  "group": "Swamp",
+  "order": 18,
+  "code": "TrophyKvastur"
+}

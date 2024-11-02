@@ -3,10 +3,11 @@ POST https://valheim.help/api/trackhunt
 Content-Type: application/json
 
 {
-    "current_score": 50,
-    "deaths": 2,
+    "current_score": 0,
+    "deaths": 0,
     "logouts": 0,
-    "player_location": "(5.73, 35.53, 3.60)",
+    "gamemode": "TrophyHunt",
+    "player_location": "",
     "player_name": "oathorse",
     "session_id": "372745983",
     "trophies": "TrophyDeer, TrophyBoar"
