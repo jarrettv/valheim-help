@@ -1,7 +1,7 @@
 {
   "id": "relog1",
   "biome": "Penalty",
-  "image": "./rested.webp",
+  "image": "./logout.webp",
   "name": "Relog #1",
   "dropChance": "",
   "group": "Ocean/Penalty",

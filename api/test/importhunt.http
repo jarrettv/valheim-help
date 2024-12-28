@@ -5,6 +5,6 @@ POST http://localhost:7071/api/importhunt
 Content-Type: application/json
 
 {
-    "hunt_id": 13,
-    "player_id": "Tubby Squirrel"
+    "hunt_id": 16,
+    "player_id": "The Tickler"
 }

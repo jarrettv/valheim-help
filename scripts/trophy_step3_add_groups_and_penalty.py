@@ -42,7 +42,7 @@ for i in range(3):
         {
             "id": f"relog{i + 1}",
             "biome": "Penalty",
-            "image": "./rested.webp",
+            "image": "./logout.webp",
             "name": "Relog #" + str(i + 1),
             "dropChance": "",
             "group": "Ocean/Penalty",
