@@ -4,7 +4,7 @@
   "image": "./kvastur_trophy.webp",
   "name": "Kvastur",
   "dropChance": "100%",
-  "score": 35,
+  "score": 25,
   "group": "Swamp",
   "order": 18,
   "code": "TrophyKvastur"

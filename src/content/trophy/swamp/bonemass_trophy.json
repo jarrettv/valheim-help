@@ -4,7 +4,7 @@
   "image": "./bonemass_trophy.png",
   "name": "Bonemass",
   "dropChance": "100%",
-  "score": 80,
+  "score": 100,
   "group": "Swamp",
   "order": 16,
   "code": "TrophyBonemass"

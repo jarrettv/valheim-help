@@ -4,7 +4,7 @@
   "image": "./serpent_trophy.png",
   "name": "Serpent",
   "dropChance": "33%",
-  "score": 25,
+  "score": 45,
   "group": "Ocean/Penalty",
   "order": 15,
   "code": "TrophySerpent"

@@ -4,7 +4,7 @@
   "image": "./yagluth_trophy.png",
   "name": "Yagluth",
   "dropChance": "100%",
-  "score": 120,
+  "score": 160,
   "group": "Plains",
   "order": 32,
   "code": "TrophyGoblinKing"

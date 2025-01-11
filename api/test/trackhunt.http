@@ -9,8 +9,13 @@ Content-Type: application/json
     "gamemode": "TrophyHunt",
     "player_location": "",
     "player_name": "oathorse",
-    "session_id": "372745983",
-    "trophies": "TrophyDeer, TrophyBoar"
+    "session_id": "seed",
+    "trophies": "TrophyDeer, TrophyBoar",
+    "extra": {
+        "put": "anything",
+        "try": "use",
+        "short": "keys"
+    }
 }
 
 
@@ -28,5 +33,10 @@ Content-Type: application/json
     "player_location": "(5.73, 35.53, 3.60)",
     "player_name": "jarrettv",
     "session_id": "JJJqEfFUeF",
-    "trophies": "TrophyGreydwarf, TrophyDeer, TrophyBoar, TrophyNeck, TrophyEikthyr"
+    "trophies": "TrophyGreydwarf, TrophyDeer, TrophyBoar, TrophyNeck, TrophyEikthyr",
+    "extra": {
+        "put": "anything",
+        "try": "use",
+        "short": "keys"
+    }
 }
